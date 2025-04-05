@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2a5be519b08012b1",
+        "id": "62740e530cff06bf",
         "type": "tabs",
         "children": [
           {
-            "id": "223fed08766c2745",
+            "id": "fe4b617631dc6014",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Test.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Test"
             }
           }
         ]
@@ -162,7 +166,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "223fed08766c2745",
+  "active": "fe4b617631dc6014",
   "lastOpenFiles": [
     "Dev General/OAuth vs OIDC.md",
     "Test.md",
