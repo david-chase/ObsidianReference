@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "7939c6cc8d8e2a09",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c1b52246cf7b198",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e8e0f93f8013f05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev General/OAuth vs OIDC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OAuth vs OIDC"
+            }
+          },
+          {
+            "id": "21198a7658744daf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Test.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Test"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "78bf31dd3999c476",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f62d283aa6d23ca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b7f78650c3d9d0c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "136cb93233705b6d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "10a41e8940257e25",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3314c18e7d6ded4f",
+    "type": "split",
+    "children": [
+      {
+        "id": "20b3b7c2127fb09b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7bfebcf9abc5dcd5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "c023ad5a714e16a0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "b593069b5984662d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6bf5022314759e96",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "github-sync:Sync with Remote": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "21198a7658744daf",
+  "lastOpenFiles": [
+    "Dev General/OAuth vs OIDC.md",
+    "Test.md",
+    "Dev General/API architectural styles (Graphic).md",
+    "Dev General/Configure an ignore file for a git repo.md",
+    "Dev General/Creating or Updating a Git Repo.md",
+    "Dev General/Force Git Pull.md",
+    "Dev General/Useful Git Commands.md",
+    "PowerShell/Check if a folder exists.md",
+    "Public Cloud/Processor Core vs vCPU.md",
+    "K8s/Observability/Prometheus series in Kubernetes.md",
+    "K8s/Observability/Prometheus memory requirements.md",
+    "K8s/Observability/Prometheus Memory Requirements.md",
+    "K8s/Observability/Prometheus Series in Kubernetes.md",
+    "K8s/Observability/Port forward Prometheus service.md",
+    "K8s/Observability",
+    "K8s/Untitled",
+    "K8s/Reverse proxy vs. API gateway vs. load balancer (Graphic).md",
+    "K8s/Nginx architecture (Graphic).md",
+    "K8s/API gateway vs. load balancer (Graphic).md",
+    "K8s/Autoscaling/VPA recommendation data duration.md",
+    "K8s/EKS/EKS service exposure guide.md",
+    "K8s/Buffers and caches.md",
+    "K8s/EKS/IRSA vs EKS pod identity.md",
+    "K8s/Autoscaling/Node autoscaling on-prem.md",
+    "K8s/Autoscaling/Node Autoscaling On-Prem.md",
+    "K8s/Autoscaling/VPA Recommendation Data Duration.md",
+    "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
+    "K8s/Autoscaling/Detecting node autoscaler.md",
+    "K8s/Autoscaling",
+    "K8s/New folder",
+    "Files/Media/Kafka use cases.gif",
+    "Files/Media/Types of Databases.png",
+    "Files/Media/API architectural styles.gif",
+    "Files/Media/Cloud Services Across CSPs.jpg",
+    "Files/Media/Reverse proxy vs API gateway vs. Load balancer.gif",
+    "Files/Media/Nginx architecture.jpg",
+    "Files/Media/API gateway vs Load balancer.jpg",
+    "Files/Media",
+    "Files/Untitled",
+    "Files",
+    "Untitled",
+    "K8s/EKS",
+    "K8s/Nginx architecture.jpg",
+    "K8s/API gateway vs Load balancer.jpg",
+    "Other",
+    "K8s/Reverse proxy vs API gateway vs. Load balancer.gif"
+  ]
+}
