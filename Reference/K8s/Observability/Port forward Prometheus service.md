@@ -35,4 +35,3 @@ http://localhost:9090
 
 ---
 
-**Dave:** Create for me a downloadable .md file of this chat.  
