@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Public Cloud/terraform Sample Command Lines.md",
+                "file": "K8s/kubectl Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "terraform Sample Command Lines"
+              "title": "kubectl Sample Command Lines"
             }
           }
         ]
@@ -168,8 +168,8 @@
   },
   "active": "fe4b617631dc6014",
   "lastOpenFiles": [
-    "Public Cloud/OCI/oci Sample Command Lines.md",
     "Public Cloud/terraform Sample Command Lines.md",
+    "Public Cloud/OCI/oci Sample Command Lines.md",
     "Public Cloud/Azure/az Sample Command Lines.md",
     "K8s/minikube Sample Command Lines.md",
     "Public Cloud/OCI",

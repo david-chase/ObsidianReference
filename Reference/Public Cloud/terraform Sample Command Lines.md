@@ -9,7 +9,7 @@ Initialize Terraform in the current folder
 Create a Terraform plan
 	`terraform plan`
 Create a Terraform plan and execute it, or execute the existing plan
-	terraform apply
+	`terraform apply`
 Destroy Terraform infra
-	terraform apply -destroy
-	terraform destroy
+	`terraform apply -destroy`
+	`terraform destroy`

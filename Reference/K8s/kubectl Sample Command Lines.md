@@ -201,4 +201,6 @@ Open a shell on a container
 Test external connectivity
 	`kubectl run test-pod --rm -it --image=busybox -- /bin/sh`
 	`ping partner1.densify.com`
-	
+See events for a pod or object
+	 `kubectl describe <object-type> <object-name>`
+	 `kubectl descript po nginx -n webserver`
