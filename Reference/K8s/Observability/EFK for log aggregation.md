@@ -41,7 +41,12 @@ helm install elasticsearch bitnami/elasticsearch --namespace logging --create-na
 helm install fluent-bit bitnami/fluent-bit --namespace logging
 
 # Deploy Kibana
-helm install kibana bitnami/kibana --namespace logging
+helm install kibana bitnami/kibana `
+  --namespace logging `
+  --set elasticsearch.hosts[0]=elasticsearch `
+  --set elasticsearch.port=9200 `
+  --set resources.requests.memory=512Mi `
+  --set resources.requests.cpu=250m
 ```
 
 ## Access and Usage
