@@ -35,7 +35,17 @@ helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 
 # Deploy Elasticsearch
-helm install elasticsearch bitnami/elasticsearch --namespace logging --create-namespace
+helm install elasticsearch bitnami/elasticsearch `
+  --namespace logging `
+  --create-namespace `
+  --set persistence.enabled=true `
+  --set podSecurityContext.fsGroup=1001 `
+  --set containerSecurityContext.runAsUser=1001 `
+  --set containerSecurityContext.runAsGroup=1001 `
+  --set resources.requests.memory=512Mi `
+  --set resources.requests.cpu=250m `
+  --set resources.limits.memory=1Gi `
+  --set resources.limits.cpu=500m
 
 # Deploy Fluent Bit
 helm install fluent-bit bitnami/fluent-bit --namespace logging

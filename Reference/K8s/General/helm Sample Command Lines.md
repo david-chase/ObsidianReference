@@ -14,3 +14,5 @@ Search all repos for a chart's available versions
 	`helm search repo <chartname> --versions`
 Show info about a chart, including required Kubernetes version
 	`helm show chart <repo>/<chartname>`
+Show all installed Helm charts in all namespaces
+	 `helm list --all-namespaces`
