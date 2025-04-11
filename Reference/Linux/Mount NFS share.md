@@ -25,7 +25,7 @@ sudo mkdir -p /mnt/nfs_share
 ## 🌐 Step 3: Mount the NFS Share Temporarily
 
 ```powershell
-sudo mount -t nfs <NFS-SERVER-IP>:/path/to/share /mnt/nfs_share
+sudo mount -t nfs 192.168.1.100:/srv/nfs/shared /mnt/nfs_share
 ```
 
 - Replace `<NFS-SERVER-IP>` with the IP address of your NFS server.
