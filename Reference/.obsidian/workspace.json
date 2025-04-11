@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "62740e530cff06bf",
+        "id": "b7ef0d90cf3d32a2",
         "type": "tabs",
         "children": [
           {
-            "id": "fe4b617631dc6014",
+            "id": "9081501c051a7450",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Install NFS Server on Ubuntu.md",
+                "file": "K8s/General/helm Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Install NFS Server on Ubuntu"
+              "title": "helm Sample Command Lines"
+            }
+          },
+          {
+            "id": "393c6539e4fbd7ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Accessing GitHub from Linux.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Accessing GitHub from Linux"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,44 +181,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe4b617631dc6014",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
     "Untitled.md",
-    "K8s/Storage/Script - Toggle-DefaultStorageClass.md",
+    "Linux/Accessing GitHub from Linux.md",
+    "K8s/General/helm Sample Command Lines.md",
     "Linux/Install NFS Server on Ubuntu.md",
+    "K8s/Storage/Script - Toggle-DefaultStorageClass.md",
     "K8s/Storage/NFS storage provisioner.md",
     "K8s/Networking/NGINX Ingress Overview.md",
-    "K8s/Storage/Create-an-NFS-storage-provisioner.md",
     "Dev General/Docker local storage.md",
-    "K8s/My K8s Cluster/Docker nodes local storage.md",
-    "K8s/My K8s Cluster",
     "K8s/Observability/EFK for log aggregation.md",
-    "K8s/Storage",
-    "K8s/General/minikube Sample Command Lines.md",
     "K8s/General/kubectl Sample Command Lines.md",
-    "K8s/General/helm Sample Command Lines.md",
-    "K8s/General/etcd Encryption by CSP.md",
-    "K8s/General/Viewing Kubernetes Master and Worker Logs.md",
-    "K8s/General/Change kubectl text editor.md",
+    "K8s/Storage/Toggle-DefaultStorageClass.md",
     "K8s/General",
-    "K8s/Networking/Step-by-step - Expose Kibana via ingress.md",
-    "PowerShell/Useful PowerShell commands.md",
-    "K8s/Observability/Port forward Prometheus service.md",
-    "K8s/Networking/Reverse proxy vs. API gateway vs. load balancer (Graphic).md",
-    "Linux",
-    "K8s/kubectl Sample Command Lines.md",
-    "K8s/Networking",
-    "K8s/Networking.md",
+    "K8s/Untitled.md",
+    "K8s/EKS/EBS backed PV.md",
+    "K8s/Storage",
+    "K8s/General/Change kubectl text editor.md",
     "Public Cloud/terraform Sample Command Lines.md",
     "Public Cloud/OCI/oci Sample Command Lines.md",
-    "Public Cloud/Azure/az Sample Command Lines.md",
-    "K8s/minikube Sample Command Lines.md",
     "Public Cloud/OCI",
-    "Other/Linux Sample Command Lines.md",
+    "Public Cloud/Azure/az Sample Command Lines.md",
     "Public Cloud/Azure",
+    "Public Cloud/AWS/aws Sample Command Lines.md",
     "Public Cloud/AWS",
+    "Other/choco Sample Command Lines.md",
+    "Other/Linux Sample Command Lines.md",
+    "Linux/Buffers and caches.md",
+    "Linux",
+    "K8s/General/minikube Sample Command Lines.md",
+    "K8s/General/Viewing Kubernetes Master and Worker Logs.md",
+    "K8s/Networking/Step-by-step - Expose Kibana via ingress.md",
+    "K8s/Networking/Reverse proxy vs. API gateway vs. load balancer (Graphic).md",
+    "K8s/Networking/Nginx architecture (Graphic).md",
+    "K8s/Networking",
     "K8s/Observability",
     "K8s/Autoscaling",
+    "K8s/New folder",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",
