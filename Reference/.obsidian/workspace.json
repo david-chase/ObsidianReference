@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Install NFS Server on Ubuntu.md",
+                "file": "Linux/Mount NFS share.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Install NFS Server on Ubuntu"
+              "title": "Mount NFS share"
             }
           }
         ]
@@ -168,10 +168,12 @@
   },
   "active": "fe4b617631dc6014",
   "lastOpenFiles": [
+    "Linux/Install NFS Server on Ubuntu.md",
+    "Linux/Mount NFS share.md",
+    "Linux/Mount NFS share.md.crdownload",
     "Linux/Accessing GitHub from Linux.md",
     "Untitled.md",
     "K8s/Storage/Script - Toggle-DefaultStorageClass.md",
-    "Linux/Install NFS Server on Ubuntu.md",
     "K8s/Storage/NFS storage provisioner.md",
     "K8s/Networking/NGINX Ingress Overview.md",
     "K8s/Storage/Create-an-NFS-storage-provisioner.md",
@@ -198,12 +200,10 @@
     "Public Cloud/terraform Sample Command Lines.md",
     "Public Cloud/OCI/oci Sample Command Lines.md",
     "Public Cloud/Azure/az Sample Command Lines.md",
-    "K8s/minikube Sample Command Lines.md",
     "Public Cloud/OCI",
     "Public Cloud/Azure",
     "Public Cloud/AWS",
     "K8s/Observability",
-    "K8s/Autoscaling",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",

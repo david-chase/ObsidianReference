@@ -2,5 +2,6 @@
   "cssTheme": "",
   "enabledCssSnippets": [
     "background-color"
-  ]
+  ],
+  "theme": "obsidian"
 }
