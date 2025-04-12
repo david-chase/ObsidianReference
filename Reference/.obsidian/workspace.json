@@ -166,11 +166,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b7f78650c3d9d0c",
+  "active": "9081501c051a7450",
   "lastOpenFiles": [
-    "Dev General/Enable GitHub SSH Sync.md",
-    "Dev General/Enable GitHub SSH Sync.md.crdownload",
     "Untitled.md",
+    "Dev General/Enable GitHub SSH Sync.md",
     "Linux/Accessing GitHub from Linux.md",
     "Linux/Mount NFS share.md",
     "Dev General/Enable GitHub access through SSH.md",
@@ -204,6 +203,7 @@
     "K8s/Networking",
     "K8s/Observability",
     "K8s/Autoscaling",
+    "K8s/New folder",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",
