@@ -1,4 +1,4 @@
-# 🚀 Deploy Prometheus and kube-state-metrics on GKE Autopilot
+#gke #autopilot #chatgpt #k8s #prometheus #kubestatemetrics
 
 ## 📦 Deploy Prometheus on GKE Autopilot
 

@@ -1,0 +1,7 @@
+- Extremely easy to setup, easier than EKS auto-mode
+- Our AIO chart fails on it.  It's nothing unique about our chart, most or all Helm charts for Prometheus will fail.
+- node-exporter is meaningless since you don't get to choose which nodes to send a pod to, including node-exporter
+- While Prometheus *can* be deployed to GKE Autopilot I suspect most or all customers will use Google Managed Prometheus, which is enabled by default.
+- You can use pod affinity to schedule pods together, but based on other pod labels or topology keys like region or zone.  But you can't do it based on host.
+- GKE Autopilot does bin packing, GKE Standard does not
+- Anthos doesn't do bin packing because you're managing your own nodes
