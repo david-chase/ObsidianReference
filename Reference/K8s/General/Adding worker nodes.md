@@ -35,12 +35,27 @@ apt install -y containerd.io
 # 7. Configure containerd and start the service
 mkdir -p /etc/containerd
 containerd config default | tee /etc/containerd/config.toml
+```
 
-# 8. Enable and restart containerd
-systemctl enable containerd
-systemctl restart containerd
+Install kubeadm etc:
 
-# 9. Verify it's running
-systemctl status containerd
+``` powershell
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.32/deb/Release.key | gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.32/deb/ /' | tee /etc/apt/sources.list.d/kubernetes.list
+apt-get update
+apt-get install -y kubelet kubeadm kubectl
+apt-mark hold kubelet kubeadm kubectl
+```
 
+On the host computer:
+
+```
+kubeadm token create --print-join-command
+```
+
+Back in the docker worker node:
+
+```
+apt install kmod
+kubeadm join 192.168.1.100:6443 --token g810cc.vropghw5mmm9esav --discovery-token-ca-cert-hash sha256:00ca0198e6f675874b348768c4f570d73cbe3f0282fe96a4c8f17f50b63b2689
 ```
