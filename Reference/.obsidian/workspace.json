@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/Adding worker nodes.md",
+                "file": "K8s/General/kubectl Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Adding worker nodes"
+              "title": "kubectl Sample Command Lines"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"K8s/\" #kubectl ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -168,8 +168,9 @@
   },
   "active": "fe4b617631dc6014",
   "lastOpenFiles": [
-    "Linux/Install NFS Server on Ubuntu.md",
+    "K8s/General/Change kubectl text editor.md",
     "K8s/General/Adding worker nodes.md",
+    "Linux/Install NFS Server on Ubuntu.md",
     "K8s/GKE/Deploy Prometheus on GKE Autopilot.md",
     "K8s/GKE/GKE Autopilot notes.md",
     "K8s/GKE",
@@ -195,7 +196,6 @@
     "K8s/General/helm Sample Command Lines.md",
     "K8s/General/etcd Encryption by CSP.md",
     "K8s/General/Viewing Kubernetes Master and Worker Logs.md",
-    "K8s/General/Change kubectl text editor.md",
     "K8s/General",
     "K8s/Networking/Step-by-step - Expose Kibana via ingress.md",
     "Linux",

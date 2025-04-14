@@ -31,7 +31,10 @@ Get help info on a subset of an object
 	`kubectl explain pod.spec`
 Show the differences a YAML file would make if it were applied
 	`kubectl diff -f <filename>`
-
+Copy files from a pod to your local machine
+	`kubectl exec <pod-name> -- tar cf - /path/in/container | tar xf - -C /local/path`
+Copy files from your local machine to a pod
+	`tar cf - /local/path | kubectl exec -i <pod-name> -- tar xf - -C /path/in/container`
 
 ## ConfigMaps
 Show a list of configmaps

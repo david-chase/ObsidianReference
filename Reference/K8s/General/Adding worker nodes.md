@@ -56,6 +56,6 @@ kubeadm token create --print-join-command
 Back in the docker worker node:
 
 ```
-apt install kmod
+mount -t bpf bpffs /sys/fs/bpf
 kubeadm join 192.168.1.100:6443 --token g810cc.vropghw5mmm9esav --discovery-token-ca-cert-hash sha256:00ca0198e6f675874b348768c4f570d73cbe3f0282fe96a4c8f17f50b63b2689
 ```
