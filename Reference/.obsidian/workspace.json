@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/kubectl Sample Command Lines.md",
+                "file": "K8s/GKE/GKE Autopilot notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubectl Sample Command Lines"
+              "title": "GKE Autopilot notes"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"K8s/\" #kubectl ",
+                "query": "autopilot",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -169,7 +170,7 @@
   "active": "fe4b617631dc6014",
   "lastOpenFiles": [
     "K8s/Storage/Deploy Rancher local-path storage provisioner.md",
-    "K8s/Storage/Untitled.md",
+    "K8s/General/kubectl Sample Command Lines.md",
     "K8s/General/Set MaxPodsPerNode on kubeadm cluster.md",
     "K8s/General/Change kubectl text editor.md",
     "K8s/General/Adding worker nodes.md",
@@ -195,8 +196,8 @@
     "K8s/Observability/EFK for log aggregation.md",
     "K8s/Storage",
     "K8s/General/minikube Sample Command Lines.md",
-    "K8s/General/kubectl Sample Command Lines.md",
     "K8s/General/helm Sample Command Lines.md",
+    "K8s/General/etcd Encryption by CSP.md",
     "K8s/General",
     "Linux",
     "K8s/Networking",
