@@ -17,3 +17,4 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 # 4. Verify the controller is running
 kubectl -n ingress-nginx get pods
 ```
+
