@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev General/Creating or Updating a Git Repo.md",
+                "file": "K8s/General/Deploy nginx ingress for Argo CD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Creating or Updating a Git Repo"
+              "title": "Deploy nginx ingress for Argo CD"
             }
           }
         ]
@@ -168,6 +168,9 @@
   },
   "active": "fe4b617631dc6014",
   "lastOpenFiles": [
+    "K8s/General/Deploy Argo CD.md",
+    "K8s/General/Deploy nginx ingress for Argo CD.md",
+    "Dev General/Creating or Updating a Git Repo.md",
     "K8s/General/Adding worker nodes.md",
     "Untitled.md",
     "K8s/Storage/Deploy Rancher local-path storage provisioner.md",
@@ -194,9 +197,6 @@
     "K8s/Storage",
     "K8s/General/minikube Sample Command Lines.md",
     "K8s/General/kubectl Sample Command Lines.md",
-    "K8s/General/helm Sample Command Lines.md",
-    "K8s/General/etcd Encryption by CSP.md",
-    "K8s/General/Viewing Kubernetes Master and Worker Logs.md",
     "K8s/General",
     "Linux",
     "K8s/Networking",
