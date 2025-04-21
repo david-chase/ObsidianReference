@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Buffers and caches.md",
+                "file": "Linux/Timeshift backup copy to USB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Buffers and caches"
+              "title": "Timeshift backup copy to USB"
             }
           }
         ]
@@ -168,6 +168,12 @@
   },
   "active": "fe4b617631dc6014",
   "lastOpenFiles": [
+    "Linux/Timeshift backup for Linux.md",
+    "Linux/Timeshift backup copy to USB.md",
+    "Linux/Timeshift_backup_copy_to_USB.md",
+    "Linux/Buffers and caches.md",
+    "Untitled 1.md",
+    "Linux/Restarting the window manager.md",
     "Untitled.md",
     "Public Cloud/terraform Sample Command Lines.md",
     "Public Cloud/OCI/oci Sample Command Lines.md",
@@ -180,7 +186,6 @@
     "Other/Linux Sample Command Lines.md",
     "Linux/Mount NFS share.md",
     "Linux/Install NFS Server on Ubuntu.md",
-    "Linux/Buffers and caches.md",
     "Linux",
     "K8s/Storage/NFS storage provisioner.md",
     "K8s/Storage/Script - Toggle-DefaultStorageClass.md",
@@ -195,11 +200,6 @@
     "K8s/Networking/API gateway vs. load balancer (Graphic).md",
     "K8s/Networking",
     "K8s/General/Viewing Kubernetes Master and Worker Logs.md",
-    "K8s/General/etcd Encryption by CSP.md",
-    "K8s/General/minikube Sample Command Lines.md",
-    "K8s/General/Set MaxPodsPerNode on kubeadm cluster.md",
-    "K8s/General/Deploy Argo CD.md",
-    "K8s/General/kubectl Sample Command Lines.md",
     "K8s/General",
     "K8s/GKE",
     "K8s/Observability",
