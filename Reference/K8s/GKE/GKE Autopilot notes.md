@@ -1,0 +1,11 @@
+- Extremely easy to setup, easier than EKS auto-mode
+- Our AIO chart fails on it.  It's nothing unique about our chart, most or all Helm charts for Prometheus will fail because:
+- You can't deploy node-exporter to GKE Autopilot because it doesn't support daemonsets.
+- While Prometheus *can* be deployed to GKE Autopilot I suspect most or all customers will use Google Managed Prometheus, which is enabled by default.
+- You can use pod affinity to schedule pods together, but based on other pod labels or topology keys like region or zone.  But you can't do it based on host.
+- GKE Autopilot does bin packing, GKE Standard does not
+- Anthos doesn't do bin packing because you're managing your own nodes
+- You're charged for <span style="font-style:italic; color:rgb(0, 130, 0)">requests, not limits or utilization</span>.  However if your utilization exceeds requests your pod could be throttled or evicted.
+- There's <span style="color:rgb(0, 130, 0)">little reason to set limits on pods</span> in GKE Autopilot since you're not paying for bursting and GKE enforces its own upper limits.  You just run the risk of running out of resources.
+- GKE prevents you from arbitrarily low requests by setting minimum requests for each resource type and enforcing CPU:Memory ratios
+- <span style="color:rgb(255, 0, 0)">This means in GKE Autopilot it would be very important for Kubex to know and respect these minimums and ratios</span> 

@@ -17,3 +17,7 @@ Encode a URL
 
 Block a program through the firewall
 	`New-NetFirewallRule -Program "C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE" -Action Block -Profile Domain,Private,Public -DisplayName "Block PowerPoint" -Description "PowerPoint blocked" -Direction Outbound`
+
+Pipe output to the clipboard
+	`<command> | Set-Clipboard`
+	`minikube ip | Set-Clipboard`
