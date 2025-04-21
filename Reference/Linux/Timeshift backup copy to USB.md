@@ -38,10 +38,10 @@ sudo timeshift --list
 
 ## 📦 3. Copy Snapshots Using rsync
 
-Preserve metadata and hard links:
+<span style="color:rgb(255, 0, 0)">Make sure the USB is formatted with ext4</span>.  Preserve metadata and hard links:
 
 ```bash
-sudo rsync -aAXv /timeshift/snapshots/ /media/dave/BackupUSB/timeshift-backup/
+sudo rsync -aAXv /timeshift/snapshots/ /mnt/usb/timeshift-backup/
 ```
 
 > Make sure to include the trailing slashes.
