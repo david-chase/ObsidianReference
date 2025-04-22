@@ -65,13 +65,13 @@ sudo dd if=/dev/zero of=/dev/sdb bs=1M count=100
 ### c. Create a new partition table and partition
 
 ```
-sudo parted /dev/sdb --script mklabel msdos mkpart primary ext3 0% 100%
+sudo parted /dev/sdb --script mklabel msdos mkpart primary ext4 0% 100%
 ```
 
 ### d. Format the partition as ext3
 
 ```
-sudo mkfs.ext3 /dev/sdb1
+sudo mkfs.ext4 /dev/sdb1
 ```
 
 ---
