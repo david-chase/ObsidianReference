@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/kubectl Sample Command Lines.md",
+                "file": "Linux/Timeshift backup copy to USB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubectl Sample Command Lines"
-            }
-          },
-          {
-            "id": "e9d0556fddf01506",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Other/OBS capture portion of screen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "OBS capture portion of screen"
+              "title": "Timeshift backup copy to USB"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"K8s/\" #kubectl ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,44 +166,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e9d0556fddf01506",
+  "active": "fe4b617631dc6014",
   "lastOpenFiles": [
-    "Linux/Detecting which cgroup version is active.md",
     "Other/OBS capture portion of screen.md",
-    "K8s/General/Deploy Argo CD.md",
-    "Linux/Timeshift backup for Linux.md",
-    "Linux/Timeshift backup copy to USB.md",
-    "Linux/Restarting the window manager.md",
+    "Linux/Detecting which cgroup version is active.md",
     "Linux/Mount and unmount usb drive.md",
     "Linux/Format and use USB stick.md",
-    "Untitled.md",
-    "K8s/General/kubectl Sample Command Lines.md",
-    "K8s/General/Deploy nginx ingress for Argo CD.md",
-    "K8s/Storage/Deploy Rancher local-path storage provisioner.md",
-    "K8s/Storage/Untitled.md",
-    "K8s/General/Set MaxPodsPerNode on kubeadm cluster.md",
-    "K8s/General/Change kubectl text editor.md",
-    "K8s/General/Adding worker nodes.md",
-    "Linux/Install NFS Server on Ubuntu.md",
-    "K8s/GKE/Deploy Prometheus on GKE Autopilot.md",
-    "K8s/GKE/GKE Autopilot notes.md",
-    "K8s/GKE",
-    "K8s/General/Clear-Kubeconfig.md",
-    "Untitled 2.md",
+    "Linux/Timeshift backup copy to USB.md",
+    "Linux/Timeshift backup for Linux.md",
+    "Linux/Format a USB stick.md",
+    "Linux/Timeshift_backup_copy_to_USB.md",
+    "Linux/Buffers and caches.md",
     "Untitled 1.md",
-    "Dev General/Enable GitHub SSH Sync.md",
-    "Linux/Mount NFS share.md",
-    "Dev General/Enable GitHub access through SSH.md",
-    "Linux/Accessing GitHub from Linux.md",
-    "K8s/My K8s Cluster",
-    "K8s/Storage",
-    "K8s/General",
-    "Linux",
-    "K8s/Networking",
+    "Linux/Restarting the window manager.md",
+    "Untitled.md",
+    "Public Cloud/terraform Sample Command Lines.md",
+    "Public Cloud/OCI/oci Sample Command Lines.md",
     "Public Cloud/OCI",
+    "Public Cloud/Azure/az Sample Command Lines.md",
     "Public Cloud/Azure",
+    "Public Cloud/AWS/aws Sample Command Lines.md",
     "Public Cloud/AWS",
+    "Other/choco Sample Command Lines.md",
+    "Other/Linux Sample Command Lines.md",
+    "Linux/Mount NFS share.md",
+    "Linux/Install NFS Server on Ubuntu.md",
+    "Linux",
+    "K8s/Storage/NFS storage provisioner.md",
+    "K8s/Storage/Script - Toggle-DefaultStorageClass.md",
+    "K8s/Storage/Deploy Rancher local-path storage provisioner.md",
+    "K8s/Storage",
+    "K8s/Observability/EFK for log aggregation.md",
+    "Test.md",
+    "K8s/Networking/Reverse proxy vs. API gateway vs. load balancer (Graphic).md",
+    "K8s/Networking",
+    "K8s/General",
+    "K8s/GKE",
     "K8s/Observability",
+    "K8s/Untitled",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",
