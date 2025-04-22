@@ -15,7 +15,7 @@ lsblk
 Assume it's mounted at:
 
 ```
-/media/dave/BackupUSB
+/mnt/usb
 ```
 
 ---
@@ -51,7 +51,7 @@ sudo rsync -aAXv /timeshift/snapshots/ /mnt/usb/timeshift-backup/
 ## 💡 Optional: Copy Entire Timeshift Directory
 
 ```bash
-sudo rsync -aAXv /timeshift/ /media/dave/BackupUSB/timeshift-backup/
+sudo rsync -aAXv /timeshift/ /mnt/usb/timeshift-backup/
 ```
 
 This includes snapshots, backup metadata, and logs.
