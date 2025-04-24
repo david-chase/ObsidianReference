@@ -94,5 +94,4 @@ Config file is at `/etc/timeshift/timeshift.json`:
   ],
   "exclude-apps" : []
 }
-}
 ```
