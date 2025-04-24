@@ -1,5 +1,12 @@
 #havana #backup #linux #tech #timeshift
 
+Installation:
+``` powershell
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install timeshift
+```
+
 Do a full backup:
 
 ``` powershell
