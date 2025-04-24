@@ -17,7 +17,7 @@ sudo apt install -y nfs-common
 ## 📂 Step 2: Create a Mount Point
 
 ```powershell
-sudo mkdir -p /mnt/nfs_share
+sudo mkdir -p /mnt/nfs
 ```
 
 ---
@@ -50,7 +50,7 @@ sudo nano /etc/fstab
 Add this line:
 
 ```
-192.168.1.100:/export/data  /mnt/nfs_share  nfs  defaults  0  0
+192.168.1.100:/srv/nfs  /mnt/nfs  nfs  defaults  0  0
 ```
 
 Then apply it:
