@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Deploy Rancher local-path storage provisioner"
             }
+          },
+          {
+            "id": "1733dd4873f34cdf",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -181,7 +193,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1e6a786ff4f9526b",
+  "active": "1733dd4873f34cdf",
   "lastOpenFiles": [
     "Linux/Laptop power settings for Ubuntu.md",
     "Dev General/Enable GitHub SSH Sync.md",
