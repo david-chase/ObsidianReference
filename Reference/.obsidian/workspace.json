@@ -11,10 +11,14 @@
             "id": "120ac8ae5548a03e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Other/Transcribing text from MP4.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Transcribing text from MP4"
             }
           }
         ]
@@ -164,6 +168,7 @@
   },
   "active": "120ac8ae5548a03e",
   "lastOpenFiles": [
+    "Other/Transcribing text from MP4.md",
     "Other/pip Sample command lines.md",
     "Linux/Disabling swap.md",
     "Linux/Timeshift backup for Linux.md",
@@ -190,7 +195,6 @@
     "K8s/General/Clear-Kubeconfig.md",
     "Untitled 2.md",
     "Untitled 1.md",
-    "Linux/Mount NFS share.md",
     "K8s/My K8s Cluster",
     "K8s/Storage",
     "K8s/General",
