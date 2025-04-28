@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Other/Transcribing text from MP4.md",
+                "file": "K8s/General/helm Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Transcribing text from MP4"
+              "title": "helm Sample Command Lines"
             }
           }
         ]
