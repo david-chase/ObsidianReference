@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "0b33ada4a1288a56",
+        "id": "1167f70834917510",
         "type": "tabs",
         "children": [
           {
-            "id": "120ac8ae5548a03e",
+            "id": "80ae361bc4154aeb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/Deploy Argo CD.md",
+                "file": "Networking/What is a bastion host.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deploy Argo CD"
+              "title": "What is a bastion host"
+            }
+          },
+          {
+            "id": "68ad50ee8e3ab736",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Other/GIMP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GIMP"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"K8s/\" argo",
+                "query": "vcpu",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -167,18 +181,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "120ac8ae5548a03e",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
+    "Dev General/Git",
+    "Networking/What is a bastion host.md",
+    "Networking",
+    "K8s/CloudNativePG.md",
+    "Public Cloud/Processor Core vs vCPU.md",
+    "K8s/General/Deploy Argo CD.md",
     "Linux/Timeshift backup for Linux.md",
     "K8s/General/helm Sample Command Lines.md",
     "Other/Transcribing text from MP4.md",
-    "Other/pip Sample command lines.md",
+    "Dev General/pip Sample command lines.md",
     "Linux/Disabling swap.md",
     "K8s/Storage/Deploy Rancher local-path storage provisioner.md",
     "Linux/Laptop power settings for Ubuntu.md",
-    "Dev General/Enable GitHub SSH Sync.md",
+    "Dev General/Git/Enable GitHub SSH Sync.md",
     "Linux/Upgrading all apt packages.md",
-    "Untitled.md",
     "Other/OBS capture portion of screen.md",
     "Linux/Mount and unmount usb drive.md",
     "Linux/Format and use USB stick.md",
@@ -186,16 +205,12 @@
     "Linux/Restarting the window manager.md",
     "Linux/Timeshift backup copy to USB.md",
     "K8s/General/Deploy nginx ingress for Argo CD.md",
-    "K8s/General/Deploy Argo CD.md",
-    "Dev General/Creating or Updating a Git Repo.md",
+    "Dev General/Git/Creating or Updating a Git Repo.md",
     "K8s/General/Adding worker nodes.md",
     "K8s/General/Set MaxPodsPerNode on kubeadm cluster.md",
     "Linux/Install NFS Server on Ubuntu.md",
     "K8s/GKE/Deploy Prometheus on GKE Autopilot.md",
-    "K8s/GKE/GKE Autopilot notes.md",
     "K8s/GKE",
-    "K8s/General/Clear-Kubeconfig.md",
-    "Untitled 2.md",
     "K8s/My K8s Cluster",
     "K8s/Storage",
     "K8s/General",
@@ -204,7 +219,6 @@
     "Public Cloud/OCI",
     "Public Cloud/Azure",
     "Public Cloud/AWS",
-    "K8s/Observability",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",
