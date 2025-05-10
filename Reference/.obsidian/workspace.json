@@ -4,39 +4,95 @@
     "type": "split",
     "children": [
       {
-        "id": "1167f70834917510",
+        "id": "62740e530cff06bf",
         "type": "tabs",
         "children": [
           {
-            "id": "80ae361bc4154aeb",
+            "id": "fe4b617631dc6014",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/What is a bastion host.md",
+                "file": "K8s/General/kubectl Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "What is a bastion host"
+              "title": "kubectl Sample Command Lines"
             }
           },
           {
-            "id": "68ad50ee8e3ab736",
+            "id": "e9d0556fddf01506",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Other/GIMP.md",
+                "file": "Other/OBS capture portion of screen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GIMP"
+              "title": "OBS capture portion of screen"
+            }
+          },
+          {
+            "id": "b73b16896c136594",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is/Traefik.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Traefik"
+            }
+          },
+          {
+            "id": "d6994421bb828dd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is/k8ssandra Operator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "k8ssandra Operator"
+            }
+          },
+          {
+            "id": "1f66889e010881dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is/Apache Cassandra.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Apache Cassandra"
+            }
+          },
+          {
+            "id": "0f0a41e434313e64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is/Apache Skywalking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Apache Skywalking"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -68,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vcpu",
+                "query": "path:\"K8s/\" #kubectl ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,44 +237,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b7f78650c3d9d0c",
+  "active": "0f0a41e434313e64",
   "lastOpenFiles": [
-    "Dev General/Git",
+    "What is/Apache Kafka.md",
+    "What is/Apache Skywalking.md",
+    "What is/k8ssandra Operator.md",
+    "What is/Traefik.md",
+    "What is/Strimzi.md",
+    "What is/Falco.md",
+    "What is/CloudNativePG.md",
+    "What is/Apache Hadoop.md",
+    "What is/Apache Cassandra.md",
+    "What is",
+    "Other/OBS capture portion of screen.md",
+    "K8s/Security",
+    "Other/Transcribing text from MP4.md",
     "Networking/What is a bastion host.md",
     "Networking",
-    "K8s/CloudNativePG.md",
-    "Public Cloud/Processor Core vs vCPU.md",
+    "Linux/Upgrading all apt packages.md",
+    "Linux/Laptop power settings for Ubuntu.md",
+    "Linux/Disabling swap.md",
+    "Dev General/pip Sample command lines.md",
+    "Dev General/Git/Useful Git Commands.md",
+    "Dev General/Git/Force Git Pull.md",
+    "Dev General/Git/Enable GitHub SSH Sync.md",
+    "Dev General/Git/Enable GitHub access through SSH.md",
+    "Dev General/Git/Creating or Updating a Git Repo.md",
+    "Dev General/Git/Configure an ignore file for a git repo.md",
+    "Dev General/Git",
+    "Linux/Detecting which cgroup version is active.md",
     "K8s/General/Deploy Argo CD.md",
     "Linux/Timeshift backup for Linux.md",
-    "K8s/General/helm Sample Command Lines.md",
-    "Other/Transcribing text from MP4.md",
-    "Dev General/pip Sample command lines.md",
-    "Linux/Disabling swap.md",
-    "K8s/Storage/Deploy Rancher local-path storage provisioner.md",
-    "Linux/Laptop power settings for Ubuntu.md",
-    "Dev General/Git/Enable GitHub SSH Sync.md",
-    "Linux/Upgrading all apt packages.md",
-    "Other/OBS capture portion of screen.md",
-    "Linux/Mount and unmount usb drive.md",
-    "Linux/Format and use USB stick.md",
-    "Linux/Detecting which cgroup version is active.md",
-    "Linux/Restarting the window manager.md",
     "Linux/Timeshift backup copy to USB.md",
-    "K8s/General/Deploy nginx ingress for Argo CD.md",
-    "Dev General/Git/Creating or Updating a Git Repo.md",
-    "K8s/General/Adding worker nodes.md",
-    "K8s/General/Set MaxPodsPerNode on kubeadm cluster.md",
-    "Linux/Install NFS Server on Ubuntu.md",
-    "K8s/GKE/Deploy Prometheus on GKE Autopilot.md",
     "K8s/GKE",
     "K8s/My K8s Cluster",
     "K8s/Storage",
     "K8s/General",
     "Linux",
     "K8s/Networking",
-    "Public Cloud/OCI",
-    "Public Cloud/Azure",
-    "Public Cloud/AWS",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",
