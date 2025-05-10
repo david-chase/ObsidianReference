@@ -4,24 +4,95 @@
     "type": "split",
     "children": [
       {
-        "id": "3ecde93b0c9c827f",
+        "id": "62740e530cff06bf",
         "type": "tabs",
         "children": [
           {
-            "id": "8cebda0e2ff9f430",
+            "id": "fe4b617631dc6014",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/etcd.md",
+                "file": "K8s/General/kubectl Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "etcd"
+              "title": "kubectl Sample Command Lines"
+            }
+          },
+          {
+            "id": "e9d0556fddf01506",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Other/OBS capture portion of screen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OBS capture portion of screen"
+            }
+          },
+          {
+            "id": "b73b16896c136594",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is/Traefik.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Traefik"
+            }
+          },
+          {
+            "id": "d6994421bb828dd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is/k8ssandra Operator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "k8ssandra Operator"
+            }
+          },
+          {
+            "id": "1f66889e010881dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is/Apache Cassandra.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Apache Cassandra"
+            }
+          },
+          {
+            "id": "0f0a41e434313e64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is/Argo Events.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Argo Events"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -53,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kubeconfig",
+                "query": "path:\"K8s/\" #kubectl ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,35 +237,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8cebda0e2ff9f430",
+  "active": "0f0a41e434313e64",
   "lastOpenFiles": [
     "What is/etcd.md",
-    "What is/Valkey.md",
-    "What is/Grafana Alloy.md",
-    "What is/Grafana Mimir.md",
-    "What is/Grafana Dashboards.md",
-    "What is/Redis.md",
-    "What is/Victoria Logs.md",
     "What is/Victoria Metrics.md",
-    "What is/Cortex.md",
+    "What is/Victoria Logs.md",
+    "What is/Valkey.md",
     "What is/Thanos.md",
+    "What is/Redis.md",
     "What is/Jaeger.md",
-    "What is/Grafana Tempo.md",
-    "What is/Grafana Loki.md",
     "What is/Helm.md",
-    "What is/Falco.md",
-    "What is/Traefik.md",
-    "What is/Strimzi.md",
-    "What is/k8ssandra Operator.md",
-    "What is/CloudNativePG.md",
+    "What is/Grafana Tempo.md",
+    "What is/Grafana Mimir.md",
+    "What is/Grafana Loki.md",
+    "What is/Grafana Dashboards.md",
+    "What is/Grafana Alloy.md",
+    "What is/Cortex.md",
     "What is/Argo Rollouts.md",
-    "What is/Argo Workflows.md",
     "What is/Argo Events.md",
     "What is/Argo CD.md",
-    "What is/Apache Skywalking.md",
+    "What is/Argo Workflows.md",
     "What is/Apache Zookeeper.md",
     "What is/Apache Spark.md",
+    "What is/Apache Skywalking.md",
+    "What is/Apache Kafka.md",
+    "What is/k8ssandra Operator.md",
+    "What is/Traefik.md",
+    "What is/Strimzi.md",
+    "What is/Falco.md",
     "What is",
+    "K8s/Security",
     "Networking",
     "Dev General/Git",
     "K8s/GKE",
@@ -203,7 +275,6 @@
     "K8s/General",
     "Linux",
     "K8s/Networking",
-    "Public Cloud/OCI",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",
