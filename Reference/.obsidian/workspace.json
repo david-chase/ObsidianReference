@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Apache Skywalking.md",
+                "file": "What is/Argo Events.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apache Skywalking"
+              "title": "Argo Events"
             }
           }
         ],
@@ -239,8 +239,14 @@
   },
   "active": "0f0a41e434313e64",
   "lastOpenFiles": [
-    "What is/Apache Kafka.md",
+    "What is/Argo Rollouts.md",
+    "What is/Argo Events.md",
+    "What is/Argo CD.md",
+    "What is/Argo Workflows.md",
+    "What is/Apache Zookeeper.md",
+    "What is/Apache Spark.md",
     "What is/Apache Skywalking.md",
+    "What is/Apache Kafka.md",
     "What is/k8ssandra Operator.md",
     "What is/Traefik.md",
     "What is/Strimzi.md",
@@ -262,13 +268,7 @@
     "Dev General/Git/Force Git Pull.md",
     "Dev General/Git/Enable GitHub SSH Sync.md",
     "Dev General/Git/Enable GitHub access through SSH.md",
-    "Dev General/Git/Creating or Updating a Git Repo.md",
-    "Dev General/Git/Configure an ignore file for a git repo.md",
     "Dev General/Git",
-    "Linux/Detecting which cgroup version is active.md",
-    "K8s/General/Deploy Argo CD.md",
-    "Linux/Timeshift backup for Linux.md",
-    "Linux/Timeshift backup copy to USB.md",
     "K8s/GKE",
     "K8s/My K8s Cluster",
     "K8s/Storage",
