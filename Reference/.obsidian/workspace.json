@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "62740e530cff06bf",
+        "id": "3ecde93b0c9c827f",
         "type": "tabs",
         "children": [
           {
-            "id": "0f0a41e434313e64",
+            "id": "8cebda0e2ff9f430",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Fluentbit.md",
+                "file": "What is/Velero.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fluentbit"
+              "title": "Velero"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"K8s/\" #kubectl ",
+                "query": "kubeconfig",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,36 +166,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f0a41e434313e64",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
     "What is/fluentd.md",
+    "What is/Flux CD.md",
     "What is/Fluentbit.md",
     "What is/Elasticsearch.md",
-    "What is/Flux CD.md",
     "Untitled.md",
-    "What is/Argo Events.md",
-    "What is/Velero.md",
-    "What is/Open Policy Agent (OPA).md",
     "What is/Kyverno.md",
-    "What is/KEDA.md",
+    "What is/Velero.md",
     "What is/GateKeeper.md",
+    "What is/Open Policy Agent (OPA).md",
+    "What is/KEDA.md",
     "What is/etcd.md",
-    "What is/Victoria Metrics.md",
-    "What is/Victoria Logs.md",
     "What is/Valkey.md",
-    "What is/Thanos.md",
-    "What is/Redis.md",
-    "What is/Jaeger.md",
-    "What is/Helm.md",
-    "What is/Grafana Tempo.md",
-    "What is/Grafana Mimir.md",
-    "What is/Grafana Loki.md",
-    "What is/Grafana Dashboards.md",
     "What is/Grafana Alloy.md",
+    "What is/Grafana Mimir.md",
+    "What is/Grafana Dashboards.md",
+    "What is/Redis.md",
+    "What is/Victoria Logs.md",
+    "What is/Victoria Metrics.md",
     "What is/Cortex.md",
-    "What is/Argo Rollouts.md",
+    "What is/Thanos.md",
+    "What is/Jaeger.md",
+    "What is/Grafana Tempo.md",
+    "What is/Grafana Loki.md",
+    "What is/Helm.md",
+    "What is/Falco.md",
+    "What is/Traefik.md",
     "What is",
-    "K8s/Security",
     "Networking",
     "Dev General/Git",
     "K8s/GKE",
@@ -204,6 +203,7 @@
     "K8s/General",
     "Linux",
     "K8s/Networking",
+    "Public Cloud/OCI",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",
