@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "1167f70834917510",
+        "id": "3ecde93b0c9c827f",
         "type": "tabs",
         "children": [
           {
-            "id": "80ae361bc4154aeb",
+            "id": "8cebda0e2ff9f430",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/What is a bastion host.md",
+                "file": "What is/Jenkins X.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "What is a bastion host"
-            }
-          },
-          {
-            "id": "68ad50ee8e3ab736",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Other/GIMP.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GIMP"
+              "title": "Jenkins X"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vcpu",
+                "query": "kubeconfig",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,37 +166,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b7f78650c3d9d0c",
+  "active": "8cebda0e2ff9f430",
   "lastOpenFiles": [
-    "What is/Victoria Metrics.md",
-    "What is/Thanos.md",
-    "What is/Kyverno.md",
-    "What is/Jaeger.md",
-    "What is/Victoria Logs.md",
+    "What is/Jenkins.md",
+    "What is/Jenkins X.md",
+    "What is/Knative.md",
+    "What is/Tekton.md",
+    "What is/Robusta.md",
     "What is/Velero.md",
-    "What is/Valkey.md",
-    "What is/Traefik.md",
-    "What is/Redis.md",
-    "What is/Strimzi.md",
+    "What is/fluentd.md",
+    "What is/Flux CD.md",
+    "What is/Fluentbit.md",
+    "What is/Elasticsearch.md",
+    "Untitled.md",
+    "What is/Kyverno.md",
+    "What is/GateKeeper.md",
     "What is/Open Policy Agent (OPA).md",
     "What is/KEDA.md",
-    "What is/Helm.md",
-    "What is/k8ssandra Operator.md",
-    "What is/Grafana Tempo.md",
-    "What is/Grafana Loki.md",
+    "What is/etcd.md",
+    "What is/Valkey.md",
+    "What is/Grafana Alloy.md",
     "What is/Grafana Mimir.md",
     "What is/Grafana Dashboards.md",
-    "What is/Fluentbit.md",
-    "What is/Grafana Alloy.md",
-    "What is/GateKeeper.md",
-    "What is/Flux CD.md",
-    "What is/fluentd.md",
-    "What is/Falco.md",
-    "What is/etcd.md",
+    "What is/Redis.md",
+    "What is/Victoria Logs.md",
+    "What is/Victoria Metrics.md",
     "What is/Cortex.md",
+    "What is/Thanos.md",
+    "What is/Jaeger.md",
     "What is",
-    "Dev General/Git",
     "Networking",
+    "Dev General/Git",
     "K8s/GKE",
     "K8s/My K8s Cluster",
     "K8s/Storage",
