@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Jenkins X.md",
+                "file": "What is/Spinnaker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jenkins X"
+              "title": "Spinnaker"
             }
           }
         ]
@@ -168,8 +168,9 @@
   },
   "active": "8cebda0e2ff9f430",
   "lastOpenFiles": [
-    "What is/Jenkins.md",
     "What is/Jenkins X.md",
+    "What is/Spinnaker.md",
+    "What is/Jenkins.md",
     "What is/Knative.md",
     "What is/Tekton.md",
     "What is/Robusta.md",
@@ -193,7 +194,6 @@
     "What is/Victoria Metrics.md",
     "What is/Cortex.md",
     "What is/Thanos.md",
-    "What is/Jaeger.md",
     "What is",
     "Networking",
     "Dev General/Git",
