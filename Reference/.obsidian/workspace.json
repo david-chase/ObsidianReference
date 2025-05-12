@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/RabbitMQ.md",
+                "file": "What is/CRI-O.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RabbitMQ"
+              "title": "CRI-O"
             }
           }
         ]
@@ -168,8 +168,18 @@
   },
   "active": "8cebda0e2ff9f430",
   "lastOpenFiles": [
-    "What is/MySQL.md",
+    "What is/containerd.md",
+    "What is/CRI-O.md",
+    "What is/Looker.md",
+    "What is/Tableau.md",
+    "What is/Trivy.md",
+    "What is/Harbor.md",
+    "What is/Chef.md",
+    "What is/VirtualBox.md",
+    "What is/MariaDB.md",
+    "What is/MongoDB.md",
     "What is/RabbitMQ.md",
+    "What is/MySQL.md",
     "What is/PostgreSQL.md",
     "What is/Nutanix.md",
     "What is/Aqua.md",
@@ -184,16 +194,6 @@
     "What is/Knative.md",
     "What is/Tekton.md",
     "What is/Robusta.md",
-    "What is/Velero.md",
-    "What is/fluentd.md",
-    "What is/Flux CD.md",
-    "What is/Fluentbit.md",
-    "What is/Elasticsearch.md",
-    "Untitled.md",
-    "What is/Kyverno.md",
-    "What is/GateKeeper.md",
-    "What is/Open Policy Agent (OPA).md",
-    "What is/KEDA.md",
     "What is",
     "Networking",
     "Dev General/Git",
