@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Kotlin.md",
+                "file": "What is/Lens.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kotlin"
+              "title": "Lens"
             }
           }
         ]
@@ -168,8 +168,15 @@
   },
   "active": "8cebda0e2ff9f430",
   "lastOpenFiles": [
-    "What is/TypeScript.md",
+    "What is/Cyclops-ui.md",
+    "What is/Lens.md",
+    "What is/Snowflake.md",
+    "What is/Nutanix.md",
+    "What is/MCP (Model Context Protocol).md",
+    "What is/Elasticsearch.md",
+    "What is/Aqua Security.md",
     "What is/Kotlin.md",
+    "What is/TypeScript.md",
     "What is/WebAssembly (Wasm).md",
     "What is/Python.md",
     "What is/Golang.md",
@@ -177,11 +184,9 @@
     "What is/Helm.md",
     "What is/Kro (Kubernetes Resource Orchestrator).md",
     "What is/Kibana.md",
-    "What is/Elasticsearch.md",
     "What is/Logstash.md",
     "What is/Zabbix.md",
     "Data/Why columnar storage is better for analytics.md",
-    "What is/Snowflake.md",
     "What is/Rook.md",
     "What is/Ceph.md",
     "What is/Longhorn.md",
@@ -189,11 +194,6 @@
     "What is/containerd.md",
     "What is/Looker.md",
     "What is/Tableau.md",
-    "What is/Trivy.md",
-    "What is/Harbor.md",
-    "What is/Chef.md",
-    "What is/VirtualBox.md",
-    "What is/MariaDB.md",
     "What is",
     "Networking",
     "Dev General/Git",
