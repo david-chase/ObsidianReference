@@ -2,6 +2,7 @@
 
 ## Install the CLI
 
+#### Linux
 ``` powershell
 # Download the latest Argocd CLI binary
 Invoke-WebRequest -Uri "https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64" -OutFile argocd-linux-amd64
@@ -12,6 +13,11 @@ sudo mv argocd-linux-amd64 /usr/local/bin/argocd
 
 # Verify the installation
 argocd version --client
+```
+
+#### Windows
+``` powershell
+choco install argocd-cli
 ```
 
 ## Deploy to cluster

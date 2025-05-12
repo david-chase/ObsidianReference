@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Prometheus.md",
+                "file": "K8s/General/Deploy Argo CD.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Prometheus"
+              "title": "Deploy Argo CD"
             }
           }
         ]
@@ -178,8 +178,10 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
-    "Dev General/Git/Enable GitHub access through SSH.md",
+    "K8s/EKS/EBS backed PV.md",
+    "K8s/General/kubectl Sample Command Lines.md",
     "What is/Prometheus.md",
+    "Dev General/Git/Enable GitHub access through SSH.md",
     "What is/Untitled.md",
     "What is/AppArmor.md",
     "DevOps and Workflow Management with Argo (LFS256)/Chapter 1.md",
@@ -203,8 +205,6 @@
     "What is/Kibana.md",
     "What is/Logstash.md",
     "What is/Zabbix.md",
-    "Data/Why columnar storage is better for analytics.md",
-    "What is/Rook.md",
     "What is",
     "Networking",
     "Dev General/Git",

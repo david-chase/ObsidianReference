@@ -48,6 +48,8 @@ Show the contents of a configmap (export)
 ## Configuration
 Show the contents of the kubectl config file
 	`kubectl config view`
+List all the contexts in the kubectl config file
+	`kubectl config get-contexts
 Set the current context
 	`kubectl config set-context --current --namespace=test-nginx`
 Delete a context from kube config
