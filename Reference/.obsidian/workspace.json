@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data/Why columnar storage is better for analytics.md",
+                "file": "What is/Kibana.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Why columnar storage is better for analytics"
+              "title": "Kibana"
             }
           }
         ]
@@ -168,8 +168,12 @@
   },
   "active": "8cebda0e2ff9f430",
   "lastOpenFiles": [
-    "What is/Snowflake.md",
+    "What is/Elasticsearch.md",
+    "What is/Logstash.md",
+    "What is/Kibana.md",
+    "What is/Zabbix.md",
     "Data/Why columnar storage is better for analytics.md",
+    "What is/Snowflake.md",
     "What is/Rook.md",
     "What is/Ceph.md",
     "What is/Longhorn.md",
@@ -190,10 +194,6 @@
     "What is/Aqua.md",
     "What is/Flannel.md",
     "What is/Kafka.md",
-    "What is/Calico.md",
-    "What is/Cilium.md",
-    "What is/Crossplane.md",
-    "What is/Spinnaker.md",
     "What is",
     "Networking",
     "Dev General/Git",
