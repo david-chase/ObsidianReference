@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Flannel.md",
+                "file": "What is/RabbitMQ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flannel"
+              "title": "RabbitMQ"
             }
           }
         ]
@@ -168,8 +168,14 @@
   },
   "active": "8cebda0e2ff9f430",
   "lastOpenFiles": [
-    "What is/Calico.md",
+    "What is/MySQL.md",
+    "What is/RabbitMQ.md",
+    "What is/PostgreSQL.md",
+    "What is/Nutanix.md",
+    "What is/Aqua.md",
     "What is/Flannel.md",
+    "What is/Kafka.md",
+    "What is/Calico.md",
     "What is/Cilium.md",
     "What is/Crossplane.md",
     "What is/Spinnaker.md",
@@ -188,12 +194,6 @@
     "What is/GateKeeper.md",
     "What is/Open Policy Agent (OPA).md",
     "What is/KEDA.md",
-    "What is/etcd.md",
-    "What is/Valkey.md",
-    "What is/Grafana Alloy.md",
-    "What is/Grafana Mimir.md",
-    "What is/Grafana Dashboards.md",
-    "What is/Redis.md",
     "What is",
     "Networking",
     "Dev General/Git",
