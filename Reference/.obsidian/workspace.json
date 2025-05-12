@@ -4,18 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "3ecde93b0c9c827f",
+        "id": "437548d1a0f91f54",
         "type": "tabs",
         "children": [
           {
-            "id": "8cebda0e2ff9f430",
+            "id": "efae8dbde2973be0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "What is/Prometheus.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Prometheus"
@@ -166,10 +176,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8cebda0e2ff9f430",
+  "active": "efae8dbde2973be0",
   "lastOpenFiles": [
-    "What is/AppArmor.md",
+    "Dev General/Git/Enable GitHub access through SSH.md",
     "What is/Prometheus.md",
+    "What is/Untitled.md",
+    "What is/AppArmor.md",
     "DevOps and Workflow Management with Argo (LFS256)/Chapter 1.md",
     "DevOps and Workflow Management with Argo (LFS256)",
     "What is/Octant.md",
@@ -193,8 +205,6 @@
     "What is/Zabbix.md",
     "Data/Why columnar storage is better for analytics.md",
     "What is/Rook.md",
-    "What is/Ceph.md",
-    "What is/Longhorn.md",
     "What is",
     "Networking",
     "Dev General/Git",
