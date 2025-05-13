@@ -19,12 +19,12 @@ https://nginx.org/
 
 ## 🔹 Key Features
 
-|Feature|Description|
-|---|---|
-|**Web Server**|Serves static files (HTML, CSS, JS, images, videos) efficiently|
-|**Reverse Proxy**|Forwards client requests to backend servers (web apps, APIs)|
-|**Load Balancer**|Distributes traffic across multiple servers (HTTP, TCP, UDP)|
-|**SSL/TLS Termination**|Handles HTTPS encryption/decryption|
-|**Caching**|Caches static and dynamic content to improve performance|
-|**Ingress Controller (K8s)**|Acts as the ingress gateway in Kubernetes clusters|
-|**Rate Limiting & Security**|Provides basic protection against attacks (DoS, bad bots)|
+| Feature                      | Description                                                     |
+| ---------------------------- | --------------------------------------------------------------- |
+| **Web Server**               | Serves static files (HTML, CSS, JS, images, videos) efficiently |
+| **Reverse Proxy**            | Forwards client requests to backend servers (web apps, APIs)    |
+| **Load Balancer**            | Distributes traffic across multiple servers (HTTP, TCP, UDP)    |
+| **SSL/TLS Termination**      | Handles HTTPS encryption/decryption                             |
+| **Caching**                  | Caches static and dynamic content to improve performance        |
+| **Ingress Controller (K8s)** | Acts as the ingress gateway in Kubernetes clusters              |
+| **Rate Limiting & Security** | Provides basic protection against attacks (DoS, bad bots)       |

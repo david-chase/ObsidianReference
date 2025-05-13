@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/nginx.md",
+                "file": "What is/Pulumi.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "nginx"
+              "title": "Pulumi"
             }
           }
         ]
@@ -169,8 +169,18 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
-    "What is/MetalLB.md",
+    "What is/Istio.md",
+    "What is/Pulumi.md",
+    "What is/Podman.md",
+    "What is/Docker.md",
+    "What is/kind.md",
+    "What is/Karpenter.md",
+    "What is/vCluster.md",
+    "What is/Gardener.md",
+    "What is/Rancher.md",
+    "What is/K3s.md",
     "What is/nginx.md",
+    "What is/MetalLB.md",
     "What is/cert-manager.md",
     "What is/CoreDNS.md",
     "K8s/General/Deploy Argo CD.md",
@@ -186,16 +196,6 @@
     "What is/Lens.md",
     "What is/Cyclops-ui.md",
     "What is/Snowflake.md",
-    "What is/Nutanix.md",
-    "What is/MCP (Model Context Protocol).md",
-    "What is/Elasticsearch.md",
-    "What is/Aqua Security.md",
-    "What is/Kotlin.md",
-    "What is/TypeScript.md",
-    "What is/WebAssembly (Wasm).md",
-    "What is/Python.md",
-    "What is/Golang.md",
-    "What is/Rust.md",
     "What is",
     "Networking",
     "Dev General/Git",
