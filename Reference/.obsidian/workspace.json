@@ -13,22 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/Deploy Argo CD.md",
+                "file": "What is/nginx.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Deploy Argo CD"
+              "title": "nginx"
             }
           }
         ]
@@ -178,6 +169,11 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
+    "What is/MetalLB.md",
+    "What is/nginx.md",
+    "What is/cert-manager.md",
+    "What is/CoreDNS.md",
+    "K8s/General/Deploy Argo CD.md",
     "K8s/EKS/EBS backed PV.md",
     "K8s/General/kubectl Sample Command Lines.md",
     "What is/Prometheus.md",
@@ -200,11 +196,6 @@
     "What is/Python.md",
     "What is/Golang.md",
     "What is/Rust.md",
-    "What is/Helm.md",
-    "What is/Kro (Kubernetes Resource Orchestrator).md",
-    "What is/Kibana.md",
-    "What is/Logstash.md",
-    "What is/Zabbix.md",
     "What is",
     "Networking",
     "Dev General/Git",
