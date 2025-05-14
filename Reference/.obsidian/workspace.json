@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/MicroK8s.md",
+                "file": "K8s/General/Installing Argo Rollouts.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "MicroK8s"
+              "title": "Installing Argo Rollouts"
             }
           }
         ]
@@ -170,6 +170,9 @@
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
     "K8s/General/Installing Argo Workflows.md",
+    "K8s/General/Installing Argo Rollouts.md",
+    "What is/Kayenta.md",
+    "What is/Wavefront.md",
     "What is/MicroK8s.md",
     "What is/PyTorch.md",
     "What is/GitHub Actions.md",
@@ -192,9 +195,6 @@
     "What is/vCluster.md",
     "What is/Gardener.md",
     "What is/Rancher.md",
-    "What is/K3s.md",
-    "What is/nginx.md",
-    "What is/MetalLB.md",
     "DevOps and Workflow Management with Argo (LFS256)",
     "What is",
     "Networking",
