@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Helm chart templates.md",
+                "file": "K8s/Deployment/Helm chart templates commonly used functions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Helm chart templates"
+              "title": "Helm chart templates commonly used functions"
             }
           }
         ]
@@ -169,8 +169,8 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
-    "K8s/Deployment/Naming Helm chart folders.md",
     "K8s/Deployment/Helm chart templates.md",
+    "K8s/Deployment/Naming Helm chart folders.md",
     "K8s/Deployment/Helm chart templates commonly used functions.md",
     "K8s/Deployment/helm Sample Command Lines.md",
     "K8s/Deployment/Argo CD sample command lines.md",
