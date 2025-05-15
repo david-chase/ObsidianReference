@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/Installing Argo Rollouts.md",
+                "file": "What is/Apache Flink.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Installing Argo Rollouts"
+              "title": "Apache Flink"
             }
           }
         ]
@@ -169,8 +169,11 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
-    "K8s/General/Installing Argo Workflows.md",
+    "What is/K8Studio.md",
+    "What is/Apache Flink.md",
+    "What is/eBPF.md",
     "K8s/General/Installing Argo Rollouts.md",
+    "K8s/General/Installing Argo Workflows.md",
     "What is/Kayenta.md",
     "What is/Wavefront.md",
     "What is/MicroK8s.md",
@@ -192,9 +195,6 @@
     "What is/Docker.md",
     "What is/kind.md",
     "What is/Karpenter.md",
-    "What is/vCluster.md",
-    "What is/Gardener.md",
-    "What is/Rancher.md",
     "DevOps and Workflow Management with Argo (LFS256)",
     "What is",
     "Networking",
