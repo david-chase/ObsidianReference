@@ -9,12 +9,15 @@
 - **b64enc** - get the base64 encoding of a string
 - **sha256sum** - get the SHA-256 digest of a string
 - **lookup** - lookup resources in a running Kubernetes cluster
+- **upper** - convert string to uppercase
+- **lower** - convert string to lowercase
+- **quote** - Convert integer to string
 
 ``` yaml
-**apiVersion: v1  
+apiVersion: v1  
 kind: ConfigMap  
 metadata:  
   name: {{ .Release.Name }}-configmap  
 data:  
-  mykey: {{ .Values.myval | upper | quote }}**
+  mykey: {{ .Values.myval | upper | quote }}
 ```

@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Helm chart templates commonly used functions.md",
+                "file": "K8s/Deployment/Helm chart templates.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Helm chart templates commonly used functions"
+              "title": "Helm chart templates"
             }
           }
         ]
@@ -169,8 +169,10 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
-    "K8s/Deployment/helm Sample Command Lines.md",
+    "K8s/Deployment/Naming Helm chart folders.md",
+    "K8s/Deployment/Helm chart templates.md",
     "K8s/Deployment/Helm chart templates commonly used functions.md",
+    "K8s/Deployment/helm Sample Command Lines.md",
     "K8s/Deployment/Argo CD sample command lines.md",
     "K8s/Deployment/Argo Workflows sample command lines.md",
     "K8s/Deployment/Argo CD password.md",
@@ -194,8 +196,6 @@
     "What is/MicroK8s.md",
     "What is/PyTorch.md",
     "What is/GitHub Actions.md",
-    "What is/GitLab.md",
-    "What is/Hubble.md",
     "DevOps and Workflow Management with Argo (LFS256)",
     "What is",
     "Networking",
