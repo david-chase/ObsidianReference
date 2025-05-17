@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Helm/Helm chart.yaml contents.md",
+                "file": "K8s/Deployment/Argo/Install Argo CD.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Helm chart.yaml contents"
+              "title": "Install Argo CD"
             }
           }
         ]
@@ -169,10 +169,10 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
+    "K8s/Deployment/Helm/Helm chart.yaml contents.md",
     "K8s/Deployment/Helm/Helm chart templates commonly used functions.md",
     "K8s/Deployment/Helm/Helm chart templates.md",
     "K8s/Deployment/Helm/Helm templates folder structure.md",
-    "K8s/Deployment/Helm/Helm chart.yaml contents.md",
     "K8s/Deployment/Helm/helm Sample Command Lines.md",
     "K8s/Deployment/Argo/Argo CD password.md",
     "K8s/Deployment/Argo/Installing Argo Workflows.md",

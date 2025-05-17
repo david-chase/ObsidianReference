@@ -40,8 +40,12 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 ``` powershell
 # 1. Grab the initial admin password
-$initialPassword = (kubectl -n argocd get secret argocd-initial-admin-secret `
-  -o jsonpath="{.data.password}" | base64 --decode)
+$base64Password = kubectl -n argocd get secret argocd-initial-admin-secret `
+  -o jsonpath="{.data.password}"
+
+$initialPassword = [System.Text.Encoding]::UTF8.GetString(
+  [System.Convert]::FromBase64String($base64Password)
+)
 
 # 2. Log in (use --insecure to skip cert checks on localhost)
 argocd login localhost:8080 `
