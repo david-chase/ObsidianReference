@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Helm chart templates commonly used functions.md",
+                "file": "K8s/Deployment/Argo/Argo CD password.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Helm chart templates commonly used functions"
+              "title": "Argo CD password"
             }
           }
         ]
@@ -167,18 +167,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "efae8dbde2973be0",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
-    "K8s/Deployment/Helm chart templates.md",
-    "K8s/Deployment/Naming Helm chart folders.md",
-    "K8s/Deployment/Helm chart templates commonly used functions.md",
-    "K8s/Deployment/helm Sample Command Lines.md",
-    "K8s/Deployment/Argo CD sample command lines.md",
-    "K8s/Deployment/Argo Workflows sample command lines.md",
-    "K8s/Deployment/Argo CD password.md",
+    "K8s/Deployment/Argo/Installing Argo Workflows.md",
+    "K8s/Deployment/Argo",
+    "K8s/Deployment/Helm/Helm templates folder structure.md",
+    "K8s/Deployment/Helm/Helm subcharts and dependencies.md",
+    "K8s/Deployment/Helm",
+    "K8s/Deployment/Helm.md",
+    "K8s/Deployment/Helm/Helm chart.yaml contents.md",
+    "K8s/Deployment/Helm/Helm chart templates.md",
+    "K8s/Deployment/Helm/Naming Helm chart folders.md",
+    "K8s/Deployment/Helm/helm Sample Command Lines.md",
+    "K8s/Deployment/Helm/Helm chart templates commonly used functions.md",
+    "K8s/Deployment/Argo/Argo CD sample command lines.md",
+    "K8s/Deployment/Argo/Argo Workflows sample command lines.md",
+    "K8s/Deployment/Argo/Argo CD password.md",
     "K8s/Networking/Deploy nginx ingress.md",
     "K8s/Deployment",
-    "K8s/Deployment/Install Argo CD.md",
+    "K8s/Deployment/Argo/Install Argo CD.md",
     "What is/Jsonnet.md",
     "What is/Zig.md",
     "What is/Golang.md",
@@ -189,13 +196,7 @@
     "What is/Apache Flink.md",
     "What is/K8Studio.md",
     "What is/eBPF.md",
-    "K8s/Deployment/Installing Argo Rollouts.md",
-    "K8s/Deployment/Installing Argo Workflows.md",
-    "What is/Kayenta.md",
-    "What is/Wavefront.md",
-    "What is/MicroK8s.md",
-    "What is/PyTorch.md",
-    "What is/GitHub Actions.md",
+    "K8s/Deployment/Argo/Installing Argo Rollouts.md",
     "DevOps and Workflow Management with Argo (LFS256)",
     "What is",
     "Networking",
@@ -203,8 +204,6 @@
     "K8s/GKE",
     "K8s/My K8s Cluster",
     "K8s/Storage",
-    "K8s/General",
-    "Linux",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",
