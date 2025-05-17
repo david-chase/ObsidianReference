@@ -33,4 +33,7 @@ helm list --all-namespaces
 helm install <chartname> <foldername> -f values.yaml
 helm install harbot .
 helm install --create-namespace -n densify -f values-edit.yaml kubex .\kubex-automation-stack\
+
+# Create an empty Helm chart
+helm create
 ```
