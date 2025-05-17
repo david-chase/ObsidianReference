@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Argo/Install Argo CD.md",
+                "file": "K8s/Deployment/Helm/helm Sample Command Lines.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Install Argo CD"
+              "title": "helm Sample Command Lines"
             }
           }
         ]
@@ -169,6 +169,7 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
+    "K8s/Deployment/Argo/Install Argo CD.md",
     "K8s/Deployment/Helm/Helm chart.yaml contents.md",
     "K8s/Deployment/Helm/Helm chart templates commonly used functions.md",
     "K8s/Deployment/Helm/Helm chart templates.md",
@@ -185,7 +186,6 @@
     "K8s/Deployment/Argo/Argo Workflows sample command lines.md",
     "K8s/Networking/Deploy nginx ingress.md",
     "K8s/Deployment",
-    "K8s/Deployment/Argo/Install Argo CD.md",
     "What is/Jsonnet.md",
     "What is/Zig.md",
     "What is/Golang.md",
