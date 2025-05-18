@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Argo/Argo Workflows/1. What is Argo Workflows.md",
+                "file": "K8s/Deployment/Argo/Argo Rollouts/1. What is Argo Rollouts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. What is Argo Workflows"
+              "title": "1. What is Argo Rollouts"
             }
           }
         ]
@@ -168,8 +168,18 @@
   },
   "active": "a1a9d0ea75bbc793",
   "lastOpenFiles": [
-    "K8s/Deployment/Argo/Installing Argo Workflows.md",
+    "K8s/Deployment/Argo/Argo CD password.md",
+    "K8s/Deployment/Argo/Argo Rollouts/1. What is Argo Rollouts.md",
+    "K8s/Deployment/Argo/Argo Workflows/8. Use Cases for Argo Workflows.md",
+    "K8s/Deployment/Argo/Argo Rollouts",
     "K8s/Deployment/Argo/Argo Workflows/1. What is Argo Workflows.md",
+    "K8s/Deployment/Argo/Argo Workflows/7. Argo Workflow Overview.md",
+    "K8s/Deployment/Argo/Argo Workflows/6. Defining Argo Workflows and Its Components.md",
+    "K8s/Deployment/Argo/Argo Workflows/5. Workflow Template.md",
+    "K8s/Deployment/Argo/Argo Workflows/4. Outputs.md",
+    "K8s/Deployment/Argo/Argo Workflows/3. Template Types.md",
+    "K8s/Deployment/Argo/Argo Workflows/2. Sample Workflow.md",
+    "K8s/Deployment/Argo/Installing Argo Workflows.md",
     "K8s/Deployment/Argo/Argo Workflows",
     "K8s/Deployment/Argo/Untitled.md",
     "What is/Directed Acyclic Graph (DAG).md",
@@ -184,26 +194,16 @@
     "K8s/Deployment/Helm/Helm chart templates commonly used functions.md",
     "K8s/Deployment/Helm/Helm chart templates.md",
     "K8s/Deployment/Helm/Helm templates folder structure.md",
-    "K8s/Deployment/Argo/Argo CD password.md",
     "K8s/Deployment/Argo",
     "K8s/Deployment/Helm/Helm subcharts and dependencies.md",
     "K8s/Deployment/Helm",
     "K8s/Deployment/Helm.md",
     "K8s/Deployment/Helm/Naming Helm chart folders.md",
-    "K8s/Deployment/Argo/Argo CD sample command lines.md",
-    "K8s/Deployment/Argo/Argo Workflows sample command lines.md",
-    "K8s/Networking/Deploy nginx ingress.md",
     "K8s/Deployment",
-    "What is/Jsonnet.md",
-    "What is/Zig.md",
-    "What is/Golang.md",
-    "What is/HashiCorp Sentinel.md",
-    "What is/Open Policy Agent (OPA).md",
     "DevOps and Workflow Management with Argo (LFS256)",
     "What is",
     "Networking",
     "Dev General/Git",
-    "K8s/GKE",
     "Files/Media/Kafka use cases.gif",
     "Files/Media/Types of Databases.png",
     "Files/Media/API architectural styles.gif",
