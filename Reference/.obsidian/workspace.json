@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Argo/Argo Rollouts/1. What is Argo Rollouts.md",
+                "file": "K8s/Deployment/Argo/Argo Rollouts Dashboard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. What is Argo Rollouts"
+              "title": "Argo Rollouts Dashboard"
             }
           }
         ]
@@ -168,8 +168,9 @@
   },
   "active": "a1a9d0ea75bbc793",
   "lastOpenFiles": [
-    "K8s/Deployment/Argo/Argo CD password.md",
     "K8s/Deployment/Argo/Argo Rollouts/1. What is Argo Rollouts.md",
+    "K8s/Deployment/Argo/Argo Rollouts Dashboard.md",
+    "K8s/Deployment/Argo/Argo CD password.md",
     "K8s/Deployment/Argo/Argo Workflows/8. Use Cases for Argo Workflows.md",
     "K8s/Deployment/Argo/Argo Rollouts",
     "K8s/Deployment/Argo/Argo Workflows/1. What is Argo Workflows.md",
@@ -181,7 +182,6 @@
     "K8s/Deployment/Argo/Argo Workflows/2. Sample Workflow.md",
     "K8s/Deployment/Argo/Installing Argo Workflows.md",
     "K8s/Deployment/Argo/Argo Workflows",
-    "K8s/Deployment/Argo/Untitled.md",
     "What is/Directed Acyclic Graph (DAG).md",
     "K8s/Security/Install Cert-Manager CLI.md",
     "K8s/Deployment/Argo/Argo CD cilium causes Out-Of-Sync.md",
