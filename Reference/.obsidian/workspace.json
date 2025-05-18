@@ -169,8 +169,9 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
-    "K8s/Deployment/Argo/Installing Argo Rollouts.md",
+    "K8s/Deployment/Argo/Argo CD ignore changes in requests or limits.md",
     "K8s/Deployment/Argo/Argo CD cilium causes Out-Of-Sync.md",
+    "K8s/Deployment/Argo/Installing Argo Rollouts.md",
     "K8s/Deployment/Helm/helm Sample Command Lines.md",
     "K8s/Deployment/Argo/Install Argo CD.md",
     "K8s/Deployment/Helm/Helm chart.yaml contents.md",
@@ -197,7 +198,6 @@
     "What is/Talos Linux.md",
     "What is/Apache Flink.md",
     "What is/K8Studio.md",
-    "What is/eBPF.md",
     "DevOps and Workflow Management with Argo (LFS256)",
     "What is",
     "Networking",
