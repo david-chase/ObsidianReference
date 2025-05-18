@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Helm/helm Sample Command Lines.md",
+                "file": "K8s/Deployment/Argo/Installing Argo Rollouts.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "helm Sample Command Lines"
+              "title": "Installing Argo Rollouts"
             }
           }
         ]
@@ -169,12 +169,12 @@
   },
   "active": "efae8dbde2973be0",
   "lastOpenFiles": [
+    "K8s/Deployment/Helm/helm Sample Command Lines.md",
     "K8s/Deployment/Argo/Install Argo CD.md",
     "K8s/Deployment/Helm/Helm chart.yaml contents.md",
     "K8s/Deployment/Helm/Helm chart templates commonly used functions.md",
     "K8s/Deployment/Helm/Helm chart templates.md",
     "K8s/Deployment/Helm/Helm templates folder structure.md",
-    "K8s/Deployment/Helm/helm Sample Command Lines.md",
     "K8s/Deployment/Argo/Argo CD password.md",
     "K8s/Deployment/Argo/Installing Argo Workflows.md",
     "K8s/Deployment/Argo",
