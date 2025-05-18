@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Timeshift backup for Linux.md",
+                "file": "Linux/Timeshift backup copy to USB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Timeshift backup for Linux"
+              "title": "Timeshift backup copy to USB"
             }
           }
         ]
@@ -168,6 +168,7 @@
   },
   "active": "a1a9d0ea75bbc793",
   "lastOpenFiles": [
+    "Linux/Timeshift backup for Linux.md",
     "K8s/Deployment/Argo/Argo Events/2. Event-Driven Architecture.md",
     "K8s/Deployment/Argo/Argo Events/1. What is Argo Events.md",
     "K8s/Deployment/Argo/Argo Rollouts/11. Rollout Analysis & Experiments.md",
@@ -196,7 +197,6 @@
     "K8s/Deployment/Argo/Argo Workflows/4. Outputs.md",
     "K8s/Deployment/Argo/Argo Workflows",
     "What is/Directed Acyclic Graph (DAG).md",
-    "K8s/Security/Install Cert-Manager CLI.md",
     "K8s/Security",
     "K8s/Deployment/Argo",
     "K8s/Deployment/Helm",
