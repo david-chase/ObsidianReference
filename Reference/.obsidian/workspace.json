@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/External Secrets Operator (ESO).md",
+                "file": "K8s/Deployment/Argo/Exam prep.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "External Secrets Operator (ESO)"
+              "title": "Exam prep"
             }
           }
         ]
@@ -168,6 +168,19 @@
   },
   "active": "a1a9d0ea75bbc793",
   "lastOpenFiles": [
+    "Pasted image 20250519110450.png",
+    "Pasted image 20250519110417.png",
+    "Pasted image 20250519110359.png",
+    "Pasted image 20250519110111.png",
+    "Pasted image 20250519110044.png",
+    "Pasted image 20250519105939.png",
+    "Pasted image 20250519105927.png",
+    "Pasted image 20250519105909.png",
+    "Pasted image 20250519105704.png",
+    "Pasted image 20250519105635.png",
+    "Pasted image 20250519105558.png",
+    "What is/External Secrets Operator (ESO).md",
+    "K8s/Deployment/Argo/Exam prep.md",
     "Linux/Timeshift backup for Linux.md",
     "K8s/Observability/EFK get my enrollment token.md",
     "K8s/Observability/EFK for log aggregation.md",
@@ -192,9 +205,6 @@
     "K8s/Deployment/Argo/Argo Rollouts/3. Continuous Delivery.md",
     "K8s/Deployment/Argo/Argo Rollouts/2. Continuous Integration.md",
     "K8s/Deployment/Argo/Argo Rollouts/1. What is Argo Rollouts.md",
-    "K8s/Deployment/Argo/Installing Argo Workflows.md",
-    "K8s/Deployment/Argo/Argo Rollouts Dashboard.md",
-    "K8s/Deployment/Argo/Argo CD password.md",
     "K8s/Deployment/Argo/Argo Rollouts",
     "K8s/Deployment/Argo/Argo Workflows",
     "K8s/Security",
@@ -203,16 +213,6 @@
     "K8s/Deployment",
     "DevOps and Workflow Management with Argo (LFS256)",
     "What is",
-    "Networking",
-    "Files/Media/Kafka use cases.gif",
-    "Files/Media/Types of Databases.png",
-    "Files/Media/API architectural styles.gif",
-    "Files/Media/Cloud Services Across CSPs.jpg",
-    "Files/Media/Reverse proxy vs API gateway vs. Load balancer.gif",
-    "Files/Media/Nginx architecture.jpg",
-    "Files/Media/API gateway vs Load balancer.jpg",
-    "K8s/Nginx architecture.jpg",
-    "K8s/API gateway vs Load balancer.jpg",
-    "K8s/Reverse proxy vs API gateway vs. Load balancer.gif"
+    "Networking"
   ]
 }
