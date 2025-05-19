@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Observability/EFK get my enrollment token.md",
+                "file": "What is/External Secrets Operator (ESO).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EFK get my enrollment token"
+              "title": "External Secrets Operator (ESO)"
             }
           }
         ]
@@ -168,10 +168,10 @@
   },
   "active": "a1a9d0ea75bbc793",
   "lastOpenFiles": [
-    "K8s/Observability/EFK for log aggregation.md",
-    "K8s/Observability/EFK get my enrollment token.md",
-    "Linux/Timeshift backup copy to USB.md",
     "Linux/Timeshift backup for Linux.md",
+    "K8s/Observability/EFK get my enrollment token.md",
+    "K8s/Observability/EFK for log aggregation.md",
+    "Linux/Timeshift backup copy to USB.md",
     "K8s/Deployment/Argo/Argo Events/2. Event-Driven Architecture.md",
     "K8s/Deployment/Argo/Argo Events/1. What is Argo Events.md",
     "K8s/Deployment/Argo/Argo Rollouts/11. Rollout Analysis & Experiments.md",
