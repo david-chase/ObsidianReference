@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Security/Copy awssm-secret to another namespace.md",
+                "file": "What is/Valkey.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Copy awssm-secret to another namespace"
+              "title": "Valkey"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#mac",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,11 +166,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f0a41e434313e64",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
-    "What is/Infinity data source.md",
-    "K8s/Security/Copy awssm-secret to another namespace.md",
+    "What is/Harbor.md",
+    "What is/JFrog Artifactory.md",
+    "K8s/Security/ESO and AWS credentials.md",
     "Untitled.md",
+    "What is/Infinity data source.md",
     "What is/Colima.md",
     "What is/Apache Spark.md",
     "Media/Screenshots/Pasted image 20250519105346.png",
@@ -195,8 +197,6 @@
     "What is/Spinnaker.md",
     "What is/Snowflake.md",
     "What is/Rust.md",
-    "What is/Rook.md",
-    "What is/Robusta.md",
     "Media/Screenshots/Pasted image 20250519111251.png",
     "Media/Screenshots/Pasted image 20250519111122.png",
     "Media/Screenshots/Pasted image 20250519111012.png",
