@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Infinity data source.md",
+                "file": "K8s/Security/Copy awssm-secret to another namespace.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Infinity data source"
+              "title": "Copy awssm-secret to another namespace"
             }
           }
         ]
@@ -168,8 +168,9 @@
   },
   "active": "0f0a41e434313e64",
   "lastOpenFiles": [
-    "Untitled.md",
     "What is/Infinity data source.md",
+    "K8s/Security/Copy awssm-secret to another namespace.md",
+    "Untitled.md",
     "What is/Colima.md",
     "What is/Apache Spark.md",
     "Media/Screenshots/Pasted image 20250519105346.png",
@@ -196,7 +197,6 @@
     "What is/Rust.md",
     "What is/Rook.md",
     "What is/Robusta.md",
-    "What is/Rancher.md",
     "Media/Screenshots/Pasted image 20250519111251.png",
     "Media/Screenshots/Pasted image 20250519111122.png",
     "Media/Screenshots/Pasted image 20250519111012.png",
