@@ -11,14 +11,12 @@
             "id": "0f0a41e434313e64",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "K8s/DGCM.md",
-                "mode": "source",
-                "source": false
+                "file": "Media/Screenshots/Pasted image 20250521181611.png"
               },
-              "icon": "lucide-file",
-              "title": "DGCM"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250521181611"
             }
           }
         ]
@@ -168,11 +166,11 @@
   },
   "active": "0f0a41e434313e64",
   "lastOpenFiles": [
-    "Pasted image 20250521181611.png",
-    "K8s/Security/ESO and AWS credentials.md",
-    "K8s/DGCM.md",
-    "What is/K0s.md",
     "Untitled.md",
+    "Media/Screenshots/Pasted image 20250521181611.png",
+    "K8s/DGCM.md",
+    "K8s/Security/ESO and AWS credentials.md",
+    "What is/K0s.md",
     "What is/Valkey.md",
     "What is/Proxmox.md",
     "What is/Harbor.md",
@@ -205,7 +203,6 @@
     "Media/Screenshots/Pasted image 20250519110824.png",
     "Media/Screenshots/Pasted image 20250519110713.png",
     "Media/Screenshots/Pasted image 20250519110646.png",
-    "Media/Screenshots/Pasted image 20250519110608.png",
     "K8s/Security",
     "K8s/Deployment/Helm",
     "K8s/Deployment/Argo/Argo Events",
