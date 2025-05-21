@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Security/ESO and AWS credentials.md",
+                "file": "K8s/DGCM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ESO and AWS credentials"
+              "title": "DGCM"
             }
           }
         ]
@@ -168,13 +168,15 @@
   },
   "active": "0f0a41e434313e64",
   "lastOpenFiles": [
+    "Pasted image 20250521181611.png",
+    "K8s/Security/ESO and AWS credentials.md",
+    "K8s/DGCM.md",
     "What is/K0s.md",
     "Untitled.md",
     "What is/Valkey.md",
     "What is/Proxmox.md",
     "What is/Harbor.md",
     "What is/JFrog Artifactory.md",
-    "K8s/Security/ESO and AWS credentials.md",
     "What is/Infinity data source.md",
     "What is/Colima.md",
     "What is/Apache Spark.md",
@@ -195,8 +197,6 @@
     "What is/TypeScript.md",
     "What is/Trivy.md",
     "What is/Tekton.md",
-    "What is/Talos Linux.md",
-    "What is/Tableau.md",
     "Media/Screenshots/Pasted image 20250519111251.png",
     "Media/Screenshots/Pasted image 20250519111122.png",
     "Media/Screenshots/Pasted image 20250519111012.png",
