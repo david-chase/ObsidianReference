@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7ff336b26c896afb",
+        "id": "62740e530cff06bf",
         "type": "tabs",
         "children": [
           {
-            "id": "5c3f6403ee2087b6",
+            "id": "0f0a41e434313e64",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "K8s/Security/ESO and AWS credentials.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "ESO and AWS credentials"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vcpu",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,11 +166,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5c3f6403ee2087b6",
+  "active": "0f0a41e434313e64",
   "lastOpenFiles": [
     "What is/K0s.md",
-    "What is/K3s.md",
     "Untitled.md",
+    "What is/Valkey.md",
+    "What is/Proxmox.md",
+    "What is/Harbor.md",
+    "What is/JFrog Artifactory.md",
+    "K8s/Security/ESO and AWS credentials.md",
+    "What is/Infinity data source.md",
+    "What is/Colima.md",
+    "What is/Apache Spark.md",
+    "Media/Screenshots/Pasted image 20250519105346.png",
+    "Media/Screenshots",
+    "Media",
     "What is/vCluster.md",
     "What is/nginx.md",
     "What is/kind.md",
@@ -182,31 +196,21 @@
     "What is/Trivy.md",
     "What is/Tekton.md",
     "What is/Talos Linux.md",
-    "What is/Kibana.md",
-    "What is/Kayenta.md",
-    "What is/Karpenter.md",
-    "What is/K8Studio.md",
-    "What is/Jsonnet.md",
-    "What is/Jenkins.md",
-    "What is/Jenkins X.md",
-    "What is/JFrog Artifactory.md",
+    "What is/Tableau.md",
     "Media/Screenshots/Pasted image 20250519111251.png",
-    "Media/Screenshots/Pasted image 20250519110824.png",
     "Media/Screenshots/Pasted image 20250519111122.png",
+    "Media/Screenshots/Pasted image 20250519111012.png",
     "Media/Screenshots/Pasted image 20250519110950.png",
     "Media/Screenshots/Pasted image 20250519110849.png",
-    "Media/Screenshots/Pasted image 20250519111012.png",
+    "Media/Screenshots/Pasted image 20250519110824.png",
     "Media/Screenshots/Pasted image 20250519110713.png",
+    "Media/Screenshots/Pasted image 20250519110646.png",
     "Media/Screenshots/Pasted image 20250519110608.png",
-    "Media/Screenshots/Pasted image 20250519110553.png",
-    "Media/Screenshots/Pasted image 20250519110527.png",
-    "Media/Screenshots",
-    "Media",
     "K8s/Security",
-    "K8s/Deployment/Argo/Argo Workflows",
-    "K8s/Deployment/Argo/Argo Rollouts",
-    "K8s/Deployment/Argo/Argo Events",
     "K8s/Deployment/Helm",
+    "K8s/Deployment/Argo/Argo Events",
+    "K8s/Deployment/Argo/Argo Rollouts",
+    "K8s/Deployment/Argo/Argo Workflows",
     "K8s/Deployment/Argo",
     "K8s/Deployment",
     "What is"
