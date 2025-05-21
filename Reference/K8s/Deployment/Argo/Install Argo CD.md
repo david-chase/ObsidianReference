@@ -2,6 +2,7 @@
 
 ## Install the CLI
 
+#### Linux
 ``` powershell
 # Download the latest Argocd CLI binary
 Invoke-WebRequest -Uri "https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64" -OutFile argocd-linux-amd64
@@ -12,6 +13,11 @@ sudo mv argocd-linux-amd64 /usr/local/bin/argocd
 
 # Verify the installation
 argocd version --client
+```
+
+#### Windows
+``` powershell
+choco install argocd-cli
 ```
 
 ## Deploy to cluster
@@ -34,8 +40,12 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 ``` powershell
 # 1. Grab the initial admin password
-$initialPassword = (kubectl -n argocd get secret argocd-initial-admin-secret `
-  -o jsonpath="{.data.password}" | base64 --decode)
+$base64Password = kubectl -n argocd get secret argocd-initial-admin-secret `
+  -o jsonpath="{.data.password}"
+
+$initialPassword = [System.Text.Encoding]::UTF8.GetString(
+  [System.Convert]::FromBase64String($base64Password)
+)
 
 # 2. Log in (use --insecure to skip cert checks on localhost)
 argocd login localhost:8080 `

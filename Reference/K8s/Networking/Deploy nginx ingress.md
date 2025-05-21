@@ -1,4 +1,4 @@
-#argocd #argo #ingress #nginx 
+#ingress #nginx 
 
 # Install nginx
 
