@@ -61,14 +61,10 @@ sudo reboot
 
 After reboot, check that the driver and CUDA are installed:
 
-``` bash
+``` powershell
+# After reboot, check that the driver and CUDA are installed:
 nvidia-smi
 
-You should see a table showing your GPU, driver version, and usage stats.
-```
-
-Also check CUDA version:
-
-``` bash
+# Also check CUDA version:
 nvcc --version
 ```
