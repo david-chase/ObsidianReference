@@ -45,6 +45,7 @@ Add the following to the end of the `scrape_configs section` in `kubex-automatio
               target_label: kubernetes_node 
 ```
 
+
 #### 3.3 Redeploy the Helm chart from the local repo
 
 ``` bash
