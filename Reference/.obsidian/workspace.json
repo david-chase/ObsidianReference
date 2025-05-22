@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "62740e530cff06bf",
+        "id": "ab04c1704bdc9f1d",
         "type": "tabs",
         "children": [
           {
-            "id": "0f0a41e434313e64",
+            "id": "d5911067bc0800f4",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Media/Screenshots/Pasted image 20250521181611.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250521181611"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -164,10 +162,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f0a41e434313e64",
+  "active": "d5911067bc0800f4",
   "lastOpenFiles": [
-    "Untitled.md",
     "Media/Screenshots/Pasted image 20250521181611.png",
+    "Untitled.md",
     "K8s/DGCM.md",
     "K8s/Security/ESO and AWS credentials.md",
     "What is/K0s.md",
