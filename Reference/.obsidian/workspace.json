@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Proxmox.md",
+                "file": "K8s/Deployment/Delete Argo CD application stuck waiting on finalizer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proxmox"
+              "title": "Delete Argo CD application stuck waiting on finalizer"
             }
           }
         ]
@@ -168,6 +168,8 @@
   },
   "active": "a1a9d0ea75bbc793",
   "lastOpenFiles": [
+    "What is/Proxmox.md",
+    "K8s/Deployment/Delete Argo CD application stuck waiting on finalizer.md",
     "Untitled.md",
     "K8s/General/Crictl CLI commands.md",
     "K8s/GPU node labels.md",
@@ -179,7 +181,6 @@
     "K8s/General/Set MaxPodsPerNode on bare metal.md",
     "K8s/Enabling DCGM exporter.md",
     "K8s/Deployment/Argo/Exam prep.md",
-    "What is/Proxmox.md",
     "What is/JFrog Artifactory.md",
     "K8s/Security/ESO and AWS credentials.md",
     "What is/Infinity data source.md",
@@ -206,7 +207,6 @@
     "K8s/Deployment/Argo/Argo Rollouts/7. Building Blocks of Argo Rollouts.md",
     "K8s/Deployment/Argo/Argo Rollouts/6. Strategies for Smooth and Reliable Releases.md",
     "K8s/Deployment/Argo/Argo Rollouts/5. Deployment Strategies.md",
-    "K8s/Deployment/Argo/Argo Workflows/6. Defining Argo Workflows and Its Components.md",
     "K8s/Deployment/Argo/Argo Rollouts",
     "K8s/Deployment/Argo/Argo Workflows",
     "K8s/Security",
