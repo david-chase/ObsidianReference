@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ee5a634e75e67a70",
+        "id": "ab04c1704bdc9f1d",
         "type": "tabs",
         "children": [
           {
-            "id": "a1a9d0ea75bbc793",
+            "id": "d5911067bc0800f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Proxmox.md",
+                "file": "K8s/GPU node labels.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proxmox"
+              "title": "GPU node labels"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#workflows",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 300
   },
   "right": {
     "id": "3314c18e7d6ded4f",
@@ -166,53 +166,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a1a9d0ea75bbc793",
+  "active": "d5911067bc0800f4",
   "lastOpenFiles": [
-    "What is/Kubetail.md",
-    "What is/K0s.md",
-    "Media/Screenshots/Pasted image 20250522092839.png",
-    "Media/Screenshots/Pasted image 20250521181611.png",
-    "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
+    "K8s/General/Viewing Kubernetes Master and Worker Logs.md",
+    "K8s/GPU node labels.md",
     "K8s/General/Set MaxPodsPerNode on bare metal.md",
+    "What is/Kubetail.md",
+    "Media/Screenshots/Pasted image 20250522092839.png",
+    "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
     "K8s/Enabling DCGM exporter.md",
-    "K8s/Deployment/Argo/Exam prep.md",
-    "What is/Proxmox.md",
-    "What is/JFrog Artifactory.md",
-    "K8s/Security/ESO and AWS credentials.md",
-    "What is/Infinity data source.md",
+    "K8s/DCGM.md",
+    "K8s/General/Set MaxPodsPerNode on kubeadm cluster.md",
+    "Media/Screenshots/Pasted image 20250521181611.png",
     "Untitled.md",
+    "K8s/Security/ESO and AWS credentials.md",
+    "What is/K0s.md",
+    "What is/Valkey.md",
+    "What is/Proxmox.md",
+    "What is/Harbor.md",
+    "What is/JFrog Artifactory.md",
+    "What is/Infinity data source.md",
     "What is/Colima.md",
+    "What is/Apache Spark.md",
+    "Media/Screenshots/Pasted image 20250519105346.png",
+    "Media/Screenshots",
+    "Media",
+    "What is/vCluster.md",
+    "What is/nginx.md",
+    "What is/kind.md",
+    "What is/eBPF.md",
+    "What is/containerd.md",
+    "What is/cert-manager.md",
+    "What is/Zig.md",
+    "What is/Zabbix.md",
     "Media/Screenshots/Pasted image 20250519111251.png",
-    "Media/Screenshots/Pasted image 20250519111012.png",
     "Media/Screenshots/Pasted image 20250519111122.png",
+    "Media/Screenshots/Pasted image 20250519111012.png",
     "Media/Screenshots/Pasted image 20250519110950.png",
     "Media/Screenshots/Pasted image 20250519110849.png",
     "Media/Screenshots/Pasted image 20250519110824.png",
     "Media/Screenshots/Pasted image 20250519110713.png",
-    "Media/Screenshots/Pasted image 20250519110646.png",
-    "Media/Screenshots",
-    "Media",
-    "What is/External Secrets Operator (ESO).md",
-    "Linux/Timeshift backup for Linux.md",
-    "K8s/Observability/EFK get my enrollment token.md",
-    "K8s/Observability/EFK for log aggregation.md",
-    "Linux/Timeshift backup copy to USB.md",
-    "K8s/Deployment/Argo/Argo Events/2. Event-Driven Architecture.md",
-    "K8s/Deployment/Argo/Argo Events/1. What is Argo Events.md",
-    "K8s/Deployment/Argo/Argo Rollouts/11. Rollout Analysis & Experiments.md",
+    "K8s/Security",
+    "K8s/Deployment/Helm",
     "K8s/Deployment/Argo/Argo Events",
-    "K8s/Deployment/Argo/Argo Rollouts/7. Building Blocks of Argo Rollouts.md",
-    "K8s/Deployment/Argo/Argo Rollouts/6. Strategies for Smooth and Reliable Releases.md",
-    "K8s/Deployment/Argo/Argo Rollouts/5. Deployment Strategies.md",
-    "K8s/Deployment/Argo/Argo Workflows/6. Defining Argo Workflows and Its Components.md",
-    "K8s/Deployment/Argo/Argo Workflows/2. Sample Workflow.md",
-    "K8s/Deployment/Argo/Argo Workflows/1. What is Argo Workflows.md",
     "K8s/Deployment/Argo/Argo Rollouts",
     "K8s/Deployment/Argo/Argo Workflows",
-    "K8s/Security",
     "K8s/Deployment/Argo",
-    "K8s/Deployment/Helm",
     "K8s/Deployment",
-    "DevOps and Workflow Management with Argo (LFS256)"
+    "What is"
   ]
 }
