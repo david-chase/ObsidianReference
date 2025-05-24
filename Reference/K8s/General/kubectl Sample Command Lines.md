@@ -1,5 +1,4 @@
 #k8s #cli 
-
 ## General Purpose
 ``` powershell 
 # Check Kubernetes server version.
@@ -204,65 +203,99 @@ kubectl uncordon <node_name>
 ```
 
 ## Pods
-Show a list of pods only in a single namespace
-kubectl get pods -n kube-system`
-kubectl get pods -n densify`
-Create a pod without a manifest
-kubectl run <podname> --image=nginx`
-Create a manifest for a pod
-kubectl run <podname> --image=nginx --port=80 -dry-run=client -o yaml > manifest.yml`
-Get info about a pod including events
-kubectl describe pods <podname>`
-Replace a running pod
-kubectl replace --force -f <filename.yml>`
-Delete a pod
-kubectl delete -f nginx.yml`
-kubectl delete pods <podname1> <podname2>`
-Get the QoS class for a pod
-kubectl --namespace=qos-example get pod qos-demo-4 -o jsonpath='{ .status.qosClass}{"\n"}'`
-Show containers with any restarts
-kubectl get pods --all-namespaces --sort-by='.status.containerStatuses[0].restartCount'`
-Show containers with more than 3 restarts
-kubectl get pods --all-namespaces --field-selector=status.containerStatuses.restartCount>3`
-Show all pods not in a "Running" state
-kubectl get pods --all-namespaces --field-selector=status.phase!=Running`
-Display CPU & memory usage of all running pods in a namespace
-kubectl top pod -n <namespace>`
+``` powershell
+# Show a list of pods only in a single namespace
+kubectl get pods -n kube-system
+kubectl get pods -n densify
 
+# Create a pod without a manifest
+kubectl run <podname> --image=nginx
+
+# Create a manifest for a pod
+kubectl run <podname> --image=nginx --port=80 -dry-run=client -o yaml > manifest.yml
+
+# Get info about a pod including events
+kubectl describe pods <podname>
+
+# Replace a running pod
+kubectl replace --force -f <filename.yml>
+
+# Delete a pod
+kubectl delete -f nginx.yml
+kubectl delete pods <podname1> <podname2>
+
+# Get the QoS class for a pod
+kubectl --namespace=qos-example get pod qos-demo-4 -o jsonpath='{ .status.qosClass}{"\n"}'
+
+# Show containers with any restarts
+kubectl get pods --all-namespaces --sort-by='.status.containerStatuses[0].restartCount'
+
+# Show containers with more than 3 restarts
+kubectl get pods --all-namespaces --field-selector=status.containerStatuses.restartCount>3
+
+# Show all pods not in a "Running" state
+kubectl get pods --all-namespaces --field-selector=status.phase!=Running
+
+# Display CPU & memory usage of all running pods in a namespace
+kubectl top pod -n <namespace>
+```
 
 ## Services
-Run a pod and also expose it as a service
-kubectl run pod-hello --image=pbitty/hello-from:latest --port=80 --expose=true`
-Edit a service
-kubectl edit svc <service-name>`
-Expose an existing deployment as a service
-kubectl expose deployment webserver --name=web-service --type=NodePort`
-kubectl expose deployment <deployment_name> --type=<service_type> --port=<port>`
-Forward a port to a service
-kubectl port-forward -n monitoring service/prometheus-kube-prometheus-prometheus 4090:9090`
-http://localhost:4090`
-kubectl port-forward -n monitoring service/prometheus-grafana 3030:80`
-Connect to a service
-kubectl service test-nginx-svc -n test-nginx`
+``` powershell
+# Run a pod and also expose it as a service
+kubectl run pod-hello --image=pbitty/hello-from:latest --port=80 --expose=true
+
+# Edit a service
+kubectl edit svc <service-name>
+
+# Expose an existing deployment as a service
+kubectl expose deployment webserver --name=web-service --type=NodePort
+kubectl expose deployment <deployment_name> --type=<service_type> --port=<port>
+
+# Forward a port to a service
+kubectl port-forward -n monitoring service/prometheus-kube-prometheus-prometheus 4090:9090
+http://localhost:4090
+kubectl port-forward -n monitoring service/prometheus-grafana 3030:80
+
+# Connect to a service
+kubectl service test-nginx-svc -n test-nginx
+```
+
 	
 ## Storage
-List the available storage classes, as well as the default
-kubectl get storageclass` 
-Patch a storageclass to be default
-	 `kubectl patch storageclass <StorageClassName> -p @{ metadata = @{ annotations = @{ "storageclass.kubernetes.io/is-default-class" = "true" } } } --type=merge`
+``` powershell
+# List the available storage classes, as well as the default
+kubectl get storageclass
 
+# Patch a storageclass to be default
+kubectl patch storageclass <StorageClassName> -p @{ metadata = @{ annotations = @{ "storageclass.kubernetes.io/is-default-class" = "true" } } } --type=merge
+```
 
 ## Troubleshooting
-Launch a temporary debugging pod that auto-deletes when you exit.
-kubectl run debug-pod --rm -it --image=busybox -- /bin/sh`
-Run a command on a pod or service
-kubectl exec -it <podname> -- <command>`
-kubectl exec -it svc/servicename -- <command>`
-Open a shell on a container
-kubectl exec -it <podname> -c <containername> -- /bin/sh`
-Test external connectivity
-kubectl run test-pod --rm -it --image=busybox -- /bin/sh`
-ping partner1.densify.com`
-See events for a pod or object
-	 `kubectl describe <object-type> <object-name>`
-	 `kubectl descript po nginx -n webserver`
+ ``` powershell
+# Launch a temporary debugging pod that auto-deletes when you exit.
+kubectl run debug-pod --rm -it --image=busybox -- /bin/sh
+
+# Run a command on a pod or service
+kubectl exec -it <podname> -- <command>
+kubectl exec -it svc/servicename -- <command>
+
+# Open a shell on a container
+kubectl exec -it <podname> -c <containername> -- /bin/sh
+
+# Test external connectivity
+kubectl run test-pod --rm -it --image=busybox -- /bin/sh
+ping partner1.densify.com
+
+# See events for a pod or object
+kubectl describe <object-type> <object-name>
+kubectl descript po nginx -n webserver
+
+# Create a stand-alone pod for troubleshooting
+kubectl run netshoot `
+  --image=nicolaka/netshoot:latest `
+  --restart=Never `
+  --rm `
+  -it `
+  -- bash
+```
