@@ -74,6 +74,3 @@ sudo parted /dev/sdb --script mklabel msdos mkpart primary ext4 0% 100%
 sudo mkfs.ext4 /dev/sdb1
 ```
 
----
-
-Let me know if you need steps for labeling, auto-mounting, or making it bootable.

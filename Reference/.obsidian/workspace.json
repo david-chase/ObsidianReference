@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/kubectl Sample Command Lines.md",
+                "file": "Linux/Timeshift backup copy to USB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubectl Sample Command Lines"
+              "title": "Timeshift backup copy to USB"
             }
           }
         ]
@@ -168,8 +168,10 @@
   },
   "active": "02ba0bfb9d053f60",
   "lastOpenFiles": [
-    "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
+    "Linux/Format and use USB stick.md",
+    "Linux/Timeshift backup copy to USB.md",
     "K8s/General/kubectl Sample Command Lines.md",
+    "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
     "K8s/General/crictl Sample Command Lines.md",
     "What is/MetalLB.md",
     "K8s/Deployment/Argo/Install Argo CD.md",
@@ -194,8 +196,6 @@
     "What is/Zabbix.md",
     "What is/WebAssembly (Wasm).md",
     "What is/Wavefront.md",
-    "What is/VirtualBox.md",
-    "What is/TypeScript.md",
     "Media/Screenshots/Pasted image 20250519111251.png",
     "Media/Screenshots/Pasted image 20250519110824.png",
     "Media/Screenshots/Pasted image 20250519111122.png",
