@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Headlamp.md",
+                "file": "What is/Zig.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Headlamp"
+              "title": "Zig"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"What is/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -168,8 +168,9 @@
   },
   "active": "02ba0bfb9d053f60",
   "lastOpenFiles": [
-    "K8s/General/Install krew on Windows.md",
+    "What is/Spring boot.md",
     "What is/Headlamp.md",
+    "K8s/General/Install krew on Windows.md",
     "K8s/Security/Kubescape Sample Command Lines.md",
     "What is/Kubescape.md",
     "What is/Cloud-Native Application Protection Platform (CNAPP).md",
@@ -195,7 +196,6 @@
     "What is/vCluster.md",
     "What is/nginx.md",
     "What is/kind.md",
-    "What is/eBPF.md",
     "Media/Screenshots/Pasted image 20250519111251.png",
     "Media/Screenshots/Pasted image 20250519110824.png",
     "Media/Screenshots/Pasted image 20250519111122.png",
