@@ -32,4 +32,9 @@ data:
         jqPathExpressions:
           - .spec.template.spec.containers[].resources.requests
           - .spec.template.spec.containers[].resources.limits
+    argoproj.io/Rollout:
+	  ignoreDifferences: |
+        jqPathExpressions:
+          - .spec.template.spec.containers[].resources.requests
+          - .spec.template.spec.containers[].resources.limits
 ```
