@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0e20bbdd3a294211",
+        "id": "dd705bfd0fb044bf",
         "type": "tabs",
         "children": [
           {
-            "id": "edd06bc2f64feef9",
+            "id": "a8110274095b2d9e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "What is/Kaito.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Kaito"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"What is/\" ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,36 +166,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "edd06bc2f64feef9",
+  "active": "a8110274095b2d9e",
   "lastOpenFiles": [
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
+    "K8s/Deployment/Argo/Argo Workflows/Installing Argo Workflows.md",
+    "K8s/Deployment/Argo/Argo Workflows/Argo Workflows sample command lines.md",
+    "K8s/Deployment/Argo/Argo Rollouts/Installing Argo Rollouts.md",
+    "K8s/Deployment/Argo/Argo Rollouts/Argo Rollouts Dashboard.md",
+    "K8s/Deployment/Argo/Argo CD/Install Argo CD.md",
     "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "K8s/Deployment/Argo/Argo CD/Argo CD sample command lines.md",
     "K8s/Deployment/Argo/Argo CD/Argo CD ignore changes in requests or limits.md",
+    "K8s/Deployment/Argo/Argo CD/Argo CD password.md",
+    "K8s/Deployment/Argo/Argo CD/Argo CD cilium causes Out-Of-Sync.md",
     "K8s/Deployment/Argo/Argo CD",
-    "Linux/Timeshift backup copy to USB.md",
     "K8s/Storage/Storage provisioning dynamic versus static.md",
-    "What is/Zig.md",
     "What is/Kaito.md",
+    "K8s/Deployment/Argo/Install Argo CD.md",
     "What is/Spring boot.md",
-    "What is/Headlamp.md",
-    "K8s/General/Install krew on Windows.md",
-    "K8s/Security/Kubescape Sample Command Lines.md",
     "What is/Kubescape.md",
-    "What is/Cloud-Native Application Protection Platform (CNAPP).md",
+    "What is/Headlamp.md",
     "What is/Deepfence Threatmapper.md",
-    "Linux/Format and use USB stick.md",
-    "K8s/General/kubectl Sample Command Lines.md",
-    "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
+    "What is/Cloud-Native Application Protection Platform (CNAPP).md",
+    "K8s/Security/Kubescape Sample Command Lines.md",
+    "K8s/General/Install krew on Windows.md",
     "K8s/General/crictl Sample Command Lines.md",
-    "What is/MetalLB.md",
-    "K8s/Deployment/Argo/Argo CD/Install Argo CD.md",
-    "Untitled.md",
+    "K8s/Deployment/Delete Argo CD application stuck waiting on finalizer.md",
     "K8s/Enabling DCGM exporter.md",
-    "K8s/GPU node labels.md",
-    "Linux/Install NFS Server on Ubuntu.md",
+    "K8s/General/Crictl CLI commands.md",
+    "Untitled.md",
+    "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
     "Media/Screenshots/Pasted image 20250522092839.png",
-    "What is/Kubetail.md",
     "Media/Screenshots/Pasted image 20250521181611.png",
     "Media/Screenshots/Pasted image 20250519111251.png",
     "Media/Screenshots/Pasted image 20250519110824.png",
