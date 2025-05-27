@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7ff336b26c896afb",
+        "id": "0e20bbdd3a294211",
         "type": "tabs",
         "children": [
           {
-            "id": "02ba0bfb9d053f60",
+            "id": "edd06bc2f64feef9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "K8s/Deployment/Argo/Argo CD ignore changes in requests or limits.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Argo CD ignore changes in requests or limits"
+              "title": "New tab"
             }
           }
         ]
@@ -166,10 +162,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "02ba0bfb9d053f60",
+  "active": "edd06bc2f64feef9",
   "lastOpenFiles": [
+    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
+    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
+    "K8s/Deployment/Argo/Argo CD/Argo CD sample command lines.md",
+    "K8s/Deployment/Argo/Argo CD/Argo CD ignore changes in requests or limits.md",
+    "K8s/Deployment/Argo/Argo CD",
     "Linux/Timeshift backup copy to USB.md",
-    "K8s/Deployment/Argo/Argo CD ignore changes in requests or limits.md",
     "K8s/Storage/Storage provisioning dynamic versus static.md",
     "What is/Zig.md",
     "What is/Kaito.md",
@@ -185,17 +185,14 @@
     "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
     "K8s/General/crictl Sample Command Lines.md",
     "What is/MetalLB.md",
-    "K8s/Deployment/Argo/Install Argo CD.md",
+    "K8s/Deployment/Argo/Argo CD/Install Argo CD.md",
     "Untitled.md",
-    "K8s/Deployment/Delete Argo CD application stuck waiting on finalizer.md",
     "K8s/Enabling DCGM exporter.md",
     "K8s/GPU node labels.md",
     "Linux/Install NFS Server on Ubuntu.md",
     "Media/Screenshots/Pasted image 20250522092839.png",
     "What is/Kubetail.md",
     "Media/Screenshots/Pasted image 20250521181611.png",
-    "K8s/General/Set MaxPodsPerNode on bare metal.md",
-    "What is/K0s.md",
     "Media/Screenshots/Pasted image 20250519111251.png",
     "Media/Screenshots/Pasted image 20250519110824.png",
     "Media/Screenshots/Pasted image 20250519111122.png",
@@ -212,7 +209,6 @@
     "K8s/Deployment/Argo/Argo Events",
     "K8s/Deployment/Helm",
     "K8s/Deployment/Argo",
-    "K8s/Deployment",
-    "What is"
+    "K8s/Deployment"
   ]
 }
