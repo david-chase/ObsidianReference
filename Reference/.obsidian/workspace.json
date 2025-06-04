@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Falco.md",
+                "file": "K8s/Enabling DCGM exporter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Falco"
+              "title": "Enabling DCGM exporter"
             }
           }
         ]
@@ -168,11 +168,9 @@
   },
   "active": "4626119ba0da0f68",
   "lastOpenFiles": [
+    "What is/Kubevirt.md",
     "What is/Umbrella chart.md",
     "What is/K9s.md",
-    "What is/Cloud-Native Application Protection Platform (CNAPP).md",
-    "What is/Falco.md",
-    "What is/Kubevirt.md",
     "What is/Kubespray.md",
     "K8s/GPU node labels.md",
     "What is/Spring boot.md",
@@ -180,6 +178,7 @@
     "What is/Kaito.md",
     "What is/Headlamp.md",
     "What is/Deepfence Threatmapper.md",
+    "What is/Cloud-Native Application Protection Platform (CNAPP).md",
     "K8s/Storage/Storage provisioning dynamic versus static.md",
     "K8s/Security/Kubescape Sample Command Lines.md",
     "K8s/General/crictl Sample Command Lines.md",
@@ -195,6 +194,7 @@
     "K8s/Deployment/Argo/Argo CD/Argo CD ignore changes in requests or limits.md",
     "K8s/Deployment/Argo/Argo CD/Argo CD password.md",
     "K8s/Deployment/Argo/Argo CD",
+    "K8s/General/Viewing Kubernetes Master and Worker Logs.md",
     "Media/Screenshots/Pasted image 20250522092839.png",
     "Media/Screenshots/Pasted image 20250521181611.png",
     "Media/Screenshots/Pasted image 20250519105346.png",
