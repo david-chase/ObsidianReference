@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Routine maintenance.md",
+                "file": "What is/RKE2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Routine maintenance"
+              "title": "RKE2"
             }
           }
         ]
@@ -168,8 +168,11 @@
   },
   "active": "4626119ba0da0f68",
   "lastOpenFiles": [
-    "K8s/Enabling DCGM exporter.md",
+    "What is/Rancher.md",
+    "What is/RKE2.md",
+    "What is/RunPod.md",
     "Linux/Routine maintenance.md",
+    "K8s/Enabling DCGM exporter.md",
     "What is/Kubevirt.md",
     "What is/Umbrella chart.md",
     "What is/K9s.md",
@@ -191,9 +194,6 @@
     "K8s/Deployment/Argo/Argo Rollouts/Argo Rollouts Dashboard.md",
     "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "K8s/Deployment/Argo/Argo CD/Install Argo CD.md",
-    "K8s/Deployment/Argo/Argo CD/Argo CD sample command lines.md",
-    "K8s/Deployment/Argo/Argo CD/Argo CD cilium causes Out-Of-Sync.md",
-    "K8s/Deployment/Argo/Argo CD/Argo CD ignore changes in requests or limits.md",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
     "Media/Screenshots/Pasted image 20250521181611.png",
