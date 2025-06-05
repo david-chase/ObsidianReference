@@ -31,7 +31,7 @@ Default location for rsync mode:
 Verify with:
 
 ```bash
-sudo timeshift --list
+ls /timeshift/snapshots
 ```
 
 ---
