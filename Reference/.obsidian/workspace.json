@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Security/Rotating ECR Credentials secrets using Lambda 1.md",
+                "file": "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rotating ECR Credentials secrets using Lambda 1"
+              "title": "Rotate ECR Credentials secrets using Lambda"
             }
           }
         ]
@@ -169,7 +169,7 @@
   "active": "d8030ee9707a33e0",
   "lastOpenFiles": [
     "K8s/Security/Rotating ECR Credentials secrets using Lambda.md",
-    "K8s/Security/Rotating ECR Credentials secrets using Lambda 1.md",
+    "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
     "K8s/Security/Force ESO to pull secret.md",
     "K8s/Security/ESO and AWS credentials.md",
     "What is/Jupyter notebook.md",
