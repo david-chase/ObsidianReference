@@ -168,6 +168,12 @@
   },
   "active": "d8030ee9707a33e0",
   "lastOpenFiles": [
+    "K8s/GPU/Gpu sharing strategies.md",
+    "K8s/GPU/Enabling DCGM exporter.md",
+    "K8s/GPU/GPU node labels.md",
+    "K8s/GPU",
+    "K8s/New folder",
+    "K8s/General/Gpu sharing strategies.md",
     "K8s/Security/Rotating ECR Credentials secrets using Lambda.md",
     "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
     "K8s/Security/Force ESO to pull secret.md",
@@ -190,10 +196,6 @@
     "What is/Kubespray.md",
     "K8s/GPU node labels.md",
     "What is/Spring boot.md",
-    "What is/Kubescape.md",
-    "What is/Kaito.md",
-    "What is/Headlamp.md",
-    "What is/Deepfence Threatmapper.md",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
     "Media/Screenshots/Pasted image 20250521181611.png",
@@ -211,8 +213,6 @@
     "K8s/Deployment/Helm",
     "K8s/Deployment/Argo/Argo Events",
     "K8s/Deployment/Argo/Argo Rollouts",
-    "K8s/Deployment/Argo/Argo Workflows",
-    "K8s/Deployment/Argo",
-    "K8s/Deployment"
+    "K8s/Deployment/Argo/Argo Workflows"
   ]
 }
