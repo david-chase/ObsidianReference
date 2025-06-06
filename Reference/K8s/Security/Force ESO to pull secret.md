@@ -1,4 +1,4 @@
-#eso #k8s #security 
+#eso #k8s #security #secrets
 
 ``` powershell
 kubectl annotate externalsecret <secretname> `
