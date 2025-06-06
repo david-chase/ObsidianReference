@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Coroot.md",
+                "file": "What is/Jupyter notebook.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Coroot"
+              "title": "Jupyter notebook"
             }
           }
         ]
@@ -169,6 +169,7 @@
   "active": "d8030ee9707a33e0",
   "lastOpenFiles": [
     "What is/Coroot.md",
+    "What is/Jupyter notebook.md",
     "Linux/Timeshift backup copy to USB.md",
     "K8s/General/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
     "Dev General/VS Code Project Manager.md",
@@ -193,7 +194,6 @@
     "K8s/Storage/Storage provisioning dynamic versus static.md",
     "K8s/Security/Kubescape Sample Command Lines.md",
     "K8s/General/crictl Sample Command Lines.md",
-    "K8s/General/Install krew on Windows.md",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
     "Media/Screenshots/Pasted image 20250521181611.png",
