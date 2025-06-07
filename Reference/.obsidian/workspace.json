@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Ansible.md",
+                "file": "What is/KAgent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ansible"
+              "title": "KAgent"
             }
           }
         ]
@@ -169,6 +169,7 @@
   "active": "04da2ee5971cd9c7",
   "lastOpenFiles": [
     "What is/Ansible.md",
+    "What is/KAgent.md",
     "Other/choco Sample Command Lines.md",
     "K8s/Storage/Where the local-path provisioner stores its files.md",
     "K8s/Storage/NFS storage provisioner.md",
@@ -195,7 +196,6 @@
     "What is/Rancher.md",
     "What is/RunPod.md",
     "K8s/Enabling DCGM exporter.md",
-    "What is/Kubevirt.md",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
     "Media/Screenshots/Pasted image 20250521181611.png",
