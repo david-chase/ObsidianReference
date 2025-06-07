@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
+                "file": "K8s/Storage/Where the local-path provisioner stores its files.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rotate ECR Credentials secrets using Lambda"
+              "title": "Where the local-path provisioner stores its files"
             }
           }
         ]
@@ -168,6 +168,10 @@
   },
   "active": "d8030ee9707a33e0",
   "lastOpenFiles": [
+    "K8s/Storage/NFS storage provisioner.md",
+    "K8s/Storage/Deploy Rancher local-path storage provisioner.md",
+    "K8s/Storage/Where the local-path provisioner stores its files.md",
+    "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
     "K8s/GPU/Gpu sharing strategies.md",
     "K8s/GPU/Enabling DCGM exporter.md",
     "K8s/GPU/GPU node labels.md",
@@ -175,7 +179,6 @@
     "K8s/New folder",
     "K8s/General/Gpu sharing strategies.md",
     "K8s/Security/Rotating ECR Credentials secrets using Lambda.md",
-    "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
     "K8s/Security/Force ESO to pull secret.md",
     "K8s/Security/ESO and AWS credentials.md",
     "What is/Jupyter notebook.md",
@@ -193,9 +196,6 @@
     "What is/Kubevirt.md",
     "What is/Umbrella chart.md",
     "What is/K9s.md",
-    "What is/Kubespray.md",
-    "K8s/GPU node labels.md",
-    "What is/Spring boot.md",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
     "Media/Screenshots/Pasted image 20250521181611.png",
