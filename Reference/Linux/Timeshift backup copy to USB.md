@@ -31,7 +31,7 @@ Default location for rsync mode:
 Verify with:
 
 ```bash
-sudo timeshift --list
+ls /timeshift/snapshots
 ```
 
 ---
@@ -40,8 +40,8 @@ sudo timeshift --list
 
 <span style="color:rgb(255, 0, 0)">Make sure the USB is formatted with ext4</span>.  Preserve metadata and hard links:
 
-```bash
-sudo rsync -aAXv /timeshift/snapshots/ /mnt/usb/timeshift-backup/
+``` powershell
+sudo rsync -aAXv --delete /timeshift/snapshots/<latest-snapshot-description>/ /mnt/usb/timeshift-backup/
 ```
 
 > Make sure to include the trailing slashes.
