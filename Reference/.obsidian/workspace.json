@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -167,7 +166,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4626119ba0da0f68",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
     "What is/Falco.md",
     "What is/RunPod.md",
