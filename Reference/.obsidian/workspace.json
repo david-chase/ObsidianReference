@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d049ebd158f84004",
+        "id": "f02ef6c578da4699",
         "type": "tabs",
         "children": [
           {
-            "id": "3fd6551aa6aec5da",
+            "id": "95dbf3f685b853ab",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "What is/Project HAMi.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Project HAMi"
             }
           }
         ]
@@ -158,11 +162,19 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "3fd6551aa6aec5da",
+  "active": "95dbf3f685b853ab",
   "lastOpenFiles": [
+    "What is/kube-ovn.md",
+    "What is/Project HAMi.md",
+    "What is/Calico.md",
+    "Untitled.md",
+    "Linux/Cockpit.md",
+    "K8s/General/JVM workloads in Kubernetes.md",
+    "K8s/Deployment/Helm/Passing custom values files.md",
     "What is/Kubevirt.md",
     "What is/RunPod.md",
     "What is/RKE2.md",
@@ -183,13 +195,6 @@
     "What is/Umbrella chart.md",
     "What is/K9s.md",
     "What is/Kubespray.md",
-    "K8s/GPU node labels.md",
-    "What is/Spring boot.md",
-    "What is/Kubescape.md",
-    "What is/Kaito.md",
-    "What is/Headlamp.md",
-    "What is/Deepfence Threatmapper.md",
-    "What is/Cloud-Native Application Protection Platform (CNAPP).md",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
     "Media/Screenshots/Pasted image 20250521181611.png",
