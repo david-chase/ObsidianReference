@@ -29,24 +29,16 @@ Traditionally, Kubernetes runs **containerized workloads**. KubeVirt adds the ab
 ## ⚙️ How It Works
 
 - Built on **KVM/QEMU** under the hood (Linux virtualization)
-    
 - You install KubeVirt via an operator or Helm chart
-    
 - VMs are launched as **pods** running a QEMU process
-    
 - Management is fully declarative — VM lifecycle handled via `kubectl` or controllers
-    
 
 ---
 
 ## 🔗 Use Cases
 
 - 🧳 **Lift-and-shift of legacy VMs**
-    
 - 🧪 **Hybrid workloads (container + VM)**
-    
 - 🧬 **Running OSes that can't be containerized (e.g., Windows Server)**
-    
 - 🛠️ **Dev/test environments for full OS testing**
-    
 - ☁️ **Edge or private cloud virtualization on Kubernetes**
