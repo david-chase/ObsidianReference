@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f39fef34c6121e52",
+        "id": "f02ef6c578da4699",
         "type": "tabs",
         "children": [
           {
-            "id": "67f5152e3571dd35",
+            "id": "95dbf3f685b853ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/RunPod.io.md",
+                "file": "What is/DRA (Dynamic Resource Allocation).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RunPod.io"
+              "title": "DRA (Dynamic Resource Allocation)"
             }
           }
         ]
@@ -157,45 +157,44 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "github-sync:Sync with Remote": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "67f5152e3571dd35",
+  "active": "95dbf3f685b853ab",
   "lastOpenFiles": [
-    "K8s/Deployment/Helm/Passing custom values files.md",
+    "What is/RunPod.io.md",
+    "What is/Project HAMi.md",
     "What is/DRA (Dynamic Resource Allocation).md",
-    "Untitled.md",
     "What is/nos.md",
     "What is/Nebuly.md",
     "K8s/GPU/Things that can contribute to poor GPU utilization.md",
     "K8s/GPU/Enabling MIG support.md",
     "What is/kube-ovn.md",
-    "What is/Project HAMi.md",
+    "What is/Calico.md",
+    "Untitled.md",
     "Linux/Cockpit.md",
     "K8s/General/JVM workloads in Kubernetes.md",
-    "What is/Kotlin.md",
-    "What is/Untitled.md",
+    "K8s/Deployment/Helm/Passing custom values files.md",
+    "What is/Kubevirt.md",
+    "What is/RunPod.md",
+    "What is/RKE2.md",
     "What is/KAgent.md",
+    "What is/Jupyter notebook.md",
+    "What is/Coroot.md",
     "What is/Ansible.md",
-    "Other/choco Sample Command Lines.md",
+    "Linux/Routine maintenance.md",
     "K8s/Storage/Where the local-path provisioner stores its files.md",
-    "K8s/Storage/NFS storage provisioner.md",
-    "K8s/Storage/Deploy Rancher local-path storage provisioner.md",
     "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
-    "K8s/GPU/Gpu sharing strategies.md",
-    "K8s/GPU/Enabling DCGM exporter.md",
+    "K8s/Security/Force ESO to pull secret.md",
+    "K8s/General/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
     "K8s/GPU/GPU node labels.md",
     "K8s/GPU",
-    "K8s/New folder",
-    "K8s/General/Gpu sharing strategies.md",
-    "K8s/Security/Rotating ECR Credentials secrets using Lambda.md",
-    "K8s/Security/Force ESO to pull secret.md",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
     "Media/Screenshots/Pasted image 20250521181611.png",
@@ -213,6 +212,7 @@
     "K8s/Deployment/Helm",
     "K8s/Deployment/Argo/Argo Events",
     "K8s/Deployment/Argo/Argo Rollouts",
-    "K8s/Deployment/Argo/Argo Workflows"
+    "K8s/Deployment/Argo/Argo Workflows",
+    "K8s/Deployment/Argo"
   ]
 }
