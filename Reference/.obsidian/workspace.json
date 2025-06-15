@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Statefulset vs Deployment comparison"
             }
+          },
+          {
+            "id": "1ab5c906a32c81f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,10 +181,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "95dbf3f685b853ab",
+  "active": "1ab5c906a32c81f7",
   "lastOpenFiles": [
-    "What is/DRA (Dynamic Resource Allocation).md",
+    "Untitled.md",
     "K8s/General/Statefulset vs Deployment comparison.md",
+    "What is/DRA (Dynamic Resource Allocation).md",
     "What is/RunPod.io.md",
     "What is/Project HAMi.md",
     "What is/nos.md",
@@ -178,7 +194,6 @@
     "K8s/GPU/Enabling MIG support.md",
     "What is/kube-ovn.md",
     "What is/Calico.md",
-    "Untitled.md",
     "Linux/Cockpit.md",
     "K8s/General/JVM workloads in Kubernetes.md",
     "K8s/Deployment/Helm/Passing custom values files.md",
