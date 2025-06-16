@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "f02ef6c578da4699",
+        "id": "9b6d8e1882f8e5f5",
         "type": "tabs",
         "children": [
           {
-            "id": "95dbf3f685b853ab",
+            "id": "4626119ba0da0f68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/Statefulset vs Deployment comparison.md",
+                "file": "Dev General/Git/Creating or Updating a Git Repo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Statefulset vs Deployment comparison"
+              "title": "Creating or Updating a Git Repo"
             }
           },
           {
-            "id": "1ab5c906a32c81f7",
+            "id": "908457bc9e863f41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "What is/Nebuly.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Nebuly"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "limitrange",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,32 +172,31 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "github-sync:Sync with Remote": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "github-sync:Sync with Remote": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "1ab5c906a32c81f7",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
     "Untitled.md",
     "K8s/General/Statefulset vs Deployment comparison.md",
-    "What is/DRA (Dynamic Resource Allocation).md",
     "What is/RunPod.io.md",
-    "What is/Project HAMi.md",
+    "What is/DRA (Dynamic Resource Allocation).md",
     "What is/nos.md",
     "What is/Nebuly.md",
     "K8s/GPU/Things that can contribute to poor GPU utilization.md",
     "K8s/GPU/Enabling MIG support.md",
+    "Dev General/Git/Creating or Updating a Git Repo.md",
     "What is/kube-ovn.md",
-    "What is/Calico.md",
-    "Linux/Cockpit.md",
-    "K8s/General/JVM workloads in Kubernetes.md",
+    "What is/Project HAMi.md",
     "K8s/Deployment/Helm/Passing custom values files.md",
-    "What is/Kubevirt.md",
+    "K8s/GKE/Deploy Prometheus on GKE Autopilot.md",
+    "What is/Falco.md",
     "What is/RunPod.md",
     "What is/RKE2.md",
     "What is/KAgent.md",
@@ -205,6 +204,7 @@
     "What is/Coroot.md",
     "What is/Ansible.md",
     "Linux/Routine maintenance.md",
+    "Linux/Cockpit.md",
     "K8s/Storage/Where the local-path provisioner stores its files.md",
     "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
     "K8s/Security/Force ESO to pull secret.md",
