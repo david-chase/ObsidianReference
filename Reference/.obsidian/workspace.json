@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/Statefulset vs Deployment comparison.md",
+                "file": "K8s/Autoscaling/Node group downscale blockers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Statefulset vs Deployment comparison"
+              "title": "Node group downscale blockers"
             }
           }
         ]
@@ -168,9 +168,10 @@
   },
   "active": "95dbf3f685b853ab",
   "lastOpenFiles": [
+    "K8s/General/Statefulset vs Deployment comparison.md",
+    "K8s/Autoscaling/Node group downscale blockers.md",
     "Untitled.md",
     "K8s/General/CRDs and controllers.md",
-    "K8s/General/Statefulset vs Deployment comparison.md",
     "What is/DRA (Dynamic Resource Allocation).md",
     "What is/RunPod.io.md",
     "What is/Project HAMi.md",
@@ -193,7 +194,6 @@
     "Linux/Routine maintenance.md",
     "K8s/Storage/Where the local-path provisioner stores its files.md",
     "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
-    "K8s/Security/Force ESO to pull secret.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
