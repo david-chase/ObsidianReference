@@ -10,6 +10,7 @@
           {
             "id": "95dbf3f685b853ab",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -17,11 +18,43 @@
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
               "title": "NVIDIA KAI scheduler"
             }
+          },
+          {
+            "id": "71ef29ddb30b1505",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8s/GPU/Things that can contribute to poor GPU utilization.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Things that can contribute to poor GPU utilization"
+            }
+          },
+          {
+            "id": "2b50ee1b2f2a4abc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is/Exostellar SDG.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exostellar SDG"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -166,10 +199,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "95dbf3f685b853ab",
+  "active": "2b50ee1b2f2a4abc",
   "lastOpenFiles": [
-    "What is/Directiv.md",
     "What is/NVIDIA KAI scheduler.md",
+    "What is/Exostellar SDG.md",
+    "K8s/GPU/Things that can contribute to poor GPU utilization.md",
+    "What is/Directiv.md",
     "What is/Plandex AI.md",
     "What is/A2A.md",
     "K8s/General/Statefulset vs Deployment comparison.md",
@@ -181,7 +216,6 @@
     "What is/Project HAMi.md",
     "What is/nos.md",
     "What is/Nebuly.md",
-    "K8s/GPU/Things that can contribute to poor GPU utilization.md",
     "K8s/GPU/Enabling MIG support.md",
     "What is/kube-ovn.md",
     "What is/Calico.md",
@@ -193,7 +227,6 @@
     "What is/RKE2.md",
     "What is/KAgent.md",
     "What is/Jupyter notebook.md",
-    "What is/Coroot.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
