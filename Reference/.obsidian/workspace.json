@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Autoscaling/Node group downscale blockers.md",
+                "file": "What is/NVIDIA KAI scheduler.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Node group downscale blockers"
+              "title": "NVIDIA KAI scheduler"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"What is/\" KAI",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -168,6 +168,10 @@
   },
   "active": "95dbf3f685b853ab",
   "lastOpenFiles": [
+    "What is/Directiv.md",
+    "What is/NVIDIA KAI scheduler.md",
+    "What is/Plandex AI.md",
+    "What is/A2A.md",
     "K8s/General/Statefulset vs Deployment comparison.md",
     "K8s/Autoscaling/Node group downscale blockers.md",
     "Untitled.md",
@@ -190,10 +194,6 @@
     "What is/KAgent.md",
     "What is/Jupyter notebook.md",
     "What is/Coroot.md",
-    "What is/Ansible.md",
-    "Linux/Routine maintenance.md",
-    "K8s/Storage/Where the local-path provisioner stores its files.md",
-    "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
