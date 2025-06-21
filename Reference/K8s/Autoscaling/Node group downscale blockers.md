@@ -5,8 +5,9 @@
 ### 1. **Non-evictable pods (e.g., DaemonSets or pods with `local storage`)**
 - **DaemonSets**: Run on every node and are not evicted during scale-down.
 - **Pods with local storage** (e.g., `emptyDir`, `hostPath`): Eviction may cause data loss, so autoscalers avoid disrupting them.
-- **Pods with `podDisruptionBudget` violations**: If a scale-down would violate a PDB, it's blocked.
+- **Pods with `podDisruptionBudget` violations**: If a scale-down would violate a PDB, it's blocked.  This will always block if a PDB is set to 0.
 - **Pods not managed by a controller** (like bare `kubectl run` pods): They’re not safe to reschedule, so the node stays.
+- `safe-to-evict` label is set to `false`
 
 ### 2. **Pods with node affinity or anti-affinity rules**
 - If a pod can **only run** on specific node types (e.g., `requiredDuringSchedulingIgnoredDuringExecution`), the autoscaler won’t remove a node if it’s the only place such pods can live.
@@ -18,6 +19,7 @@
 ### 4. **Pods in `Terminating` or `Unknown` state**
 - Karpenter and Cluster Autoscaler will wait until terminating pods finish.
 - Nodes hosting `Unknown` pods may be considered tainted and not downsized.
+
 
 ---
 
