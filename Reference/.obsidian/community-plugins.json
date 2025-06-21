@@ -1,5 +1,6 @@
 [
   "github-sync",
   "colored-text",
-  "copy-image"
+  "copy-image",
+  "remove-newlines"
 ]
