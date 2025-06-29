@@ -21,7 +21,7 @@ helm show values bitnami/wordpress
 helm search repo <chartname> --versions
 
 # Search a repo for its contents
-helm search repo <renoname>/
+helm search repo <reponame>/
 
 # Show info about a chart, including required Kubernetes version
 helm show chart <repo>/<chartname>

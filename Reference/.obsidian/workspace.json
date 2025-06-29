@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
+                "file": "K8s/Deployment/Helm/helm Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Delete an app with stuck finalizer"
+              "title": "helm Sample Command Lines"
             }
           }
         ],
@@ -183,12 +183,14 @@
   },
   "active": "2fa2d292240d0f30",
   "lastOpenFiles": [
+    "K8s/Deployment/Risks of simply deleting a namespace.md",
+    "K8s/Deployment/Helm/helm Sample Command Lines.md",
+    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "Untitled.md",
     "K8s/Security/ESO and AWS credentials.md",
     "K8s/Deployment/Argo/Argo CD/Install Argo CD.md",
     "K8s/General/kubectl Sample Command Lines.md",
     "K8s/Deployment/Argo/Argo CD/Argo CD repo structure.md",
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "K8s/GPU/Things that can contribute to poor GPU utilization.md",
     "What is/NVIDIA KAI scheduler.md",
     "K8s/Observability/Prometheus check what endpoints are being scraped.md",
@@ -207,8 +209,6 @@
     "What is/Project HAMi.md",
     "What is/nos.md",
     "What is/Nebuly.md",
-    "K8s/GPU/Enabling MIG support.md",
-    "What is/kube-ovn.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
