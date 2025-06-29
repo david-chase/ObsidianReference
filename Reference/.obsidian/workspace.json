@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/kubectl Sample Command Lines.md",
+                "file": "K8s/Security/ESO and AWS credentials.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubectl Sample Command Lines"
+              "title": "ESO and AWS credentials"
             }
           }
         ]
@@ -168,6 +168,8 @@
   },
   "active": "4153141315a691ab",
   "lastOpenFiles": [
+    "K8s/Deployment/Argo/Argo CD/Install Argo CD.md",
+    "K8s/General/kubectl Sample Command Lines.md",
     "K8s/Deployment/Argo/Argo CD/Argo CD repo structure.md",
     "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "K8s/GPU/Things that can contribute to poor GPU utilization.md",
@@ -192,8 +194,6 @@
     "What is/Nebuly.md",
     "K8s/GPU/Enabling MIG support.md",
     "What is/kube-ovn.md",
-    "What is/Calico.md",
-    "Linux/Cockpit.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
