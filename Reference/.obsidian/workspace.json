@@ -183,8 +183,9 @@
   },
   "active": "2fa2d292240d0f30",
   "lastOpenFiles": [
-    "K8s/Deployment/Risks of simply deleting a namespace.md",
+    "Untitled 1.md",
     "K8s/Deployment/Helm/helm Sample Command Lines.md",
+    "K8s/Deployment/Risks of simply deleting a namespace.md",
     "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "Untitled.md",
     "K8s/Security/ESO and AWS credentials.md",
@@ -208,7 +209,6 @@
     "What is/RunPod.io.md",
     "What is/Project HAMi.md",
     "What is/nos.md",
-    "What is/Nebuly.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
