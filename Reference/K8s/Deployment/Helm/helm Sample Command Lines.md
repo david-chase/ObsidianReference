@@ -37,3 +37,13 @@ helm install --create-namespace -n densify -f values-edit.yaml kubex .\kubex-aut
 # Create an empty Helm chart
 helm create
 ```
+
+``` powershell
+# Commands for Argo CD apps
+
+# Get the repo url
+helm repo list
+
+# Get the chart name and version
+helm search repo <reponame>
+```
