@@ -11,10 +11,14 @@
             "id": "22938d3a916603e6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Untitled"
             }
           }
         ]
@@ -164,13 +168,16 @@
   },
   "active": "22938d3a916603e6",
   "lastOpenFiles": [
+    "Untitled.md",
+    "What is/KubeShare.md",
+    "K8s/GPU/NVIDIA GPU Operator.md",
+    "K8s/GPU/GPU market share by vendor.md",
     "What is/inference.md",
     "K8s/GPU/Useful commands in a GPU environment.md",
     "K8s/GPU/Training vs inference hardware requirements.md",
     "What is/Elasti.md",
     "Other/Transcribing text from MP4.md",
     "K8s/Deployment/Risks of simply deleting a namespace.md",
-    "Untitled.md",
     "K8s/Storage/Checking free space on Rancher local path provisioner.md",
     "K8s/Observability/Prometheus check what endpoints are being scraped.md",
     "K8s/Deployment/Argo/Argo CD/Argo CD repo structure.md",
@@ -187,9 +194,6 @@
     "What is/RunPod.io.md",
     "What is/Project HAMi.md",
     "What is/nos.md",
-    "What is/Nebuly.md",
-    "K8s/GPU/Things that can contribute to poor GPU utilization.md",
-    "K8s/GPU/Enabling MIG support.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",

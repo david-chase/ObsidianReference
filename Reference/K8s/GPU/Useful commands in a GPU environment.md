@@ -1,7 +1,7 @@
 #sample #mig #nvidia #gpu #k8s 
 
 ``` yaml
-  "nvidia.com/gpu.count": "7", # Based on the mig config, this is how many GPUs we have
+  "nvidia.com/gpu.count": "7", # Based on the mig config
   "nvidia.com/gpu.product": "NVIDIA-H100-80GB-HBM3",
   "nvidia.com/gpu.replicas": "1",
   "nvidia.com/gpu.sharing-strategy": "none",
