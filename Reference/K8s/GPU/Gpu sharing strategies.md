@@ -1,3 +1,4 @@
+#k8s #gpu #sharing #mig #mps
 
 Sure, Dave — here's a structured breakdown of the major GPU sharing strategies in Kubernetes clusters, including **how they work**, **main categories**, and **key vendor/tool support**.
 
