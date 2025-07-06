@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/DRA (Dynamic Resource Allocation).md",
+                "file": "K8s/GPU/MIG vs GPU time slicing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DRA (Dynamic Resource Allocation)"
+              "title": "MIG vs GPU time slicing"
             }
           }
         ]
@@ -168,23 +168,25 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "K8s/GPU/Kubernetes 1.33 and AI workloads.md",
+    "K8s/GPU/Comparison of GPU Time Slicing Approaches.md",
     "What is/Indexed jobs.md",
+    "K8s/GPU/Poor GPU utilization contributing factors.md",
+    "K8s/GPU/Kubernetes 1.33 and AI workloads.md",
     "K8s/GPU/How to spot GPU sharing.md",
     "K8s/GPU/GPU time slicing.md",
-    "K8s/GPU/GPU sharing strategies.md",
-    "K8s/GPU/Poor GPU utilization contributing factors.md",
-    "K8s/GPU/NVIDIA GPU Operator.md",
-    "K8s/GPU/MIG vs GPU time slicing.md",
     "Untitled.md",
     "Untitled 1.md",
+    "K8s/GPU/MIG vs GPU time slicing.md",
     "What is/MIG Manager.md",
+    "K8s/GPU/NVIDIA GPU Operator.md",
     "What is/NVIDIA CUDA.md",
     "K8s/GPU/GPU market share by vendor.md",
     "What is/KubeShare.md",
     "K8s/GPU/Useful commands in a GPU environment.md",
     "K8s/GPU/Training vs inference hardware requirements.md",
     "What is/inference.md",
+    "K8s/GPU/Things that can contribute to poor GPU utilization.md",
+    "K8s/GPU/GPU sharing strategies.md",
     "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "What is/Elasti.md",
     "K8s/Security/ESO and AWS credentials.md",
@@ -192,8 +194,6 @@
     "K8s/Deployment/Risks of simply deleting a namespace.md",
     "K8s/Deployment/Argo/Argo CD/Install Argo CD.md",
     "K8s/General/kubectl Sample Command Lines.md",
-    "K8s/Deployment/Argo/Argo CD/Argo CD repo structure.md",
-    "What is/NVIDIA KAI scheduler.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
