@@ -5,7 +5,6 @@
 DRA allows Kubernetes to **negotiate resource availability at scheduling time** and ensures that resources are **allocated just-in-time**, rather than requiring preallocation or static advertisement by node agents.
 
 ---
-
 ### 🔑 **Key Concepts**
 
 - **DRA Plugin**: A controller/service that implements the Kubernetes DRA gRPC API to manage a custom resource type (e.g., GPU memory blocks, hardware partitions).
@@ -14,22 +13,18 @@ DRA allows Kubernetes to **negotiate resource availability at scheduling time** 
 - **Allocation**: The actual step of selecting and provisioning a resource when the Pod is scheduled.
 
 ---
-
 ### ⚙️ **How DRA Works**
 
 1. **Scheduling Phase**:
     - The scheduler interacts with the DRA framework to **evaluate and reserve resources** via a plugin.
     - A `ResourceClaim` object is created, potentially pointing to a `ResourceClass` defining how to provision the resource.
-    
 2. **Resource Allocation**:
     - When a Pod is scheduled, the **DRA plugin allocates the resource** and returns a handle.
     - Kubelet uses this handle to **set up the resource** at runtime.
-
 3. **Deallocation**:
     - Once the Pod is deleted, DRA plugins are notified to **clean up the resource**.
 
 ---
-
 ### 📦 **DRA vs Device Plugins**
 
 |Feature|Device Plugin|DRA|
@@ -40,10 +35,10 @@ DRA allows Kubernetes to **negotiate resource availability at scheduling time** 
 |Resource coordination across nodes|🚫 No|✅ Yes (via central plugin controller)|
 
 ---
-
 ### 🧪 **Status and Maturity**
 
 - **Alpha Feature**: Introduced in Kubernetes v1.26.
+- Beta in Kubernetes v1.332
 - Requires feature gates:  
     `--feature-gates=DynamicResourceAllocation=true`
 - Still **experimental** and **subject to change**.
