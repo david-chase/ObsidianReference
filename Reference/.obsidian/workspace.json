@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Helm/helm Sample Command Lines.md",
+                "file": "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "helm Sample Command Lines"
+              "title": "Delete an app with stuck finalizer"
             }
           }
         ]
@@ -168,13 +168,14 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "K8s/Security/ESO and AWS credentials.md",
+    "K8s/Security/Force ESO to pull secret.md",
+    "K8s/Deployment/Helm/helm Sample Command Lines.md",
     "K8s/Security/Kubescape Sample Command Lines.md",
     "K8s/General/PDB risks.md",
     "Public Cloud/AWS/Switching RDS instance to Graviton.md",
     "Public Cloud/AWS/Switching EC2 instance to Graviton.md",
     "K8s/Security/Install Cert-Manager CLI.md",
-    "K8s/Security/Force ESO to pull secret.md",
-    "K8s/Security/ESO and AWS credentials.md",
     "K8s/GPU/Poor GPU utilization contributing factors.md",
     "K8s/GPU/MIG vs GPU time slicing.md",
     "K8s/GPU/Comparison of GPU Time Slicing Approaches.md",
@@ -193,7 +194,6 @@
     "K8s/GPU/Training vs inference hardware requirements.md",
     "What is/inference.md",
     "K8s/GPU/Things that can contribute to poor GPU utilization.md",
-    "K8s/GPU/GPU sharing strategies.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
