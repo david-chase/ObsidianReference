@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Security/Kubescape Sample Command Lines.md",
+                "file": "K8s/Deployment/Helm/helm Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kubescape Sample Command Lines"
+              "title": "helm Sample Command Lines"
             }
           }
         ]
@@ -168,6 +168,7 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "K8s/Security/Kubescape Sample Command Lines.md",
     "K8s/General/PDB risks.md",
     "Public Cloud/AWS/Switching RDS instance to Graviton.md",
     "Public Cloud/AWS/Switching EC2 instance to Graviton.md",
@@ -193,7 +194,6 @@
     "What is/inference.md",
     "K8s/GPU/Things that can contribute to poor GPU utilization.md",
     "K8s/GPU/GPU sharing strategies.md",
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
