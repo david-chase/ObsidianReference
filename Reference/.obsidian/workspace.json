@@ -166,10 +166,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "4d9b353e19949f49",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
-    "Linux/Routine maintenance.md",
+    "Untitled.md",
     "Linux/Timeshift backup for Linux.md",
+    "Linux/Routine maintenance.md",
     "What is/Komodor.md",
     "What is/kubriX.md",
     "K8s/Security/Kubescape Sample Command Lines.md",
@@ -186,7 +187,6 @@
     "K8s/GPU/Kubernetes 1.33 and AI workloads.md",
     "K8s/GPU/How to spot GPU sharing.md",
     "K8s/GPU/GPU time slicing.md",
-    "Untitled.md",
     "Untitled 1.md",
     "What is/MIG Manager.md",
     "K8s/GPU/NVIDIA GPU Operator.md",
