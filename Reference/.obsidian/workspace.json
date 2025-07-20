@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
+                "file": "What is/Validating Admission Policy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Delete an app with stuck finalizer"
+              "title": "Validating Admission Policy"
             }
           }
         ]
@@ -168,6 +168,8 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
+    "What is/Validating Admission Policy.md",
     "Linux/Timeshift backup for Linux.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.4 NVIDIA certified systems.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.3 NVIDIA DOCA.md",
@@ -192,8 +194,6 @@
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.5 Development to production.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.4 Compute platforms for accelerated AI.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.1 Full stack platform for accelerated computing.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.3 Anatomy of an accelerated system.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.2 Three pillars of the data center.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
     "Training",
