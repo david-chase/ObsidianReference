@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1e667f83c3d24d3c",
+        "id": "988187d6b687833f",
         "type": "tabs",
         "children": [
           {
-            "id": "99dfb0527bfc2b17",
+            "id": "4d9b353e19949f49",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"K8s/\" stuck",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,20 +166,23 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "99dfb0527bfc2b17",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
+    "Training/AI Infrastructure and Operations Fundamentals",
+    "Training",
     "K8s/General/Delete a namespace with stuck finalizers.md",
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
-    "What is/kubriX.md",
+    "Untitled.md",
+    "Linux/Timeshift backup for Linux.md",
+    "Linux/Routine maintenance.md",
     "What is/Komodor.md",
-    "K8s/Security/ESO and AWS credentials.md",
-    "K8s/Security/Force ESO to pull secret.md",
-    "K8s/Deployment/Helm/helm Sample Command Lines.md",
+    "What is/kubriX.md",
     "K8s/Security/Kubescape Sample Command Lines.md",
-    "K8s/General/PDB risks.md",
     "Public Cloud/AWS/Switching RDS instance to Graviton.md",
     "Public Cloud/AWS/Switching EC2 instance to Graviton.md",
+    "K8s/General/PDB risks.md",
     "K8s/Security/Install Cert-Manager CLI.md",
+    "K8s/Security/Force ESO to pull secret.md",
+    "K8s/Security/ESO and AWS credentials.md",
     "K8s/GPU/Poor GPU utilization contributing factors.md",
     "K8s/GPU/MIG vs GPU time slicing.md",
     "K8s/GPU/Comparison of GPU Time Slicing Approaches.md",
@@ -187,13 +190,11 @@
     "K8s/GPU/Kubernetes 1.33 and AI workloads.md",
     "K8s/GPU/How to spot GPU sharing.md",
     "K8s/GPU/GPU time slicing.md",
-    "Untitled.md",
     "Untitled 1.md",
     "What is/MIG Manager.md",
     "K8s/GPU/NVIDIA GPU Operator.md",
     "What is/NVIDIA CUDA.md",
     "K8s/GPU/GPU market share by vendor.md",
-    "What is/KubeShare.md",
     "K8s/GPU",
     "K8s/Deployment/Argo/Argo CD",
     "Media/Screenshots/Pasted image 20250522092839.png",
@@ -212,7 +213,6 @@
     "K8s/Deployment/Helm",
     "K8s/Deployment/Argo/Argo Events",
     "K8s/Deployment/Argo/Argo Rollouts",
-    "K8s/Deployment/Argo/Argo Workflows",
-    "K8s/Deployment/Argo"
+    "K8s/Deployment/Argo/Argo Workflows"
   ]
 }
