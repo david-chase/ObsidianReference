@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"K8s/\" practice",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -169,6 +170,8 @@
   },
   "active": "95dbf3f685b853ab",
   "lastOpenFiles": [
+    "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
+    "K8s/General/PDB risks.md",
     "What is/kubriX.md",
     "What is/Validating Admission Policy.md",
     "What is/Komodor.md",
@@ -193,8 +196,6 @@
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.3 NVIDIA B200 GPU.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.2 Different architectures for different workloads.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.5 Development to production.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.1 CPUs and GPUs.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.4 Compute platforms for accelerated AI.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
     "Training",
