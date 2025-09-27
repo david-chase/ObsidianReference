@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Kubestellar.md",
+                "file": "K8s/General/What's New in Kubernetes v1.34.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kubestellar"
+              "title": "What's New in Kubernetes v1.34"
             }
           }
         ]
@@ -169,8 +169,10 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "Public Cloud/AWS/Identify EMR nodes.md",
+    "K8s/General/What's New in Kubernetes v1.33.md",
+    "K8s/General/What's New in Kubernetes v1.34.md",
     "What is/Kubestellar.md",
+    "Public Cloud/AWS/Identify EMR nodes.md",
     "K8s/Autoscaling/Karpenter and pod limits.md",
     "Public Cloud/AWS/Elastic MapReduce (EMR).md",
     "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
@@ -193,8 +195,6 @@
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.7 Grace Hopper superchip.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.6 NVIDIA Grace CPU.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.2 Different architectures for different workloads.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.5 NVIDIA L40S GPU.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.3 NVIDIA B200 GPU.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
     "Training",
