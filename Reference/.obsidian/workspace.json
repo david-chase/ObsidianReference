@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f02ef6c578da4699",
+        "id": "1e667f83c3d24d3c",
         "type": "tabs",
         "children": [
           {
-            "id": "95dbf3f685b853ab",
+            "id": "99dfb0527bfc2b17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Autoscaling/Karpenter and pod limits.md",
+                "file": "What is/Kubestellar.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Karpenter and pod limits"
+              "title": "Kubestellar"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"K8s/\" practice",
+                "query": "path:\"K8s/\" stuck",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,33 +167,33 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "95dbf3f685b853ab",
+  "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "K8s/Autoscaling/Karpenter node consolidation.md",
+    "Public Cloud/AWS/Identify EMR nodes.md",
+    "What is/Kubestellar.md",
     "K8s/Autoscaling/Karpenter and pod limits.md",
-    "K8s/General/PDB risks.md",
-    "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
-    "What is/kubriX.md",
+    "Public Cloud/AWS/Elastic MapReduce (EMR).md",
+    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
+    "K8s/Autoscaling/Karpenter node consolidation.md",
     "What is/Validating Admission Policy.md",
-    "What is/Komodor.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.1 Data center transformation with NVIDIA DPU.md",
+    "Linux/Timeshift backup for Linux.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.4 NVIDIA certified systems.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.3 NVIDIA DOCA.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.2 NVIDIA Bluefield 3.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.5 NVIDIA DGX H100.md",
+    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.1 Data center transformation with NVIDIA DPU.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.7 NVIDIA GB200.md",
+    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.2 NVIDIA Bluefield 3.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.6 NVIDIA DGX B200.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.9 NVIDIA Grace superchip.md",
+    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.5 NVIDIA DGX H100.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.4 All-to-All GPU communication.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.3 GPU-to-GPU communication.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.3 Anatomy of an accelerated system.md",
+    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.9 NVIDIA Grace superchip.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.2 Multi-GPU systems.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.1 Multi-GPU system.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.8 Grace Blackwell superchip.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.7 Grace Hopper superchip.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.6 NVIDIA Grace CPU.md",
+    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.2 Different architectures for different workloads.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.5 NVIDIA L40S GPU.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.4 NVIDIA H100 GPU.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.3 NVIDIA B200 GPU.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
