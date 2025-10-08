@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Autoscaling/Karpenter node consolidation.md",
+                "file": "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Karpenter node consolidation"
+              "title": "Leave replicas unspecified when using HPA"
             }
           }
         ]
@@ -157,6 +157,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -168,8 +169,13 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "K8s/Autoscaling/Karpenter node consolidation.md",
+    "K8s/Autoscaling/Node group downscale blockers.md",
+    "K8s/Autoscaling/Node autoscaling on-prem.md",
+    "K8s/Autoscaling/VPA.md",
+    "K8s/Scheduling/Scheduling daemonsets.md",
+    "K8s/Scheduling",
+    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "What is/Validating Admission Policy.md",
     "Linux/Timeshift backup for Linux.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.4 NVIDIA certified systems.md",
@@ -190,10 +196,6 @@
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.2 Different architectures for different workloads.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.5 NVIDIA L40S GPU.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.3 NVIDIA B200 GPU.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.4 NVIDIA H100 GPU.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.2.1 CPUs and GPUs.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.5 Development to production.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.1.4 Compute platforms for accelerated AI.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
     "Training",
@@ -212,7 +214,6 @@
     "Media/Screenshots",
     "Media",
     "K8s/Security",
-    "K8s/Deployment/Helm",
-    "K8s/Deployment/Argo/Argo Events"
+    "K8s/Deployment/Helm"
   ]
 }
