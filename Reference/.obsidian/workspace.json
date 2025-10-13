@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
+                "file": "What is/KYAML.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Delete an app with stuck finalizer"
+              "title": "KYAML"
             }
           }
         ]
@@ -169,6 +169,10 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "What is/TPU.md",
+    "What is/KYAML.md",
+    "What is/Cilium.md",
+    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
     "Untitled.md",
     "What is/Kubestellar.md",
@@ -184,7 +188,6 @@
     "K8s/Autoscaling/VPA.md",
     "K8s/Scheduling/Scheduling daemonsets.md",
     "K8s/Scheduling",
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "What is/Validating Admission Policy.md",
     "Linux/Timeshift backup for Linux.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.4 NVIDIA certified systems.md",
@@ -193,9 +196,6 @@
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.7 NVIDIA GB200.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.2 NVIDIA Bluefield 3.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.6 NVIDIA DGX B200.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.5 NVIDIA DGX H100.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.4 All-to-All GPU communication.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.3.3 GPU-to-GPU communication.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
     "Training",
