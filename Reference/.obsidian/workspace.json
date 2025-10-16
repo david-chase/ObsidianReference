@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Public Cloud/AWS/FSx Storage.md",
+                "file": "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FSx Storage"
+              "title": "Delete an app with stuck finalizer"
             }
           }
         ]
@@ -169,8 +169,8 @@
   },
   "active": "95dbf3f685b853ab",
   "lastOpenFiles": [
-    "What is/Infracost.md",
     "Public Cloud/AWS/FSx Storage.md",
+    "What is/Infracost.md",
     "What is/TPU.md",
     "What is/KYAML.md",
     "K8s/Scheduling/Scheduling daemonsets.md",
