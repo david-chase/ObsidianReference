@@ -1,5 +1,9 @@
 #storage #eks #k8s #ebs #automode
 
+```table-of-contents
+```
+## EKS Standard Mode
+
 As suspected, creating EBS-backed PVs in EKS is an absolute breeze.
 
 1. Deploy the EBS CSI driver add-on
@@ -53,7 +57,7 @@ spec:
 
 - OMG FFS the entire time the only problem with EKS Auto mode was the provisioner name in the storageclass definition is "ebs.csi.eks.amazonaws.com"
 
-#### StorageClass definition for EKS Auto Mode
+## EKS Auto Mode
 
 ``` yaml
 apiVersion: storage.k8s.io/v1
