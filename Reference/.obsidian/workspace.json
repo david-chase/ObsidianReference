@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/EKS/EKS service exposure guide.md",
+                "file": "K8s/Security/cert-manager.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EKS service exposure guide"
+              "title": "cert-manager"
             }
           }
         ]
@@ -169,6 +169,7 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "K8s/EKS/EKS service exposure guide.md",
     "K8s/EKS/EBS backed PV.md",
     "K8s/Security/ESO.md",
     "K8s/Security/Force ESO to pull secret.md",
@@ -194,7 +195,6 @@
     "K8s/Autoscaling/Karpenter node consolidation.md",
     "K8s/Autoscaling/Node group downscale blockers.md",
     "K8s/Autoscaling/Node autoscaling on-prem.md",
-    "K8s/Autoscaling/VPA.md",
     "K8s/Scheduling",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
