@@ -169,6 +169,8 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "What is/Blackwell.md",
+    "What is/Project HAMi.md",
     "What is/HashiCorp Nomad.md",
     "What is/HashiCorp Consul.md",
     "K8s/Security/cert-manager.md",
@@ -193,8 +195,6 @@
     "Public Cloud/AWS/Elastic MapReduce (EMR).md",
     "K8s/General/What's New in Kubernetes v1.34.md",
     "K8s/General/What's New in Kubernetes v1.33.md",
-    "K8s/Autoscaling/Karpenter and pod limits.md",
-    "K8s/Autoscaling/Karpenter node consolidation.md",
     "K8s/Scheduling",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
