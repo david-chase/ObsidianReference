@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/HashiCorp Nomad.md",
+                "file": "What is/Project HAMi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HashiCorp Nomad"
+              "title": "Project HAMi"
             }
           }
         ]
@@ -169,6 +169,7 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "What is/HashiCorp Nomad.md",
     "What is/HashiCorp Consul.md",
     "K8s/Security/cert-manager.md",
     "K8s/EKS/EKS service exposure guide.md",
@@ -194,7 +195,6 @@
     "K8s/General/What's New in Kubernetes v1.33.md",
     "K8s/Autoscaling/Karpenter and pod limits.md",
     "K8s/Autoscaling/Karpenter node consolidation.md",
-    "K8s/Autoscaling/Node group downscale blockers.md",
     "K8s/Scheduling",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
