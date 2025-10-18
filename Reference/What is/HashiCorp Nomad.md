@@ -11,13 +11,9 @@ While Kubernetes focuses primarily on container orchestration, **Nomad is more g
 ## 🔹 What is Nomad?
 
 - A **single binary orchestration tool** for scheduling and managing workloads.
-    
 - Supports a **broad range of workloads**: Docker containers, VMs, Java applications, raw binaries, etc.
-    
 - Designed to be **lightweight, easy to deploy, and highly scalable**.
-    
 - Integrates with **HashiCorp Vault** (secrets management) and **Consul** (service discovery & networking).
-    
 
 ---
 
