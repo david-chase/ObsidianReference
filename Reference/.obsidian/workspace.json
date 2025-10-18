@@ -10,18 +10,37 @@
           {
             "id": "99dfb0527bfc2b17",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Project HAMi.md",
+                "file": "Linux/Routine maintenance.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "Project HAMi"
+              "title": "Routine maintenance"
+            }
+          },
+          {
+            "id": "007cde1327a9ace4",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2025.10.18 Upgrading to Kubernetes v1.34"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,10 +186,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "99dfb0527bfc2b17",
+  "active": "007cde1327a9ace4",
   "lastOpenFiles": [
-    "What is/Blackwell.md",
+    "Linux/Routine maintenance.md",
+    "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
+    "Linux/Timeshift backup for Linux.md",
     "What is/Project HAMi.md",
+    "What is/Blackwell.md",
     "What is/HashiCorp Nomad.md",
     "What is/HashiCorp Consul.md",
     "K8s/Security/cert-manager.md",
@@ -192,9 +214,6 @@
     "What is/Kubestellar.md",
     "Public Cloud/AWS/Identify EMR nodes.md",
     "Public Cloud/AWS/FSx Storage.md",
-    "Public Cloud/AWS/Elastic MapReduce (EMR).md",
-    "K8s/General/What's New in Kubernetes v1.34.md",
-    "K8s/General/What's New in Kubernetes v1.33.md",
     "K8s/Scheduling",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
