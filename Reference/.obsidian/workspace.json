@@ -4,43 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "1e667f83c3d24d3c",
+        "id": "f02ef6c578da4699",
         "type": "tabs",
         "children": [
           {
-            "id": "99dfb0527bfc2b17",
+            "id": "95dbf3f685b853ab",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Routine maintenance.md",
+                "file": "What is/Flagger.md",
                 "mode": "source",
                 "source": false
               },
-              "pinned": true,
               "icon": "lucide-file",
-              "title": "Routine maintenance"
-            }
-          },
-          {
-            "id": "007cde1327a9ace4",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "2025.10.18 Upgrading to Kubernetes v1.34"
+              "title": "Flagger"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -72,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"K8s/\" practice",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -186,35 +167,35 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "007cde1327a9ace4",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
-    "Linux/Routine maintenance.md",
-    "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
-    "Linux/Timeshift backup for Linux.md",
-    "What is/Project HAMi.md",
-    "What is/Blackwell.md",
-    "What is/HashiCorp Nomad.md",
-    "What is/HashiCorp Consul.md",
-    "K8s/Security/cert-manager.md",
-    "K8s/EKS/EKS service exposure guide.md",
     "K8s/EKS/EBS backed PV.md",
+    "What is/HashiCorp Consul.md",
+    "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
+    "K8s/Security/cert-manager.md",
     "K8s/Security/ESO.md",
-    "K8s/Security/Force ESO to pull secret.md",
-    "K8s/Security/ESO and AWS credentials.md",
-    "K8s/Security/Kubescape Sample Command Lines.md",
-    "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
-    "K8s/Security/Install Cert-Manager CLI.md",
-    "What is/KYAML.md",
+    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
+    "Public Cloud/AWS/FSx Storage.md",
     "What is/Infracost.md",
     "What is/TPU.md",
-    "What is/Cilium.md",
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
-    "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
-    "Untitled.md",
-    "What is/Kubestellar.md",
-    "Public Cloud/AWS/Identify EMR nodes.md",
-    "Public Cloud/AWS/FSx Storage.md",
+    "What is/KYAML.md",
+    "K8s/Scheduling/Scheduling daemonsets.md",
     "K8s/Scheduling",
+    "K8s/Autoscaling/VPA.md",
+    "K8s/Autoscaling/Karpenter and pod limits.md",
+    "What is/Kubestellar.md",
+    "K8s/General/What's New in Kubernetes v1.34.md",
+    "K8s/General/What's New in Kubernetes v1.33.md",
+    "K8s/Autoscaling/Karpenter node consolidation.md",
+    "K8s/General/PDB risks.md",
+    "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
+    "What is/kubriX.md",
+    "What is/Validating Admission Policy.md",
+    "What is/Komodor.md",
+    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.1 Data center transformation with NVIDIA DPU.md",
+    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.4 NVIDIA certified systems.md",
+    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.3 NVIDIA DOCA.md",
+    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.2 NVIDIA Bluefield 3.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
     "Training",
