@@ -4,24 +4,55 @@
     "type": "split",
     "children": [
       {
-        "id": "f02ef6c578da4699",
+        "id": "1e667f83c3d24d3c",
         "type": "tabs",
         "children": [
           {
-            "id": "95dbf3f685b853ab",
+            "id": "99dfb0527bfc2b17",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Flagger.md",
+                "file": "Linux/Routine maintenance.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "Flagger"
+              "title": "Routine maintenance"
+            }
+          },
+          {
+            "id": "007cde1327a9ace4",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2025.10.18 Upgrading to Kubernetes v1.34"
+            }
+          },
+          {
+            "id": "edac3c4545bf45c5",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Media/PDFs/The Most Common Kubernetes Errors and How to Fix Them.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "The Most Common Kubernetes Errors and How to Fix Them"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -53,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"K8s/\" practice",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,38 +195,43 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "5b7f78650c3d9d0c",
+  "active": "edac3c4545bf45c5",
   "lastOpenFiles": [
-    "K8s/EKS/EBS backed PV.md",
-    "What is/HashiCorp Consul.md",
+    "K8s/General/The Most Common Kubernetes Errors and How to Fix Them.md",
+    "Media/PDFs/The Most Common Kubernetes Errors and How to Fix Them.pdf",
+    "K8s/General/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
+    "K8s/General/kubectl Sample Command Lines.md",
+    "Media/PDFs",
+    "Media/New folder",
+    "Data/The Most Common Kubernetes Errors and How to Fix Them.pdf",
+    "K8s/General/The Most Common Kubernetes Errors and How to Fix Them.pdf",
+    "K8s/General/Adding worker nodes.md",
     "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
+    "Linux/Routine maintenance.md",
+    "Linux/Timeshift backup for Linux.md",
+    "What is/Project HAMi.md",
+    "What is/Blackwell.md",
+    "What is/HashiCorp Nomad.md",
+    "What is/HashiCorp Consul.md",
     "K8s/Security/cert-manager.md",
+    "K8s/EKS/EKS service exposure guide.md",
+    "K8s/EKS/EBS backed PV.md",
     "K8s/Security/ESO.md",
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
-    "Public Cloud/AWS/FSx Storage.md",
+    "K8s/Security/Force ESO to pull secret.md",
+    "K8s/Security/ESO and AWS credentials.md",
+    "K8s/Security/Kubescape Sample Command Lines.md",
+    "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
+    "K8s/Security/Install Cert-Manager CLI.md",
+    "What is/KYAML.md",
     "What is/Infracost.md",
     "What is/TPU.md",
-    "What is/KYAML.md",
-    "K8s/Scheduling/Scheduling daemonsets.md",
+    "What is/Cilium.md",
+    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "K8s/Scheduling",
-    "K8s/Autoscaling/VPA.md",
-    "K8s/Autoscaling/Karpenter and pod limits.md",
-    "What is/Kubestellar.md",
-    "K8s/General/What's New in Kubernetes v1.34.md",
-    "K8s/General/What's New in Kubernetes v1.33.md",
-    "K8s/Autoscaling/Karpenter node consolidation.md",
-    "K8s/General/PDB risks.md",
-    "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
-    "What is/kubriX.md",
-    "What is/Validating Admission Policy.md",
-    "What is/Komodor.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.1 Data center transformation with NVIDIA DPU.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.4 NVIDIA certified systems.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.3 NVIDIA DOCA.md",
-    "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI/7.4.2 NVIDIA Bluefield 3.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
     "Training",
@@ -209,11 +245,6 @@
     "Media/Screenshots/Pasted image 20250720113012.png",
     "Media/Screenshots/Pasted image 20250720112809.png",
     "Media/Screenshots/Pasted image 20250720112641.png",
-    "K8s/GPU",
-    "K8s/Deployment/Argo/Argo CD",
-    "Media/Screenshots",
-    "Media",
-    "K8s/Security",
-    "K8s/Deployment/Helm"
+    "K8s/GPU"
   ]
 }
