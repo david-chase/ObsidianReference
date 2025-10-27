@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/What's New in Kubernetes v1.34.md",
+                "file": "AI/MCP Servers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "What's New in Kubernetes v1.34"
+              "title": "MCP Servers"
             }
           }
         ]
@@ -167,8 +167,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "5b7f78650c3d9d0c",
+  "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "K8s/General/What's New in Kubernetes v1.34.md",
     "AI/MCP Servers.md",
     "AI",
     "What is/node declared features.md",
@@ -188,7 +189,6 @@
     "K8s/GPU/NVIDIA MIG and Kubernetes DRA - Better together.md",
     "K8s/Autoscaling/VPA.md",
     "K8s/General/What's New in Kubernetes v1.33.md",
-    "K8s/General/What's New in Kubernetes v1.34.md",
     "What is/Kubestellar.md",
     "Public Cloud/AWS/Identify EMR nodes.md",
     "K8s/Autoscaling/Karpenter and pod limits.md",
