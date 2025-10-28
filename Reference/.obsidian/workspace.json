@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/node declared features.md",
+                "file": "Files/Articles/2025.09.01 The Most Common Kubernetes Errors and How to Fix Them.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "node declared features"
+              "title": "2025.09.01 The Most Common Kubernetes Errors and How to Fix Them"
             }
           }
         ],
@@ -181,18 +181,19 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "github-sync:Sync with Remote": false,
-      "omnisearch:Omnisearch": false
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "8aab420f3373de3f",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
-    "What is/gang scheduling.md",
+    "Files/Articles",
+    "Files/Untitled.md",
+    "Files/Articles/2025.09.01 The Most Common Kubernetes Errors and How to Fix Them.md",
     "What is/node declared features.md",
+    "What is/gang scheduling.md",
     "What is/NVIDIA KAI scheduler.md",
     "Linux/Routine maintenance.md",
     "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
-    "K8s/General/The Most Common Kubernetes Errors and How to Fix Them.md",
     "K8s/GPU/NVIDIA MIG and Kubernetes DRA - Better together.md",
     "What is/Kargo.md",
     "Media/Screenshots/The Most Common Kubernetes Errors and How to Fix Them.pdf",
@@ -217,8 +218,6 @@
     "K8s/Security/ESO and AWS credentials.md",
     "K8s/Security/Kubescape Sample Command Lines.md",
     "K8s/Security/Rotate ECR Credentials secrets using Lambda.md",
-    "K8s/Security/Install Cert-Manager CLI.md",
-    "What is/KYAML.md",
     "K8s/Scheduling",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
     "Training/AI Infrastructure and Operations Fundamentals",
