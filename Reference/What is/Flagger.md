@@ -13,15 +13,10 @@ It’s commonly used with service meshes (like Istio, Linkerd, Kuma) or ingress 
 ## 🔹 What is Flagger?
 
 - A **Kubernetes operator** that automates **progressive delivery**.
-    
 - Helps deploy new versions of applications **safely and incrementally**.
-    
 - Reduces deployment risks by analyzing metrics before shifting traffic.
-    
 - Integrates with **Prometheus, Datadog, CloudWatch**, and others for monitoring.
-    
 - Works with **GitOps workflows (Flux, Argo CD)**.
-    
 
 ---
 

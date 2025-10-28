@@ -1,5 +1,6 @@
 #ai #mcp
 
+
 ## 1. MCP Server Introduction
 
 The Model Context Protocol (MCP) allows chat models like GPT-5 to connect securely to external data sources, APIs, and tools through standardized interfaces called **MCP servers**. Each MCP server exposes *resources* (readable data, documents, etc.) and *tools* (invocable actions). The chat model acts as an **MCP client**, discovering and interacting with these endpoints while remaining sandboxed.
