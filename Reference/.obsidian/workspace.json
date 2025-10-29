@@ -4,24 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "f02ef6c578da4699",
+        "id": "1e667f83c3d24d3c",
         "type": "tabs",
         "children": [
           {
-            "id": "95dbf3f685b853ab",
+            "id": "99dfb0527bfc2b17",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Routine maintenance.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Routine maintenance"
+            }
+          },
+          {
+            "id": "8aab420f3373de3f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/MCP Servers.md",
+                "file": "What is/Grafana Tempo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MCP Servers"
+              "title": "Grafana Tempo"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"K8s/\" practice",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,41 +184,44 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "95dbf3f685b853ab",
+  "active": "8aab420f3373de3f",
   "lastOpenFiles": [
     "Files/Articles/2025.09.01 The Most Common Kubernetes Errors and How to Fix Them.md",
-    "Files/Articles",
-    "What is/Flagger.md",
-    "What is/node declared features.md",
-    "What is/gang scheduling.md",
-    "Media/Screenshots/The Most Common Kubernetes Errors and How to Fix Them.pdf",
-    "K8s/General/The Most Common Kubernetes Errors and How to Fix Them.md",
-    "K8s/GPU/NVIDIA MIG and Kubernetes DRA - Better together.md",
+    "Untitled.md",
     "AI/MCP Servers.md",
     "AI",
-    "K8s/EKS/EBS backed PV.md",
-    "What is/HashiCorp Consul.md",
+    "Files/Articles",
+    "Files/Untitled.md",
+    "What is/node declared features.md",
+    "What is/gang scheduling.md",
+    "What is/NVIDIA KAI scheduler.md",
+    "Linux/Routine maintenance.md",
     "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
+    "K8s/GPU/NVIDIA MIG and Kubernetes DRA - Better together.md",
+    "What is/Kargo.md",
+    "Media/Screenshots/The Most Common Kubernetes Errors and How to Fix Them.pdf",
+    "Media/PDFs/The Most Common Kubernetes Errors and How to Fix Them.pdf",
+    "K8s/General/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
+    "K8s/General/kubectl Sample Command Lines.md",
+    "Media/PDFs",
+    "Media/New folder",
+    "Data/The Most Common Kubernetes Errors and How to Fix Them.pdf",
+    "K8s/General/The Most Common Kubernetes Errors and How to Fix Them.pdf",
+    "K8s/General/Adding worker nodes.md",
+    "Linux/Timeshift backup for Linux.md",
+    "What is/Project HAMi.md",
+    "What is/Blackwell.md",
+    "What is/HashiCorp Nomad.md",
+    "What is/HashiCorp Consul.md",
     "K8s/Security/cert-manager.md",
+    "K8s/EKS/EKS service exposure guide.md",
+    "K8s/EKS/EBS backed PV.md",
     "K8s/Security/ESO.md",
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
-    "Public Cloud/AWS/FSx Storage.md",
-    "What is/Infracost.md",
-    "What is/TPU.md",
-    "What is/KYAML.md",
-    "K8s/Scheduling/Scheduling daemonsets.md",
+    "K8s/Security/Force ESO to pull secret.md",
+    "K8s/Security/ESO and AWS credentials.md",
+    "K8s/Security/Kubescape Sample Command Lines.md",
     "K8s/Scheduling",
-    "K8s/Autoscaling/VPA.md",
-    "K8s/Autoscaling/Karpenter and pod limits.md",
-    "What is/Kubestellar.md",
-    "K8s/General/What's New in Kubernetes v1.34.md",
-    "K8s/General/What's New in Kubernetes v1.33.md",
-    "K8s/Autoscaling/Karpenter node consolidation.md",
-    "K8s/General/PDB risks.md",
-    "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
     "Training/AI Infrastructure and Operations Fundamentals/Unit 7 - Compute Platforms for AI",
-    "Training/AI Infrastructure and Operations Fundamentals",
-    "Training",
     "Media/Screenshots/Pasted image 20250720113823.png",
     "Media/Screenshots/Pasted image 20250720113637.png",
     "Media/Screenshots/Pasted image 20250720113524.png",
@@ -211,9 +231,6 @@
     "Media/Screenshots/Pasted image 20250720113128.png",
     "Media/Screenshots/Pasted image 20250720113012.png",
     "Media/Screenshots/Pasted image 20250720112809.png",
-    "Media/Screenshots/Pasted image 20250720112641.png",
-    "K8s/GPU",
-    "K8s/Deployment/Argo/Argo CD",
-    "Media/Screenshots"
+    "Media/Screenshots/Pasted image 20250720112641.png"
   ]
 }
