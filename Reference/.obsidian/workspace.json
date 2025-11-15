@@ -10,17 +10,15 @@
           {
             "id": "99dfb0527bfc2b17",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Routine maintenance.md",
+                "file": "Files/Articles/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.md",
                 "mode": "source",
                 "source": false
               },
-              "pinned": true,
               "icon": "lucide-file",
-              "title": "Routine maintenance"
+              "title": "2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it"
             }
           },
           {
@@ -29,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Spacelift.io.md",
+                "file": "Dev General/JVM versus Node.js.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spacelift.io"
+              "title": "JVM versus Node.js"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,10 +181,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "8aab420f3373de3f",
+  "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "What is/Backstage.md",
+    "Linux/Routine maintenance.md",
+    "Dev General/JVM versus Node.js.md",
+    "Files/Articles/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.md",
+    "Media/Screenshots/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.pdf",
     "What is/Spacelift.io.md",
+    "What is/Backstage.md",
     "Files/Articles/2025.10.09 Mastering Kubernetes Observability The Ultimate Grafana Alloy Setup Guide.md",
     "Media/Screenshots/2025.10.09 Mastering Kubernetes Observability The Ultimate Grafana Alloy Setup Guide.pdf",
     "Files/Articles/2025.11.15 ArgoCD 3.2 The Latest Stable Release Is Here.md",
@@ -206,7 +207,6 @@
     "What is/node declared features.md",
     "What is/gang scheduling.md",
     "What is/NVIDIA KAI scheduler.md",
-    "Linux/Routine maintenance.md",
     "Linux/2025.10.18 Upgrading to Kubernetes v1.34.md",
     "K8s/GPU/NVIDIA MIG and Kubernetes DRA - Better together.md",
     "What is/Kargo.md",
@@ -215,13 +215,10 @@
     "K8s/General/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
     "K8s/General/kubectl Sample Command Lines.md",
     "Media/PDFs",
-    "Media/New folder",
     "K8s/General/Adding worker nodes.md",
     "Linux/Timeshift backup for Linux.md",
     "What is/Project HAMi.md",
     "What is/Blackwell.md",
-    "What is/HashiCorp Nomad.md",
-    "What is/HashiCorp Consul.md",
     "Media/Screenshots/Pasted image 20250720113823.png",
     "Media/Screenshots/Pasted image 20250720113637.png",
     "Media/Screenshots/Pasted image 20250720113524.png",
