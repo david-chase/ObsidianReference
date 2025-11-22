@@ -1,6 +1,8 @@
 #karpenter #nodes #k8s #autoscaling 
 
-### 🔹 What Node Consolidation Is
+```table-of-contents
+```
+## What Node Consolidation Is
 
 Karpenter is an autoscaler for Kubernetes that not only **adds nodes** when workloads need capacity, but also **removes or reshapes nodes** when the cluster can run more efficiently.
 
@@ -11,7 +13,7 @@ Karpenter is an autoscaler for Kubernetes that not only **adds nodes** when work
 3. Terminates those nodes to save cost and improve utilization.
 
 ---
-### 🔹 How It Works (Process)
+## How It Works (Process)
 
 1. **Metrics Collection**
     - Karpenter continuously watches pods, nodes, and scheduling requirements.
@@ -35,13 +37,13 @@ Karpenter is an autoscaler for Kubernetes that not only **adds nodes** when work
     - Once empty, the node is terminated.
 
 ---
-### 🔹 Key Differences From Cluster Autoscaler
+## Key Differences From Cluster Autoscaler
 
 - **Cluster Autoscaler**: Works mostly at the node group level (e.g., AWS ASG, GCP MIG). It scales node groups up/down but can’t freely replace instances with different types/sizes.
 - **Karpenter**: Works at the **individual node level**. It can replace an expensive instance type with a cheaper one, or consolidate multiple small nodes into fewer large ones.
 
 ---
-### 🔹 Example Scenario
+### Example Scenario
 
 - Suppose you have 3 `m5.2xlarge` nodes running at 20% utilization.
 - Karpenter sees that all pods could fit on 1 `m5.4xlarge`.
@@ -49,7 +51,7 @@ Karpenter is an autoscaler for Kubernetes that not only **adds nodes** when work
 - Result: Same workload, fewer nodes, lower cost.
 
 ---
-### 🔹 Important Safeguards
+## Important Safeguards
 
 - **PodDisruptionBudgets (PDBs)**: Karpenter respects them and won’t evict if it violates availability guarantees.
 - **Topology/Affinity**: Pods with hard constraints prevent consolidation if they can’t move.
@@ -57,7 +59,7 @@ Karpenter is an autoscaler for Kubernetes that not only **adds nodes** when work
 
 ---
 
-✅ In short:  
+In short:  
 Karpenter consolidation is like an _always-on cost optimizer_. It continuously evaluates whether the cluster could run with fewer or cheaper nodes, simulates rescheduling, and safely drains/removes nodes when possible.
 
 ---
@@ -73,24 +75,24 @@ tell me about consolidationPolicy
 Great question, Dave — let’s zoom in on **`consolidationPolicy`** in Karpenter.
 
 ---
-## 🔹 What `consolidationPolicy` Does
+## What `consolidationPolicy` Does
 
 The `consolidationPolicy` setting controls **how aggressively Karpenter looks for opportunities to replace or remove nodes**.  
 It’s configured in the **`Provisioner`** (or **`NodePool`** in newer versions).
 
 ---
-## 🔹 Values for `consolidationPolicy`
+### Values for `consolidationPolicy`
 
 Karpenter currently supports these options:
 
-### 1. **`WhenEmpty`**
+#### 1. **`WhenEmpty`**
 
 - Simplest and safest option.
 - Karpenter will only **terminate nodes that are completely empty** (no pods running).
 - Typical for environments where you want minimal disruption.
 - Useful if you don’t want pod evictions beyond natural scale-down.
 
-### 2. **`WhenUnderutilized`**
+#### 2. **`WhenUnderutilized`**
 
 - More aggressive.
 - Karpenter will terminate nodes that are **underutilized**, **even if they have pods**, provided those pods can be rescheduled elsewhere.
@@ -100,7 +102,7 @@ Karpenter currently supports these options:
 - Goal: reduce cost and fragmentation.
 
 ---
-## 🔹 Example Configuration (Provisioner)
+### Example Configuration (Provisioner)
 
 Here’s how it looks in a `Provisioner` manifest:
 
@@ -111,7 +113,7 @@ Here’s how it looks in a `Provisioner` manifest:
 - If you set `WhenEmpty`, only empty nodes get removed.
 
 ---
-## 🔹 How It Interacts With `ttlSecondsAfterEmpty`
+### How It Interacts With `ttlSecondsAfterEmpty`
 
 - `ttlSecondsAfterEmpty`: Controls how long an empty node should remain before Karpenter deletes it.
 - Works alongside consolidation:
@@ -119,7 +121,7 @@ Here’s how it looks in a `Provisioner` manifest:
     - If `WhenUnderutilized` → consolidation looks for broader opportunities, not just empty nodes.
 
 ---
-## 🔹 Quick Comparison
+### Quick Comparison
 
 |Policy|Behavior|
 |---|---|
@@ -132,3 +134,10 @@ Here’s how it looks in a `Provisioner` manifest:
 
 - **Use `WhenEmpty`** if you want conservative cleanup.
 - **Use `WhenUnderutilized`** if you want Karpenter to aggressively optimize cost/utilization by moving pods around.
+
+---
+
+## Node consolidation and node sizes
+
+- When using large node sizes, node consolidation can require moving dozens or even hundreds of pods
+- This results in a large blast radius
