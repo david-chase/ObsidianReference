@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Files/Articles/2025.09.08 Mastering Karpenter Consolidation Empty Nodes, Underutilized Nodes, and the Trade-Offs.md",
+                "file": "K8s/Autoscaling/VPA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025.09.08 Mastering Karpenter Consolidation Empty Nodes, Underutilized Nodes, and the Trade-Offs"
+              "title": "VPA"
             }
           }
         ]
@@ -169,8 +169,16 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "K8s/Autoscaling/Detecting node autoscaler.md",
     "K8s/Autoscaling/Karpenter node consolidation.md",
+    "K8s/Autoscaling/Karpenter and pod limits.md",
+    "K8s/Autoscaling/Leave replicas unspecified when using HPA.md",
+    "K8s/Autoscaling/Node autoscaling.md",
+    "K8s/Autoscaling/Node group downscale blockers.md",
+    "K8s/Autoscaling/Node autoscaling on-prem.md",
+    "K8s/Autoscaling/VPA.md",
     "Files/Articles/2025.09.08 Mastering Karpenter Consolidation Empty Nodes, Underutilized Nodes, and the Trade-Offs.md",
+    "K8s/Untitled.md",
     "K8s/GPU/Steering GPU workloads to a MIG instance.md",
     "K8s/General/Sidecars vs Init containers.md",
     "K8s/GPU/MIG support.md",
@@ -193,16 +201,8 @@
     "Media/Screenshots/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.pdf",
     "Media/Screenshots/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.pdf",
     "Media/Screenshots/2025.11.15 ArgoCD 3.2 The Latest Stable Release Is Here.pdf",
-    "Dev General/JVM versus Node.js.md",
-    "Linux/Routine maintenance.md",
-    "What is/Spacelift.io.md",
-    "What is/Grafana Tempo.md",
-    "Untitled.md",
-    "AI/MCP Servers.md",
     "AI",
     "Files/Articles",
-    "Files/Untitled.md",
-    "What is/node declared features.md",
     "Media/PDFs/The Most Common Kubernetes Errors and How to Fix Them.pdf",
     "Media/PDFs",
     "Media/Screenshots/Pasted image 20250720113823.png",
