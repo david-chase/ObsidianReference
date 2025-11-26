@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Timeshift backup for Linux.md",
+                "file": "PowerShell/Show location of all profiles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Timeshift backup for Linux"
+              "title": "Show location of all profiles"
             }
           }
         ]
@@ -157,6 +157,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "github-sync:Sync with Remote": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -168,10 +169,10 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "Linux/Laptop power settings for Ubuntu.md",
+    "Linux/Timeshift backup for Linux.md",
     "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
     "Linux/Apt common command-lines.md",
-    "Linux/Timeshift backup for Linux.md",
-    "Linux/Laptop power settings for Ubuntu.md",
     "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
     "Linux/Install NFS Server on Ubuntu.md",
     "What is/Cockpit.md",
