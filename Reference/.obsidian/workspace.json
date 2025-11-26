@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PowerShell/Show location of all profiles.md",
+                "file": "Linux/Laptop power settings for Ubuntu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Show location of all profiles"
+              "title": "Laptop power settings for Ubuntu"
             }
           }
         ]
@@ -169,6 +169,8 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "Linux/Disabling swap.md",
+    "PowerShell/Show location of all profiles.md",
     "Linux/Laptop power settings for Ubuntu.md",
     "Linux/Timeshift backup for Linux.md",
     "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
@@ -197,8 +199,6 @@
     "Files/Articles/2025.09.08 Mastering Karpenter Consolidation Empty Nodes, Underutilized Nodes, and the Trade-Offs.md",
     "K8s/GPU/Steering GPU workloads to a MIG instance.md",
     "K8s/Pods/Sidecars vs Init containers.md",
-    "K8s/GPU/MIG support.md",
-    "K8s/GPU/Enabling MIG support.md",
     "Media/Screenshots/The Most Common Kubernetes Errors and How to Fix Them.pdf",
     "Media/Screenshots/2025.10.09 Mastering Kubernetes Observability The Ultimate Grafana Alloy Setup Guide.pdf",
     "Media/Screenshots/2025.11.04 Argo CD Blue-Green Deployments in Kubernetes Full Guide.pdf",
