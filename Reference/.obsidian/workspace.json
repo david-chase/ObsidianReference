@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
+                "file": "Linux/Timeshift backup for Linux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025.11.13 MCP is Broken and Anthropic Just Admitted It"
+              "title": "Timeshift backup for Linux"
             }
           }
         ]
@@ -169,8 +169,8 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "Linux/Apt common command-lines.md",
     "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
+    "Linux/Apt common command-lines.md",
     "Linux/Timeshift backup for Linux.md",
     "Linux/Laptop power settings for Ubuntu.md",
     "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
