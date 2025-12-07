@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Bottlerocket.md",
+                "file": "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bottlerocket"
+              "title": "2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS"
             }
           }
         ]
@@ -169,8 +169,9 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "K8s/GPU/Fractional GPU Instances.md",
     "What is/Bottlerocket.md",
+    "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
+    "K8s/GPU/Fractional GPU Instances.md",
     "Files/Articles/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.md",
     "What is/Spacelift.io.md",
     "What is/ConfigHub.md",
@@ -197,7 +198,6 @@
     "K8s/Nodes/Karpenter node consolidation.md",
     "K8s/Nodes",
     "K8s/Hosted Kubernetes Platforms/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
-    "K8s/Hosted Kubernetes Platforms/etcd Encryption by CSP.md",
     "K8s/Hosted Kubernetes Platforms",
     "Media/Screenshots/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.pdf",
     "Files/Articles",
