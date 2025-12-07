@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
+                "file": "Files/Articles/2025.09.06 KYAML in Kubernetes v1.34 A Safer, Leaner Alternative to YAML and JSON.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS"
+              "title": "2025.09.06 KYAML in Kubernetes v1.34 A Safer, Leaner Alternative to YAML and JSON"
             }
           }
         ]
@@ -169,8 +169,14 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "What is/Bottlerocket.md",
     "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
+    "Files/Articles/2025.09.06 KYAML in Kubernetes v1.34 A Safer, Leaner Alternative to YAML and JSON.md",
+    "Untitled.md",
+    "What is/KubeCM.md",
+    "What is/Cockpit.md",
+    "Linux/Apt common command-lines.md",
+    "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
+    "What is/Bottlerocket.md",
     "K8s/GPU/Fractional GPU Instances.md",
     "Files/Articles/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.md",
     "What is/Spacelift.io.md",
@@ -191,13 +197,7 @@
     "K8s/Pods/JVM workloads in Kubernetes.md",
     "K8s/Pods/Set MaxPodsPerNode on bare metal.md",
     "K8s/Pods",
-    "K8s/Nodes/Node autoscaling.md",
-    "K8s/Nodes/Detecting node autoscaler.md",
-    "K8s/Nodes/Karpenter and pod limits.md",
-    "K8s/Nodes/Adding worker nodes.md",
-    "K8s/Nodes/Karpenter node consolidation.md",
     "K8s/Nodes",
-    "K8s/Hosted Kubernetes Platforms/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
     "K8s/Hosted Kubernetes Platforms",
     "Media/Screenshots/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.pdf",
     "Files/Articles",

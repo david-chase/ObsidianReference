@@ -5,11 +5,8 @@
 ### 🔧 Prerequisites
 
 - You **must have an NVIDIA GPU**.
-    
 - **Disable Nouveau drivers** (Ubuntu’s open-source fallback driver) is often necessary but now handled better by newer packages.
-    
 - Use a clean Ubuntu 24.04 install if possible to avoid conflicts.
-    
 
 ---
 

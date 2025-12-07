@@ -1,5 +1,5 @@
 {
-  "remoteURL": "https://github.com/david-chase/ObsidianReference.git",
+  "remoteURL": "git@github.com:david-chase/ObsidianReference.git",
   "gitLocation": "",
   "syncinterval": 30,
   "isSyncOnLoad": true,

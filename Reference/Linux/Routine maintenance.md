@@ -3,6 +3,8 @@
 ### Upgrade firmware(s)
 
 ``` powershell
+sudo fwupdmgr refresh
+sudo fwupdmgr get-updates
 sudo fwupdmgr update
 ```
 
@@ -13,6 +15,15 @@ sudo apt update
 sudo apt upgrade
 ```
 
+### Update Ubuntu and drivers
+
+``` PowerShell
+sudo apt update
+sudo apt full-upgrade -y
+sudo ubuntu-drivers install
+sudo update-initramfs -u
+# sudo reboot
+```
 ### Remove unused packages
 
 ``` powershell
