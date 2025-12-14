@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Helm/Values.yaml and umbrella charts.md",
+                "file": "K8s/Deployment/Helm/helm Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Values.yaml and umbrella charts"
+              "title": "helm Sample Command Lines"
             }
           }
         ]
@@ -169,8 +169,8 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "K8s/Deployment/Helm/Passing custom values files.md",
     "K8s/Deployment/Helm/Values.yaml and umbrella charts.md",
+    "K8s/Deployment/Helm/Passing custom values files.md",
     "K8s/Deployment/Helm/Values.yaml and umbrella charts.md.crdownload",
     "What is/KubeCM.md",
     "Linux/Timeshift backup for Linux.md",
