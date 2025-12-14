@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Helm/helm Sample Command Lines.md",
+                "file": "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "helm Sample Command Lines"
+              "title": "Delete an app with stuck finalizer"
             }
           }
         ]
@@ -169,6 +169,7 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "K8s/Deployment/Helm/helm Sample Command Lines.md",
     "K8s/Deployment/Helm/Values.yaml and umbrella charts.md",
     "K8s/Deployment/Helm/Passing custom values files.md",
     "K8s/Deployment/Helm/Values.yaml and umbrella charts.md.crdownload",
@@ -199,7 +200,6 @@
     "K8s/Autoscaling/Node group downscale blockers.md",
     "K8s/Autoscaling/Node autoscaling on-prem.md",
     "Files/Articles/2025.09.08 Mastering Karpenter Consolidation Empty Nodes, Underutilized Nodes, and the Trade-Offs.md",
-    "K8s/GPU/Steering GPU workloads to a MIG instance.md",
     "Media/Screenshots/The Most Common Kubernetes Errors and How to Fix Them.pdf",
     "Media/Screenshots/2025.10.09 Mastering Kubernetes Observability The Ultimate Grafana Alloy Setup Guide.pdf",
     "Media/Screenshots/2025.11.04 Argo CD Blue-Green Deployments in Kubernetes Full Guide.pdf",
