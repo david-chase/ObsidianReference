@@ -32,3 +32,34 @@ allowedTopologies:
     values:
     - us-east-2a  # Replace with your cluster's AZ
 ```
+
+
+## Installing Argo CD
+
+``` powershell
+kubectl create namespace argocd
+```
+ 
+``` powershell
+kubectl apply -n argocd `
+  -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+
+``` powershell
+kubectl wait --for=condition=Available `
+  deployment/argocd-server `
+  -n argocd `
+  --timeout=300s
+```
+
+``` powershell
+kubectl patch configmap argocd-cm `
+  -n argocd `
+  --type merge `
+  -p '{"data":{"kustomize.buildOptions":"--enable-helm"}}'
+```
+
+``` powershell
+kubectl rollout restart deployment argocd-repo-server -n argocd
+```
+
