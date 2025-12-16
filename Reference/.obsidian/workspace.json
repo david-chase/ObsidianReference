@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/General/Easy EKS Auto Mode Cluster.md",
+                "file": "Quick Starts/AKS QuickStart.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Easy EKS Auto Mode Cluster"
+              "title": "AKS QuickStart"
             }
           }
         ]
@@ -169,8 +169,12 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "Quick Starts/EKS Auto Mode Quickstart.md",
+    "Quick Starts/AKS QuickStart.md",
+    "Quick Starts/Kubex Automation Controller Quickstart.md",
+    "Quick Starts",
+    "Quick Starts/Argo CD Quickstart.md",
     "K8s/Deployment/Argo/Argo CD/Install Argo CD.md",
-    "K8s/General/Easy EKS Auto Mode Cluster.md",
     "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
     "K8s/Deployment/Helm/helm Sample Command Lines.md",
     "K8s/Deployment/Helm/Values.yaml and umbrella charts.md",
@@ -197,14 +201,10 @@
     "K8s/Pods.md",
     "K8s/Nodes",
     "K8s/Nodes/Detecting node autoscaler.md",
-    "K8s/Nodes/Karpenter node consolidation.md",
-    "K8s/Nodes/Karpenter and pod limits.md",
-    "K8s/Pods/Leave replicas unspecified when using HPA.md",
     "Media/Screenshots/The Most Common Kubernetes Errors and How to Fix Them.pdf",
     "Media/Screenshots/2025.10.09 Mastering Kubernetes Observability The Ultimate Grafana Alloy Setup Guide.pdf",
     "Media/Screenshots/2025.11.04 Argo CD Blue-Green Deployments in Kubernetes Full Guide.pdf",
     "Media/Screenshots/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.pdf",
-    "Media/Screenshots/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.pdf",
     "Media/Screenshots/Pasted image 20250720113823.png",
     "Media/Screenshots/Pasted image 20250720113637.png",
     "Media/Screenshots/Pasted image 20250720113524.png",
