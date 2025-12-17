@@ -29,15 +29,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Quick Starts/Argo CD Quickstart.md",
+                "file": "Quick Starts/Kubex Automation Controller Quickstart.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Argo CD Quickstart"
+              "title": "Kubex Automation Controller Quickstart"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.5
+    "width": 337.5
   },
   "right": {
     "id": "3314c18e7d6ded4f",
@@ -183,12 +184,27 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "99dfb0527bfc2b17",
+  "active": "394c6a9c28b7b4da",
   "lastOpenFiles": [
-    "Quick Starts/Argo CD Quickstart.md",
-    "K8s/Deployment/Argo/Argo CD/Argo CD sample command lines.md",
-    "Quick Starts/AKS QuickStart.md",
     "Quick Starts/EKS Auto Mode Quickstart.md",
+    "Quick Starts/Argo CD Quickstart.md",
+    "Quick Starts/AKS QuickStart.md",
+    "Untitled.md",
+    "K8s/Deployment/Argo/Argo CD/Argo CD sample command lines.md",
+    "Windows/Enabling SSH Authentication for Windows.md",
+    "Windows/choco Sample Command Lines.md",
+    "Windows",
+    "What is/OpenSearch.md",
+    "What is/Kueue.md",
+    "What is/Kgateway.md",
+    "What is/DevZero.md",
+    "Files/Articles/2025.12.15 Vertical Pod Autoscaler (VPA) with InPlaceOrRecreate in Kubernetes 1.33.x.md",
+    "Files/Articles/2025.12.15 Using Kustomize With Helm Charts for Argo CD Applications.md",
+    "Files/Articles/2025.12.11 Nvidia Is Terrified Of Google’s TPUs.md",
+    "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
+    "Files/Articles/2025.11.26 Cilium - A Simple Way To See and Control Pod-to-Pod Traffic.md",
+    "Files/Articles/2025.11.18 Helm Best Practices 2025 What Changed with Helm 4 and What You Should Know.md",
+    "Files/Articles/2025.09.06 KYAML in Kubernetes v1.34 A Safer, Leaner Alternative to YAML and JSON.md",
     "Quick Starts/Kubex Automation Controller Quickstart.md",
     "Quick Starts",
     "K8s/Deployment/Argo/Argo CD/Install Argo CD.md",
@@ -199,28 +215,13 @@
     "K8s/Deployment/Helm/Values.yaml and umbrella charts.md.crdownload",
     "What is/KubeCM.md",
     "Linux/Timeshift backup for Linux.md",
-    "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
-    "Linux/Apt common command-lines.md",
-    "Linux/Laptop power settings for Ubuntu.md",
-    "Linux/Install NVIDIA GPU drivers on Ubuntu.md",
-    "Linux/Install NFS Server on Ubuntu.md",
-    "What is/Cockpit.md",
-    "K8s/General/Viewing Kubernetes Master and Worker Logs.md",
-    "What is/Bottlerocket.md",
-    "K8s/GPU/Fractional GPU Instances.md",
-    "K8s/Hosted Kubernetes Platforms/etcd Encryption by CSP.md",
-    "K8s/Nodes/Node autoscaling.md",
     "K8s/Tools & Utilities",
-    "K8s/Tools & Utilities.md",
     "K8s/Hosted Kubernetes Platforms",
-    "K8s/Pods/VPA.md",
     "K8s/Pods",
-    "K8s/Pods.md",
     "K8s/Nodes",
     "Media/Screenshots/The Most Common Kubernetes Errors and How to Fix Them.pdf",
     "Media/Screenshots/2025.10.09 Mastering Kubernetes Observability The Ultimate Grafana Alloy Setup Guide.pdf",
     "Media/Screenshots/2025.11.04 Argo CD Blue-Green Deployments in Kubernetes Full Guide.pdf",
-    "Media/Screenshots/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.pdf",
     "Media/Screenshots/Pasted image 20250720113823.png",
     "Media/Screenshots/Pasted image 20250720113637.png",
     "Media/Screenshots/Pasted image 20250720113524.png",
