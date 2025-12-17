@@ -33,3 +33,11 @@ allowedTopologies:
     - us-east-2a  # Replace with your cluster's AZ
 ```
 
+6. Add the cluster to your kubeconfig
+
+``` powershell
+aws eks update-kubeconfig `
+  --region ca-central-1 `
+  --name dchase-testing `
+  --profile Work
+```
