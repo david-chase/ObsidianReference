@@ -65,3 +65,11 @@ aws eks update-kubeconfig `
   --profile Work
 ```
 
+8. Recycle a failed node
+
+``` powershell
+kubectl drain <node> `
+  --ignore-daemonsets `
+  --delete-emptydir-data `
+  --force
+```
