@@ -33,7 +33,30 @@ allowedTopologies:
     - us-east-2a  # Replace with your cluster's AZ
 ```
 
-6. Add the cluster to your kubeconfig
+6. Enable spot + on-demand instances
+
+``` powershell
+kubectl patch nodepool general-purpose `
+  --type='merge' `
+  -p '{
+    "spec": {
+      "template": {
+        "spec": {
+          "requirements": [
+            {
+              "key": "karpenter.sh/capacity-type",
+              "operator": "In",
+              "values": ["spot", "on-demand"]
+            }
+          ]
+        }
+      }
+    }
+  }'
+
+```
+
+7. Add the cluster to your kubeconfig
 
 ``` powershell
 aws eks update-kubeconfig `
@@ -41,3 +64,4 @@ aws eks update-kubeconfig `
   --name dchase-testing `
   --profile Work
 ```
+
