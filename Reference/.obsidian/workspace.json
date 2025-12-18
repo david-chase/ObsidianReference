@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Quick Starts/EKS Auto Mode Quickstart.md",
+                "file": "K8s/Deployment/Helm/helm Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EKS Auto Mode Quickstart"
+              "title": "helm Sample Command Lines"
             }
           }
         ]
@@ -169,10 +169,15 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "K8s/Deployment/Helm/Helm chart templates commonly used functions.md",
+    "K8s/Deployment/Argo/Argo CD/Argo CD sample command lines.md",
+    "K8s/Deployment/Argo/Argo CD/Argo CD cilium causes Out-Of-Sync.md",
+    "K8s/Deployment/Argo/Argo CD/Argo CD ignore changes in requests or limits.md",
+    "K8s/Deployment/Argo/Argo CD/Argo CD repo structure.md",
+    "Quick Starts/EKS Auto Mode Quickstart.md",
     "Quick Starts/AKS QuickStart.md",
     "Files/Articles/2025.12.15 Using Kustomize With Helm Charts for Argo CD Applications.md",
     "Quick Starts/Argo CD Quickstart.md",
-    "Quick Starts/EKS Auto Mode Quickstart.md",
     "Quick Starts/Kubex Automation Controller Quickstart.md",
     "Quick Starts",
     "K8s/Deployment/Helm/Values.yaml and umbrella charts.md",
@@ -194,11 +199,6 @@
     "What is/KubeCM.md",
     "What is/Cockpit.md",
     "Linux/Apt common command-lines.md",
-    "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
-    "What is/Bottlerocket.md",
-    "K8s/GPU/Fractional GPU Instances.md",
-    "Files/Articles/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.md",
-    "What is/Spacelift.io.md",
     "K8s/Tools & Utilities",
     "K8s/Pods",
     "K8s/Nodes",
