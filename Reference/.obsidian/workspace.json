@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Quick Starts/EKS Auto Mode Quickstart.md",
+                "file": "Tech Journal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EKS Auto Mode Quickstart"
+              "title": "Tech Journal"
             }
           }
         ]
@@ -169,10 +169,10 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "Quick Starts/EKS Auto Mode Quickstart.md",
+    "Tech Journal.md",
     "Quick Starts/Argo CD Quickstart.md",
     "Untitled 1.md",
-    "Untitled.md",
-    "Quick Starts/EKS Auto Mode Quickstart.md",
     "K8s/Pods/Pod eviction loops.md",
     "Quick Starts/AKS QuickStart.md",
     "Files/Articles/2025.12.15 Using Kustomize With Helm Charts for Argo CD Applications.md",
