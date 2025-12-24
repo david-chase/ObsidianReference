@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech Journal.md",
+                "file": "What is/Apache Airflow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tech Journal"
+              "title": "Apache Airflow"
             }
           }
         ]
@@ -169,10 +169,15 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "Quick Starts/EKS Auto Mode Quickstart.md",
     "Tech Journal.md",
+    "What is/Apache Airflow.md",
+    "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
+    "Files/Articles/2025.12.24 Installing Apache Airflow 3 on Kubernetes.md",
+    "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
+    "Quick Starts/EKS Auto Mode Quickstart.md",
     "Quick Starts/Argo CD Quickstart.md",
     "Untitled 1.md",
+    "Untitled.md",
     "K8s/Pods/Pod eviction loops.md",
     "Quick Starts/AKS QuickStart.md",
     "Files/Articles/2025.12.15 Using Kustomize With Helm Charts for Argo CD Applications.md",
@@ -194,11 +199,6 @@
     "Files/Articles/2025.09.06 KYAML in Kubernetes v1.34 A Safer, Leaner Alternative to YAML and JSON.md",
     "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
     "What is/KubeCM.md",
-    "What is/Cockpit.md",
-    "Linux/Apt common command-lines.md",
-    "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
-    "What is/Bottlerocket.md",
-    "K8s/GPU/Fractional GPU Instances.md",
     "K8s/Tools & Utilities",
     "K8s/Pods",
     "K8s/Nodes",
