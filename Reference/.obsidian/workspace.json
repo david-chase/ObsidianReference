@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/GPU/Install grove-system.md",
+                "file": "Files/Articles/Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Install grove-system"
+              "title": "Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That"
             }
           }
         ]
@@ -169,8 +169,9 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "Tech Journal.md",
     "K8s/GPU/Install grove-system.md",
+    "Files/Articles/Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
+    "Tech Journal.md",
     "What is/Apache Airflow.md",
     "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
     "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
@@ -198,7 +199,6 @@
     "New folder",
     "Files/Articles/2025.09.06 KYAML in Kubernetes v1.34 A Safer, Leaner Alternative to YAML and JSON.md",
     "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
-    "What is/KubeCM.md",
     "K8s/Tools & Utilities",
     "K8s/Pods",
     "K8s/Nodes",
