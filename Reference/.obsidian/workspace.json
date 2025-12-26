@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Files/Articles/Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
+                "file": "K8s/Pods/HPA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That"
+              "title": "HPA"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#pods",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -169,8 +169,11 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "K8s/GPU/Install grove-system.md",
+    "K8s/Pods/JVM workloads in Kubernetes.md",
+    "K8s/Pods/Leave replicas unspecified when using HPA.md",
+    "K8s/Pods/HPA.md",
     "Files/Articles/Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
+    "K8s/GPU/Install grove-system.md",
     "Tech Journal.md",
     "What is/Apache Airflow.md",
     "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
@@ -193,12 +196,9 @@
     "Files/Articles/2025.12.11 Nvidia Is Terrified Of Google’s TPUs.md",
     "Files/Articles/2025.11.26 Cilium - A Simple Way To See and Control Pod-to-Pod Traffic.md",
     "Windows/Enabling SSH Authentication for Windows.md",
-    "Files/Articles/2025.11.18 Helm Best Practices 2025 What Changed with Helm 4 and What You Should Know.md",
     "Windows/Enabling SSH Authentication for Window.md.crdownload",
     "Windows",
     "New folder",
-    "Files/Articles/2025.09.06 KYAML in Kubernetes v1.34 A Safer, Leaner Alternative to YAML and JSON.md",
-    "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
     "K8s/Tools & Utilities",
     "K8s/Pods",
     "K8s/Nodes",
