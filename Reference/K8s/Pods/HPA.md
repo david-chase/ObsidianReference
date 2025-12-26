@@ -6,7 +6,8 @@
 ## Dangers of scaling on CPU only
 
 - If you set CPU requests too low, you will scale out way too many replicas and waste memory
-- If you set CPU reque
+- If you set CPU requests too high, you may never scale out, even while running out of memory
+- Using KEDA to scale on queues and actual business events will always be more robust than scaling on CPU or memory alone
 
 ## Leave replicas unspecified when using HPA
 
