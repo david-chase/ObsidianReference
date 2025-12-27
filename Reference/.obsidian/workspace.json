@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/Grove.md",
+                "file": "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Grove"
+              "title": "2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage"
             }
           }
         ]
@@ -169,8 +169,8 @@
   },
   "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "What is/NVIDIA Grove.md",
     "K8s/Pods/HPA.md",
-    "What is/Grove.md",
     "K8s/Pods/JVM workloads in Kubernetes.md",
     "K8s/Pods/Leave replicas unspecified when using HPA.md",
     "Files/Articles/Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
