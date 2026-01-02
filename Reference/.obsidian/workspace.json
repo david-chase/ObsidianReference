@@ -10,18 +10,35 @@
           {
             "id": "99dfb0527bfc2b17",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Quick Starts/EKS Auto Mode Quickstart.md",
+                "file": "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "kubectl Sample Command Lines"
+            }
+          },
+          {
+            "id": "d2dcd9be999b3a2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8s/Troubleshooting K8s.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EKS Auto Mode Quickstart"
+              "title": "Troubleshooting K8s"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#pods",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,12 +184,24 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "99dfb0527bfc2b17",
+  "active": "d2dcd9be999b3a2c",
   "lastOpenFiles": [
+    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
+    "K8s/Troubleshooting K8s.md",
+    "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
+    "What is/NVIDIA Grove.md",
+    "K8s/Pods/HPA.md",
+    "K8s/Pods/JVM workloads in Kubernetes.md",
+    "K8s/Pods/Leave replicas unspecified when using HPA.md",
+    "Files/Articles/Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
+    "K8s/GPU/Install grove-system.md",
+    "Tech Journal.md",
+    "What is/Apache Airflow.md",
+    "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
+    "Files/Articles/2025.12.24 Installing Apache Airflow 3 on Kubernetes.md",
+    "Quick Starts/EKS Auto Mode Quickstart.md",
     "Quick Starts/Argo CD Quickstart.md",
     "Untitled 1.md",
-    "Untitled.md",
-    "Quick Starts/EKS Auto Mode Quickstart.md",
     "K8s/Pods/Pod eviction loops.md",
     "Quick Starts/AKS QuickStart.md",
     "Files/Articles/2025.12.15 Using Kustomize With Helm Charts for Argo CD Applications.md",
@@ -184,21 +213,9 @@
     "What is/DevZero.md",
     "What is/OpenSearch.md",
     "What is/Kueue.md",
-    "Files/Articles/2025.12.11 Nvidia Is Terrified Of Google’s TPUs.md",
-    "Files/Articles/2025.11.26 Cilium - A Simple Way To See and Control Pod-to-Pod Traffic.md",
-    "Windows/Enabling SSH Authentication for Windows.md",
-    "Files/Articles/2025.11.18 Helm Best Practices 2025 What Changed with Helm 4 and What You Should Know.md",
     "Windows/Enabling SSH Authentication for Window.md.crdownload",
     "Windows",
     "New folder",
-    "Files/Articles/2025.09.06 KYAML in Kubernetes v1.34 A Safer, Leaner Alternative to YAML and JSON.md",
-    "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
-    "What is/KubeCM.md",
-    "What is/Cockpit.md",
-    "Linux/Apt common command-lines.md",
-    "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
-    "What is/Bottlerocket.md",
-    "K8s/GPU/Fractional GPU Instances.md",
     "K8s/Tools & Utilities",
     "K8s/Pods",
     "K8s/Nodes",
