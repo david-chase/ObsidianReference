@@ -2,6 +2,28 @@
 
 ```table-of-contents
 ```
+## Scopes
+
+- Custom Resource Definitions (CRDs) are always cluster scoped.
+- Individual CRs can be cluster or namespace-scoped depending on how they're defined.
+
+``` yaml
+spec:
+  scope: Namespaced   # or Cluster
+```
+
+## Deleting a CR
+
+- To delete a CR you reference the resource type, the resource, and the namespace it's in.  
+
+``` powershell
+# Delete a CR that is an Argo CD application
+kubectl delete application <name> -n argocd
+
+# Delete a CR that is a cluster-scoped cert-manager clusterissuer
+kubectl delete clusterissuer <name>
+```
+
 ## Deleting a CRD
 
 ``` powershell
