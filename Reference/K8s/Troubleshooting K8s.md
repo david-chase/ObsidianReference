@@ -32,3 +32,12 @@ ping google.com
 kubectl exec -it <podname> -c <containername> -- /bin/sh
 ```
 
+## Create a debugger container on a pod
+
+- This is useful for containers that are distroless -- they have no shell in them.
+- In fact, this is probably preferred to opening a shell on a container since it doesn't rely on anything being included in the container image
+
+``` powershell
+# Create an interactive debugging session in pod mypod and immediately attach to it.
+kubectl debug mypod -it --image=busybox
+```
