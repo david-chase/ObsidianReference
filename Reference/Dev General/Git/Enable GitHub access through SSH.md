@@ -1,4 +1,76 @@
-# Enable GitHub Access Through SSH
+#github #ssh #linux #windows
+
+## Windows
+
+### Generate an SSH key (Ed25519 – recommended)
+
+``` powershell
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+
+When prompted:
+
+- **File location** → press **Enter** (default is best)
+- **Passphrase** → optional but recommended
+
+This creates:
+
+- Private key: `~\.ssh\id_ed25519`
+- Public key: `~\.ssh\id_ed25519.pub`
+
+---
+### Start the SSH agent and load your key
+
+In a PowerShell Admin window:
+
+``` powershell
+Set-Service ssh-agent -StartupType Automatic
+Start-Service ssh-agent
+```
+
+``` powershell
+Start-Service ssh-agent
+ssh-add $env:USERPROFILE\.ssh\id_ed25519
+
+# Confirm:
+ssh-add -l
+```
+
+---
+### Add the public key to GitHub
+
+Copy the key:
+
+``` powershell
+Get-Content $env:USERPROFILE\.ssh\id_ed25519.pub | Set-Clipboard
+```
+
+Then in GitHub:
+
+1. Go to **Settings → SSH and GPG keys**
+2. Click **New SSH key**
+3. Paste the key
+4. Type: **Authentication key**
+5. Save
+
+---
+## 7. Use SSH URLs for repositories
+
+Clone using SSH (not HTTPS):
+
+``` powershell
+git clone git@github.com:OWNER/REPO.git
+```
+
+If you already cloned via HTTPS:
+
+``` powershell
+git remote set-url origin git@github.com:OWNER/REPO.git
+```
+
+
+# Linux
 
 ## 1. Check for Existing SSH Keys
 

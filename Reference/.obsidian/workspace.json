@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Troubleshooting K8s.md",
+                "file": "Dev General/Git/Enable GitHub access through SSH.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Troubleshooting K8s"
+              "title": "Enable GitHub access through SSH"
             }
           }
         ],
@@ -186,8 +186,10 @@
   },
   "active": "d2dcd9be999b3a2c",
   "lastOpenFiles": [
-    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
+    "Dev General/Git/Enable GitHub SSH Sync.md",
+    "Dev General/Git/Enable GitHub access through SSH.md",
     "K8s/Troubleshooting K8s.md",
+    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
     "K8s/General/CRDs, Custom Resources, and controllers.md",
     "K8s/Nodes/Removing a Node From a Cluster.md",
     "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
@@ -211,8 +213,6 @@
     "Quick Starts",
     "K8s/Deployment/Helm/Values.yaml and umbrella charts.md",
     "What is/Kgateway.md",
-    "Files/Articles/2025.12.15 Vertical Pod Autoscaler (VPA) with InPlaceOrRecreate in Kubernetes 1.33.x.md",
-    "What is/DevZero.md",
     "Windows/Enabling SSH Authentication for Window.md.crdownload",
     "Windows",
     "New folder",
