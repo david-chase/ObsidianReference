@@ -186,10 +186,10 @@
   },
   "active": "d2dcd9be999b3a2c",
   "lastOpenFiles": [
-    "K8s/General/CRDs, Custom Resources, and controllers.md",
-    "K8s/Troubleshooting K8s.md",
-    "K8s/Nodes/Removing a Node From a Cluster.md",
     "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
+    "K8s/Troubleshooting K8s.md",
+    "K8s/General/CRDs, Custom Resources, and controllers.md",
+    "K8s/Nodes/Removing a Node From a Cluster.md",
     "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
     "What is/NVIDIA Grove.md",
     "K8s/Pods/HPA.md",

@@ -238,6 +238,10 @@ kubectl get pods --all-namespaces --field-selector=status.phase!=Running
 
 # Display CPU & memory usage of all running pods in a namespace
 kubectl top pod -n <namespace>
+
+# List the containers in a pod, including initContainers
+kubectl get pod <pod-name> -n <namespace> `
+  -o jsonpath="{.spec.initContainers[*].name} {.spec.containers[*].name}"
 ```
 
 ## Services

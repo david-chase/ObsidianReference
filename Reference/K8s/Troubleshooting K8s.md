@@ -41,3 +41,20 @@ kubectl exec -it <podname> -c <containername> -- /bin/sh
 # Create an interactive debugging session in pod mypod and immediately attach to it.
 kubectl debug mypod -it --image=busybox
 ```
+
+## Create a debug pod that has all the same mounts (config/data) as the container I'm debugging
+
+``` powershell
+kubectl debug <podname> -n <namespace> `
+  --copy-to=my-pod-debug `
+  --container=<containername> `
+  --image=busybox `
+  -it
+  
+# Example for kubex automation controller
+kubectl debug kubex-automation-controller-84d56875-4t96h -n kubex `
+  --copy-to=my-pod-debug `
+  --container=kubex-automation-controller `
+  --image=busybox `
+  -it
+```
