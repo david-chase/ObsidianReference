@@ -1,4 +1,4 @@
-# Temporarily Removing a Node From a Kubernetes Cluster
+#k8s #nodes 
 
 This guide describes the **easiest, fully reversible way** to simulate a node being removed (scaled in) from a Kubernetes cluster **without** using an autoscaler.
 
