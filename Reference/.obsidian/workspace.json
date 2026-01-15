@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Nodes/Karpenter node consolidation.md",
+                "file": "K8s/Nodes/Karpenter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Karpenter node consolidation"
+              "title": "Karpenter"
             }
           }
         ]
@@ -169,6 +169,7 @@
   },
   "active": "03c3a52415c37453",
   "lastOpenFiles": [
+    "K8s/Nodes/Karpenter node consolidation.md",
     "K8s/Nodes/Karpenter.md",
     "K8s/Nodes/Karpenter and pod limits.md",
     "What is/Small Language Model (SLM).md",
@@ -194,7 +195,6 @@
     "Quick Starts/EKS Auto Mode Quickstart.md",
     "Quick Starts/Argo CD Quickstart.md",
     "Untitled 1.md",
-    "K8s/Pods/Pod eviction loops.md",
     "Quick Starts",
     "Windows/Enabling SSH Authentication for Window.md.crdownload",
     "Windows",
