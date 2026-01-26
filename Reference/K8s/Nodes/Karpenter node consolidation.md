@@ -74,13 +74,11 @@ tell me about consolidationPolicy
 
 Great question, Dave — let’s zoom in on **`consolidationPolicy`** in Karpenter.
 
----
 ## What `consolidationPolicy` Does
 
 The `consolidationPolicy` setting controls **how aggressively Karpenter looks for opportunities to replace or remove nodes**.  
 It’s configured in the **`Provisioner`** (or **`NodePool`** in newer versions).
 
----
 ### Values for `consolidationPolicy`
 
 Karpenter currently supports these options:
@@ -101,7 +99,6 @@ Karpenter currently supports these options:
 - This can mean pods get evicted and restarted, but PDBs and constraints are respected.
 - Goal: reduce cost and fragmentation.
 
----
 ### Example Configuration (Provisioner)
 
 Here’s how it looks in a `Provisioner` manifest:
@@ -112,7 +109,6 @@ Here’s how it looks in a `Provisioner` manifest:
 - `consolidationPolicy: WhenUnderutilized` → allows eviction and node replacement.
 - If you set `WhenEmpty`, only empty nodes get removed.
 
----
 ### How It Interacts With `ttlSecondsAfterEmpty`
 
 - `ttlSecondsAfterEmpty`: Controls how long an empty node should remain before Karpenter deletes it.
@@ -120,27 +116,18 @@ Here’s how it looks in a `Provisioner` manifest:
     - If `consolidationPolicy: WhenEmpty` → nodes are removed after they go empty + TTL.
     - If `WhenUnderutilized` → consolidation looks for broader opportunities, not just empty nodes.
 
----
 ### Quick Comparison
-
-|Policy|Behavior|
-|---|---|
-|`WhenEmpty`|Removes only empty nodes after TTL. Safest, minimal disruption.|
-|`WhenUnderutilized`|Removes/replaces underutilized nodes if pods can be rescheduled safely.|
-
----
 
 👉 So in short:
 
 - **Use `WhenEmpty`** if you want conservative cleanup.
 - **Use `WhenUnderutilized`** if you want Karpenter to aggressively optimize cost/utilization by moving pods around.
-
----
 ## Node consolidation and node sizes
 
 - When using large node sizes, node consolidation can require moving dozens or even hundreds of pods
 - This results in a large blast radius
 
+---
 ## Node Consolidation in Practice
 
 In the industry, there is a strong consensus that **active node consolidation is essential for cost management**, but it is almost never used "out of the box" without strict guardrails.
