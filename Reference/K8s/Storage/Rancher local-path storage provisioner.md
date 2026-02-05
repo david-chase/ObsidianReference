@@ -1,21 +1,38 @@
 #standard #storage #pv #pvc
 
-## 🧱 Prerequisites
 
-- A working Kubernetes cluster (e.g. kubeadm-based)
-    
-- `kubectl` access to the cluster
-    
-- At least one worker node
-    
-- `/opt/local-path-provisioner` or similar directory available on the worker nodes (this will be used to store PV data)
-    
+```table-of-contents
+```
+## Where the local-path provisioner stores its files
+
+By default, the **Rancher Local Path Provisioner** stores the contents of PersistentVolumes under:
+
+``` text
+/opt/local-path-provisioner
+```
+
+Each PersistentVolume will have its own subdirectory inside that path, usually named after the PVC or PV.
+
+### Example Structure:
+
+``` text
+/opt/local-path-provisioner/pvc-<uid>/
+```
+
+Where `<uid>` is the UID of the PVC object.
 
 ---
+## Deployment
+### Prerequisites
 
-## ✅ Step-by-step Deployment Instructions
+- A working Kubernetes cluster (e.g. kubeadm-based)
+- `kubectl` access to the cluster
+- At least one worker node
+- `/opt/local-path-provisioner` or similar directory available on the worker nodes (this will be used to store PV data)
 
-### 1. **Install the Local Path Provisioner**
+### Step-by-step Deployment Instructions
+
+#### 1. **Install the Local Path Provisioner**
 
 Run the following command to apply the default manifest maintained by Rancher:
 
@@ -26,13 +43,9 @@ kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisione
 This deploys:
 
 - The `local-path-provisioner` pod in its own namespace (`local-path-storage`)
-    
 - A `StorageClass` named `local-path`
-    
 
----
-
-### 2. **(Optional) Mark It as Default StorageClass**
+#### 2. **(Optional) Mark It as Default StorageClass**
 
 Check current default storage class:
 
@@ -46,9 +59,7 @@ If `local-path` is **not** marked `(default)`, patch it:
 kubectl patch storageclass local-path -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 ```
 
----
-
-### 3. **Verify Deployment**
+#### 3. **Verify Deployment**
 
 Check that the pod is running:
 
@@ -64,9 +75,7 @@ kubectl get storageclass
 
 You should see `local-path` and it should be marked as the default.
 
----
-
-### 4. **Test It with a PVC**
+#### 4. **Test It with a PVC**
 
 Create a test PVC and pod:
 
@@ -115,12 +124,8 @@ kubectl get pvc
 kubectl get pod test-pod
 ```
 
----
-
-### 5. **Cleanup (Optional)**
+#### 5. **Cleanup (Optional)**
 
 ```powershell
 kubectl delete -f test-pvc.yaml
 ```
-
----
