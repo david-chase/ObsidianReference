@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Storage/Local Storage.md",
+                "file": "K8s/Pods/Max Pods Per Node.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Local Storage"
+              "title": "Max Pods Per Node"
             }
           }
         ]
@@ -167,14 +167,16 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "03c3a52415c37453",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
+    "What is/Grafana Mimir.md",
+    "What is/Grafana Loki.md",
+    "K8s/Storage/Local Storage.md",
     "K8s/Storage/Rancher local-path storage provisioner.md",
     "K8s/Storage/Where the local-path provisioner stores its files.md",
     "K8s/Storage/Storage provisioning dynamic versus static.md",
     "K8s/Storage/Script - Toggle-DefaultStorageClass.md",
     "K8s/Storage/NFS storage provisioner.md",
-    "K8s/Storage/Local Storage.md",
     "K8s/Storage/Checking free space on Rancher local path provisioner.md",
     "K8s/Nodes/Karpenter node consolidation.md",
     "K8s/Troubleshooting K8s.md",
@@ -193,8 +195,6 @@
     "What is/NVIDIA Grove.md",
     "K8s/Pods/HPA.md",
     "K8s/Pods/JVM workloads in Kubernetes.md",
-    "K8s/Pods/Leave replicas unspecified when using HPA.md",
-    "Files/Articles/Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
     "Quick Starts",
     "Windows/Enabling SSH Authentication for Window.md.crdownload",
     "Windows",
