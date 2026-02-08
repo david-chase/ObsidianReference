@@ -22,23 +22,8 @@
               "icon": "lucide-file",
               "title": "kubectl Sample Command Lines"
             }
-          },
-          {
-            "id": "a120548b24db1d2b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "What is/cdk8s.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "cdk8s"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,10 +169,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "a120548b24db1d2b",
+  "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
-    "K8s/Nodes/Temporarily Removing a Node From a Cluster.md",
     "What is/cdk8s.md",
+    "K8s/Nodes/Temporarily Removing a Node From a Cluster.md",
     "What is/Small Language Model (SLM).md",
     "K8s/Nodes/Karpenter.md",
     "Untitled.md",
