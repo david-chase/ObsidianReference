@@ -42,6 +42,7 @@ mig-devices:
 
 - If a pod requests a specific mig config and there is no node labelled with that mig config, then the pod will go unscheduled
 
+---
 ## Reconfiguring MIGs on an existing node
 
 ### MIG reconfiguration requires destroying the existing GPU instances
@@ -51,10 +52,10 @@ When you change a GPU’s MIG layout (e.g., from 1g.24gb × 4 → 2g.48gb × 2):
 - ALL existing MIG instances on that GPU must be removed.
 - Removing a MIG instance unbinds and resets the GPU partition.
 - Any Kubernetes Pod using those MIG devices loses its device handle → it crashes or is evicted automatically.
+- The node itself doesn't need to restart, only the GPUs where MIG config is being applied get reset.
 
 **Therefore, all workloads on that GPU must restart.**
 
----
 ### What About Other GPUs in the Same Node?
 
 Each GPU’s MIG configuration is independent.
@@ -62,7 +63,15 @@ Each GPU’s MIG configuration is independent.
 - Reconfiguring **GPU0** does _not_ affect workloads on **GPU1**.
 - Only workloads using the specific GPU whose MIG layout you modify are impacted.
 
----
 ### What About CPU-only workloads?
 
 CPU-only Pods are unaffected **unless you choose to drain the node**.
+
+---
+
+## Enabling MIG support on CSP nodes
+
+- By default EKS, AKS, and GKE nodes don't have MIG support enabled
+- This has to be enabled before you can apply a MIG config
+- Most public cloud instances need to be rebooted prior to applying a MIG config, unless it's on-prem or a bare-metal instance
+
