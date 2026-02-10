@@ -163,6 +163,15 @@ kubectl get node <nodename> -o json | jq .metadata.annotations
 # Apply a label to a pod, overwriting if it exists
 kubectl label pod <podname> <key>=<value> --overwrite
 ```
+
+## LimitRanges
+``` powershell
+# Check for limitranges
+kubectl get limitrange -n <namespace>
+
+# Get details of a limitrange
+kubectl describe limitrange <name> -n <namespace>
+```
 ## Logs
 ``` powershell
 # Show logs for a pod
