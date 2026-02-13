@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Helm/helm Sample Command Lines.md",
+                "file": "Files/Articles/2025.10.02 Production-Ready Cilium — Gateway API, Pod Rate Limiting, and Real-World Challenges.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "helm Sample Command Lines"
+              "title": "2025.10.02 Production-Ready Cilium — Gateway API, Pod Rate Limiting, and Real-World Challenges"
             }
           }
         ],
@@ -187,6 +187,9 @@
   },
   "active": "5a30915c6f092935",
   "lastOpenFiles": [
+    "Linux/Timeshift backup for Linux.md",
+    "Files/Articles/2025.10.02 Production-Ready Cilium — Gateway API, Pod Rate Limiting, and Real-World Challenges.md",
+    "K8s/Deployment/Helm/helm Sample Command Lines.md",
     "K8s/Deployment/Argo/Argo CD sample command lines.md",
     "K8s/Deployment/Argo/Argo CD.md",
     "Files/Articles/2026.02.01 awsmap, Find Everything Running in Your AWS Account.md",
