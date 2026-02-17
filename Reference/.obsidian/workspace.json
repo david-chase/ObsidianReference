@@ -1,56 +1,41 @@
 {
   "main": {
-    "id": "73a51a2e163d589c",
+    "id": "6bab346add84b597",
     "type": "split",
     "children": [
       {
-        "id": "d8723651a35a9b80",
+        "id": "e7a5f0e693708463",
         "type": "tabs",
         "children": [
           {
-            "id": "dc591e219dec4255",
+            "id": "1654e245f16484e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Deployment/Argo/Argo CD.md",
+                "file": "What is/SOPS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Argo CD"
-            }
-          },
-          {
-            "id": "5a30915c6f092935",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Files/Articles/2025.10.02 Production-Ready Cilium — Gateway API, Pod Rate Limiting, and Real-World Challenges.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025.10.02 Production-Ready Cilium — Gateway API, Pod Rate Limiting, and Real-World Challenges"
+              "title": "SOPS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "c6cbf79becc9d245",
+    "id": "92974bf885542829",
     "type": "split",
     "children": [
       {
-        "id": "b288f03074616730",
+        "id": "951ed278e706af29",
         "type": "tabs",
         "children": [
           {
-            "id": "6eac9827a7365ddf",
+            "id": "4a899497ca03e78e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -63,7 +48,7 @@
             }
           },
           {
-            "id": "57d39e728f9fb0af",
+            "id": "18c2fdcceb3d2ebf",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -80,7 +65,7 @@
             }
           },
           {
-            "id": "f239504ec0a101bc",
+            "id": "9f9bd212abd9ff5b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -96,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "bf6f939ca6ce1e88",
+    "id": "1fb06eaf52022f52",
     "type": "split",
     "children": [
       {
-        "id": "88311ae40efcf54c",
+        "id": "a352bec72b216999",
         "type": "tabs",
         "children": [
           {
-            "id": "3ea76e98a5bf00ac",
+            "id": "807ae6fecdbcb78b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "K8s/Deployment/Argo/Argo CD.md",
+                "file": "What is/KVM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Argo CD"
+              "title": "Backlinks for KVM"
             }
           },
           {
-            "id": "70b0ef8fe662f3c5",
+            "id": "6b2c908378557dd8",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "K8s/Deployment/Argo/Argo CD.md",
+                "file": "What is/KVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Argo CD"
+              "title": "Outgoing links from KVM"
             }
           },
           {
-            "id": "807721e3dc99d9f8",
+            "id": "4308c443938ad5db",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -152,18 +137,18 @@
             }
           },
           {
-            "id": "7b8b3b6b6e279c9e",
+            "id": "f9b48090327fce78",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "K8s/Deployment/Argo/Argo CD.md",
+                "file": "What is/KVM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Argo CD"
+              "title": "Outline of KVM"
             }
           }
         ]
@@ -185,16 +170,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "5a30915c6f092935",
+  "active": "1654e245f16484e4",
   "lastOpenFiles": [
-    "Linux/Timeshift backup for Linux.md",
-    "Files/Articles/2025.10.02 Production-Ready Cilium — Gateway API, Pod Rate Limiting, and Real-World Challenges.md",
-    "K8s/Deployment/Helm/helm Sample Command Lines.md",
-    "K8s/Deployment/Argo/Argo CD sample command lines.md",
-    "K8s/Deployment/Argo/Argo CD.md",
-    "Files/Articles/2026.02.01 awsmap, Find Everything Running in Your AWS Account.md",
-    "Untitled.md",
     "What is/KVM.md",
-    "Training/GitHub Foundations/1.2 What is version control.md"
+    "What is/SOPS.md",
+    "Untitled.md",
+    "Files/Articles/2026.02.01 awsmap, Find Everything Running in Your AWS Account.md",
+    "Files/Articles/2025.10.02 Production-Ready Cilium — Gateway API, Pod Rate Limiting, and Real-World Challenges.md"
   ]
 }
