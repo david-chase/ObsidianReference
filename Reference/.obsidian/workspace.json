@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Steering GPU workloads to a MIG instance"
             }
+          },
+          {
+            "id": "a29a71d073d0b80d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,8 +185,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "53e17ab4ea9d6e14",
+  "active": "a29a71d073d0b80d",
   "lastOpenFiles": [
+    "Untitled.md",
+    "K8s/GPU/Steering GPU workloads to a MIG instance.md",
     "Files/Articles/2026.02.08 Managing Kubernetes Secrets with Mozilla SOPS and AGE.md",
     "Files/Articles/2025.11.12 Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
     "K8s/GPU/NVIDIA GPU Operator.md",
@@ -183,7 +200,6 @@
     "K8s/GPU/GPU node labels.md",
     "K8s/GPU/Useful commands in a GPU environment.md",
     "K8s/GPU/Training vs inference hardware requirements.md",
-    "K8s/GPU/Steering GPU workloads to a MIG instance.md",
     "K8s/GPU/Poor GPU utilization contributing factors.md",
     "K8s/GPU/NVIDIA MIG and Kubernetes DRA - Better together.md",
     "K8s/GPU/Fractional GPU Instances.md",
@@ -196,7 +212,6 @@
     "What is/Headlamp.md",
     "Vault.md",
     "What is/HashiCorp Vault.md",
-    "Terraform.md",
-    "What is/HashiCorp Terraform.md"
+    "Terraform.md"
   ]
 }
