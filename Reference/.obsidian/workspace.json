@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
+                "file": "K8s/Troubleshooting K8s.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025.12.24 Knative - Scale to Zero"
+              "title": "Troubleshooting K8s"
             }
           }
         ],
@@ -186,6 +186,9 @@
   },
   "active": "7e710c2b89c6e3eb",
   "lastOpenFiles": [
+    "K8s/Deployment/Argo/Argo CD.md",
+    "K8s/Deployment/Argo/Argo CD sample command lines.md",
+    "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
     "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
     "Files/Articles/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.md",
     "Files/Articles/2025.11.12 Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
@@ -211,9 +214,6 @@
     "Other/PowerShell/Check if a folder exists.md",
     "Other/PowerShell",
     "Nomad.md",
-    "Linux/CoreDNS.md",
-    "K8s/Deployment/Argo/Argo CD/Delete an app with stuck finalizer.md",
-    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
     "Quick Starts",
     "Windows/Enabling SSH Authentication for Window.md.crdownload",
     "Windows",
