@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is/SOPS.md",
+                "file": "K8s/Security/SOPS.md",
                 "mode": "source",
                 "source": false
               },
@@ -172,8 +172,9 @@
   },
   "active": "1654e245f16484e4",
   "lastOpenFiles": [
-    "What is/KVM.md",
     "What is/SOPS.md",
+    "K8s/Security/SOPS.md",
+    "What is/KVM.md",
     "Untitled.md",
     "Files/Articles/2026.02.01 awsmap, Find Everything Running in Your AWS Account.md",
     "Files/Articles/2025.10.02 Production-Ready Cilium — Gateway API, Pod Rate Limiting, and Real-World Challenges.md"
