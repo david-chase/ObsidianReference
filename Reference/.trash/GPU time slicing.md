@@ -29,9 +29,9 @@
 
 ### 🧠 Summary Recommendation:
 
-|**Use this if...**|**Best Method**|
-|---|---|
-|You're in Kubernetes and want soft GPU sharing|`nvidia-time-slicing` toolkit|
-|You're doing HPC-style CUDA job multiplexing|NVIDIA MPS|
-|You're running multi-user virtual desktops|NVIDIA vGPU / GRID|
-|You want strong isolation and performance|Use MIG instead of time slicing|
+| **Use this if...**                             | **Best Method**                 |
+| ---------------------------------------------- | ------------------------------- |
+| You're in Kubernetes and want soft GPU sharing | `nvidia-time-slicing` toolkit   |
+| You're doing HPC-style CUDA job multiplexing   | NVIDIA MPS                      |
+| You're running multi-user virtual desktops     | NVIDIA vGPU / GRID              |
+| You want strong isolation and performance      | Use MIG instead of time slicing |
