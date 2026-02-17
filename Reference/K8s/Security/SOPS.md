@@ -5,7 +5,7 @@
 
 ## Example SOPS Encoded Manifest
 
-- Thi
+- This is an example of a manifest encrypted with SOPS
 
 ``` yaml
 apiVersion: v1
@@ -36,3 +36,25 @@ sops:
     version: 3.9.0
 ```
 
+## Decryption Process for SOPS Secrets
+
+The decryption of a SOPS-encoded Secret generally follows one of two paths: manual decryption via the CLI or automated decryption within the cluster using a controller.
+
+### CLI Decryption
+
+To decrypt the file manually on your local system using PowerShell, the SOPS binary uses the metadata stored in the `sops` section of the YAML to identify which private key is required. If the corresponding private key (such as an Age key file or a PGP key) is present on your machine, you run the following command:
+
+`sops --decrypt secret.enc.yaml`
+
+SOPS reads the encrypted data blocks, uses the private key to unlock the data encryption key (DEK), and then outputs the plaintext YAML.
+
+### In-Cluster Decryption
+
+Since you are using Argo CD on your tokyo cluster, decryption is typically handled by a plugin or operator so that the plaintext secrets are never stored in your GitHub repository.
+
+- Argo CD SOPS Plugin: Argo CD can be configured with a custom sidecar or a plugin (like `argocd-vault-plugin`) that runs `sops --decrypt` during the manifest generation phase. The controller uses an environment variable or a volume-mounted key to perform the decryption before applying the Secret to the Kubernetes API.
+    
+- SopsSecretController or Flux: Some users deploy a controller that watches for a specific Custom Resource Definition (CRD). The controller detects the encrypted manifest, decrypts it using a key stored in a Kubernetes Secret (often the Age private key), and creates a standard Kubernetes Secret in the cluster.
+    
+
+In both scenarios, the Kubernetes API server eventually receives a standard, base64-encoded Secret. The "ENC[...]" strings are replaced with the actual values during the transition from the Git repository to the cluster's etcd storage.
