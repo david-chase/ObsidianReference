@@ -1,38 +1,40 @@
 {
   "main": {
-    "id": "6bab346add84b597",
+    "id": "7939c6cc8d8e2a09",
     "type": "split",
     "children": [
       {
-        "id": "e7a5f0e693708463",
+        "id": "1e667f83c3d24d3c",
         "type": "tabs",
         "children": [
           {
-            "id": "53e17ab4ea9d6e14",
+            "id": "99dfb0527bfc2b17",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/GPU/Steering GPU workloads to a MIG instance.md",
+                "file": "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "Steering GPU workloads to a MIG instance"
+              "title": "kubectl Sample Command Lines"
             }
           },
           {
-            "id": "a29a71d073d0b80d",
+            "id": "7e710c2b89c6e3eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "K8s/Troubleshooting K8s.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Troubleshooting K8s"
             }
           }
         ],
@@ -42,15 +44,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "92974bf885542829",
+    "id": "78bf31dd3999c476",
     "type": "split",
     "children": [
       {
-        "id": "951ed278e706af29",
+        "id": "1f62d283aa6d23ca",
         "type": "tabs",
         "children": [
           {
-            "id": "4a899497ca03e78e",
+            "id": "5b7f78650c3d9d0c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -63,12 +65,12 @@
             }
           },
           {
-            "id": "18c2fdcceb3d2ebf",
+            "id": "136cb93233705b6d",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#pods",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,7 +82,7 @@
             }
           },
           {
-            "id": "9f9bd212abd9ff5b",
+            "id": "10a41e8940257e25",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -96,20 +98,19 @@
     "width": 300
   },
   "right": {
-    "id": "1fb06eaf52022f52",
+    "id": "3314c18e7d6ded4f",
     "type": "split",
     "children": [
       {
-        "id": "a352bec72b216999",
+        "id": "20b3b7c2127fb09b",
         "type": "tabs",
         "children": [
           {
-            "id": "807ae6fecdbcb78b",
+            "id": "7bfebcf9abc5dcd5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "What is/KVM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,25 +120,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for KVM"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "6b2c908378557dd8",
+            "id": "c023ad5a714e16a0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "What is/KVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from KVM"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "4308c443938ad5db",
+            "id": "b593069b5984662d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -152,18 +152,17 @@
             }
           },
           {
-            "id": "f9b48090327fce78",
+            "id": "6bf5022314759e96",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "What is/KVM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of KVM"
+              "title": "Outline"
             }
           }
         ]
@@ -175,43 +174,63 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "a29a71d073d0b80d",
+  "active": "7e710c2b89c6e3eb",
   "lastOpenFiles": [
     "Untitled.md",
-    "K8s/GPU/Steering GPU workloads to a MIG instance.md",
-    "Files/Articles/2026.02.08 Managing Kubernetes Secrets with Mozilla SOPS and AGE.md",
+    "K8s/Deployment/Argo/Argo CD.md",
+    "K8s/Deployment/Argo/Argo CD sample command lines.md",
+    "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
+    "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
+    "Files/Articles/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.md",
     "Files/Articles/2025.11.12 Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
-    "K8s/GPU/NVIDIA GPU Operator.md",
-    "K8s/GPU/Enabling DCGM exporter.md",
-    "K8s/GPU/MIG vs time slicing.md",
-    "K8s/GPU/Kubernetes 1.33 and AI workloads.md",
-    "K8s/GPU/Install grove-system.md",
-    "K8s/GPU/GPU market share by vendor.md",
-    "K8s/GPU/GPU node labels.md",
-    "K8s/GPU/Useful commands in a GPU environment.md",
-    "K8s/GPU/Training vs inference hardware requirements.md",
-    "K8s/GPU/Poor GPU utilization contributing factors.md",
-    "K8s/GPU/NVIDIA MIG and Kubernetes DRA - Better together.md",
-    "K8s/GPU/Fractional GPU Instances.md",
-    "K8s/GPU/How to spot GPU sharing.md",
-    "K8s/GPU/GPU Sharing.md",
-    "K8s/GPU/GPU time slicing.md",
-    "K8s/GPU/GPU sharing strategies.md",
-    "What is/Kubescape.md",
-    "What is/Jenkins.md",
-    "What is/Headlamp.md",
-    "Vault.md",
-    "What is/HashiCorp Vault.md",
-    "Terraform.md"
+    "Files/Articles/2025.06.05 Maximizing GPU Efficiency Setting Up MIG on Nvidia H100 in Kubernetes.md",
+    "Files/Articles/2026.02.08 Managing Kubernetes Secrets with Mozilla SOPS and AGE.md",
+    "K8s/Deployment/Helm/helm Sample Command Lines.md",
+    "Training/GitHub Foundations/2.0 Introduction to GitHub.md",
+    "Training/GitHub Foundations/2.6 Exercise - A guided tour of GitHub.md",
+    "Training/GitHub Foundations/2.5 GitHub platform management.md",
+    "Training/GitHub Foundations/2.4 GitHub is a collaborative platform.md",
+    "Training/GitHub Foundations/2.3 Components of the GitHub flow.md",
+    "Training/GitHub Foundations/2.2 What is GitHub.md",
+    "Training/GitHub Foundations/2.1 Introduction.md",
+    "Training/GitHub Foundations/1.4 Basic Git commands.md",
+    "Training/GitHub Foundations/1.3 Exercise - Try out Git.md",
+    "Training/GitHub Foundations/1.2 What is version control.md",
+    "Training/GitHub Foundations/1.1 Introduction.md",
+    "Training/GitHub Foundations",
+    "Terraform.md",
+    "Other/PowerShell/Useful PowerShell commands.md",
+    "Other/PowerShell/Show location of all profiles.md",
+    "Other/PowerShell/Map a Network Drive.md",
+    "Other/PowerShell/Check if a folder exists.md",
+    "Other/PowerShell",
+    "Quick Starts",
+    "Windows/Enabling SSH Authentication for Window.md.crdownload",
+    "Windows",
+    "New folder",
+    "K8s/Tools & Utilities",
+    "K8s/Pods",
+    "K8s/Nodes",
+    "K8s/Hosted Kubernetes Platforms",
+    "Media/Screenshots/Pasted image 20250720113823.png",
+    "Media/Screenshots/Pasted image 20250720113637.png",
+    "Media/Screenshots/Pasted image 20250720113524.png",
+    "Media/Screenshots/Pasted image 20250720113517.png",
+    "Media/Screenshots/Pasted image 20250720113435.png",
+    "Media/Screenshots/Pasted image 20250720113241.png",
+    "Media/Screenshots/Pasted image 20250720113128.png",
+    "Media/Screenshots/Pasted image 20250720113012.png",
+    "Media/Screenshots/Pasted image 20250720112809.png",
+    "Media/Screenshots/Pasted image 20250720112641.png"
   ]
 }
