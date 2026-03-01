@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Troubleshooting K8s.md",
+                "file": "What is/SeaweedFS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Troubleshooting K8s"
+              "title": "SeaweedFS"
             }
           }
         ],
@@ -186,6 +186,17 @@
   },
   "active": "9a97b3f8f47e00ab",
   "lastOpenFiles": [
+    "What is/Ceph.md",
+    "What is/SeaweedFS.md",
+    "What is/Longhorn.md",
+    "K8s/Storage/Longhorn.md",
+    "K8s/Storage/Storage provisioning dynamic versus static.md",
+    "K8s/Storage/Where the local-path provisioner stores its files.md",
+    "K8s/Storage/Script - Toggle-DefaultStorageClass.md",
+    "K8s/Storage/Local Storage.md",
+    "K8s/Storage/Rancher local-path storage provisioner.md",
+    "Files/Articles/2026.02.24 What Really Happens When You Create a Kubernetes Pod.md",
+    "K8s/Troubleshooting K8s.md",
     "Files/Articles/2026.02.08 Managing Kubernetes Secrets with Mozilla SOPS and AGE.md",
     "Files/Articles/2026.02.01 awsmap, Find Everything Running in Your AWS Account.md",
     "Files/Articles/2026.01.25 Yes, It's Fascism.md",
@@ -201,17 +212,6 @@
     "Files/Articles/2025.11.26 Cilium - A Simple Way To See and Control Pod-to-Pod Traffic.md",
     "Files/Articles/2025.11.21 The Future is Containerless Why Rust and WASM are Coming for Docker.md",
     "Files/Articles/2025.11.18 Helm Best Practices 2025 What Changed with Helm 4 and What You Should Know.md",
-    "Files/Articles/2025.11.16 Containerization Is Officially Legacy Tech.md",
-    "Files/Articles/2025.11.16 ConfigHub Why Your Internal Developer Platform Needs It.md",
-    "Files/Articles/2025.11.15 ArgoCD 3.2 The Latest Stable Release Is Here.md",
-    "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
-    "Files/Articles/2025.11.12 Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
-    "Files/Articles/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.md",
-    "Files/Articles/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.md",
-    "Files/Articles/2025.11.04 Argo CD Blue-Green Deployments in Kubernetes Full Guide.md",
-    "Files/Articles/2025.11.01 Platform Engineering with Backstage.io.md",
-    "Files/Articles/2025.10.25 7 Surprising Truths About NVIDIA GPUs in Kubernetes You Probably Don’t Know.md",
-    "Files/Articles/2025.10.09 Mastering Kubernetes Observability The Ultimate Grafana Alloy Setup Guide.md",
     "Training/GitHub Foundations",
     "Other/PowerShell",
     "Quick Starts",
