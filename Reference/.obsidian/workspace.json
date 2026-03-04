@@ -24,35 +24,21 @@
             }
           },
           {
-            "id": "186091898041736b",
+            "id": "9a97b3f8f47e00ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Platforms and Distributions/OpenShift.md",
+                "file": "What is/SeaweedFS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenShift"
-            }
-          },
-          {
-            "id": "a1e4c11db9fb904f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "SeaweedFS"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#pods",
+                "query": "path:\"Files/Articles/\" emptive",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -198,34 +184,35 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "a1e4c11db9fb904f",
+  "active": "9a97b3f8f47e00ab",
   "lastOpenFiles": [
     "Untitled.md",
-    "K8s/Platforms and Distributions/OpenShift.md",
-    "Untitled 1.md",
     "Untitled 2.md",
+    "What is/SeaweedFS.md",
+    "Untitled 1.md",
     "What is/KAI Scheduler.md",
     "K8s/Nodes/Node Blockers.md",
     "What is/OVN-Kubernetes.md",
-    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
-    "What is/Podman.md",
-    "What is/PostgreSQL.md",
-    "K8s/Troubleshooting K8s.md",
-    "What is/SeaweedFS.md",
+    "K8s/Platforms and Distributions/etcd Encryption by CSP.md",
+    "K8s/Platforms and Distributions/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
+    "K8s/Platforms and Distributions/OpenShift.md",
+    "K8s/Platforms and Distributions/IRSA vs EKS pod identity.md",
+    "K8s/Platforms and Distributions/GKE Autopilot notes.md",
+    "K8s/Platforms and Distributions/Enable VPC CNI Prefix.md",
+    "K8s/Platforms and Distributions/EKS service exposure guide.md",
+    "K8s/Platforms and Distributions/EBS backed PV.md",
+    "K8s/Platforms and Distributions/Deploy Prometheus on GKE Autopilot.md",
+    "K8s/Platforms and Distributions",
+    "What is/Ceph.md",
+    "What is/Longhorn.md",
     "K8s/Storage/Longhorn.md",
+    "K8s/Storage/Storage provisioning dynamic versus static.md",
+    "K8s/Storage/Where the local-path provisioner stores its files.md",
+    "K8s/Storage/Script - Toggle-DefaultStorageClass.md",
+    "K8s/Storage/Local Storage.md",
+    "K8s/Storage/Rancher local-path storage provisioner.md",
     "Files/Articles/2026.02.24 What Really Happens When You Create a Kubernetes Pod.md",
-    "What is/Vault.md",
-    "What is/Terraform.md",
-    "What is/Nomad.md",
-    "K8s/Deployment/Argo/Argo CD.md",
-    "K8s/Deployment/Argo/Argo CD sample command lines.md",
-    "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
-    "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
-    "Files/Articles/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.md",
-    "Files/Articles/2025.11.12 Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
-    "Files/Articles/2025.06.05 Maximizing GPU Efficiency Setting Up MIG on Nvidia H100 in Kubernetes.md",
-    "Files/Articles/2026.02.08 Managing Kubernetes Secrets with Mozilla SOPS and AGE.md",
-    "K8s/Deployment/Helm/helm Sample Command Lines.md",
+    "K8s/Troubleshooting K8s.md",
     "Training/GitHub Foundations",
     "Other/PowerShell",
     "Quick Starts",
@@ -235,7 +222,6 @@
     "K8s/Tools & Utilities",
     "K8s/Pods",
     "K8s/Nodes",
-    "K8s/Platforms and Distributions",
     "Media/Screenshots/Pasted image 20250720113823.png",
     "Media/Screenshots/Pasted image 20250720113637.png",
     "Media/Screenshots/Pasted image 20250720113524.png",
