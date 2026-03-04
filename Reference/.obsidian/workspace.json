@@ -36,9 +36,23 @@
               "icon": "lucide-file",
               "title": "OpenShift"
             }
+          },
+          {
+            "id": "a1e4c11db9fb904f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -184,13 +198,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "186091898041736b",
+  "active": "a1e4c11db9fb904f",
   "lastOpenFiles": [
+    "Untitled.md",
+    "K8s/Platforms and Distributions/OpenShift.md",
     "Untitled 1.md",
     "Untitled 2.md",
-    "K8s/Platforms and Distributions/OpenShift.md",
     "What is/KAI Scheduler.md",
-    "Untitled.md",
     "K8s/Nodes/Node Blockers.md",
     "What is/OVN-Kubernetes.md",
     "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
