@@ -44,7 +44,8 @@ spec:
 
 ## Local storage
 
-- If a cluster uses the Rancher local path storage provider, or an equivalent, or uses hostPath volumes for storage, this storage is tied to the note on which the pod is running.  This can cause the pod to be tied to the node, meaning the node cannot b
+- If a cluster uses the Rancher local path storage provider (or an equivalent) or uses hostPath volumes for storage, this storage is tied to the note on which the pod is running.  This can cause the pod to be tied to the node, meaning the node cannot be scaled down.
+
 ## Special Cases
 ### IP Exhaustion
 
