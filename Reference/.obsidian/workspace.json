@@ -22,8 +22,23 @@
               "icon": "lucide-file",
               "title": "kubectl Sample Command Lines"
             }
+          },
+          {
+            "id": "89f10794c6af47a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8s/Nodes/Node Blockers.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Node Blockers"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -55,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"What is/\" KAI",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,8 +91,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,8 +184,25 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "99dfb0527bfc2b17",
+  "active": "89f10794c6af47a7",
   "lastOpenFiles": [
+    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
+    "K8s/Nodes/Node Blockers.md",
+    "Untitled.md",
+    "What is/SeaweedFS.md",
+    "What is/OVN-Kubernetes.md",
+    "K8s/Storage/Longhorn.md",
+    "K8s/Platforms and Distributions/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
+    "K8s/Platforms and Distributions/IRSA vs EKS pod identity.md",
+    "K8s/Platforms and Distributions/OpenShift.md",
+    "K8s/Platforms and Distributions/GKE Autopilot notes.md",
+    "K8s/Platforms and Distributions/etcd Encryption by CSP.md",
+    "K8s/Platforms and Distributions/Enable VPC CNI Prefix.md",
+    "K8s/Platforms and Distributions/EKS service exposure guide.md",
+    "K8s/Platforms and Distributions/Deploy Prometheus on GKE Autopilot.md",
+    "K8s/Platforms and Distributions/EBS backed PV.md",
+    "K8s/Platforms and Distributions",
+    "Files/Articles/2026.02.24 What Really Happens When You Create a Kubernetes Pod.md",
     "What is/NVIDIA KAI scheduler.md",
     "What is/KAI Scheduler.md",
     "K8s/Troubleshooting K8s.md",
@@ -182,22 +213,6 @@
     "Files/Articles/2025.25.08 Enabling ArgoCD Web Shell to Exec Inside Pods.md",
     "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
     "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
-    "Files/Articles/2025.12.24 Installing Apache Airflow 3 on Kubernetes.md",
-    "Files/Articles/2025.12.15 Vertical Pod Autoscaler (VPA) with InPlaceOrRecreate in Kubernetes 1.33.x.md",
-    "Files/Articles/2025.12.15 Using Kustomize With Helm Charts for Argo CD Applications.md",
-    "Files/Articles/2025.12.11 Nvidia Is Terrified Of Google’s TPUs.md",
-    "Files/Articles/2025.12.07 Karpenter vs Cluster Autoscaler The Future of Kubernetes Autoscaling on AWS EKS.md",
-    "Files/Articles/2025.11.26 Cilium - A Simple Way To See and Control Pod-to-Pod Traffic.md",
-    "Files/Articles/2025.11.21 The Future is Containerless Why Rust and WASM are Coming for Docker.md",
-    "Files/Articles/2025.11.18 Helm Best Practices 2025 What Changed with Helm 4 and What You Should Know.md",
-    "Files/Articles/2025.11.16 Containerization Is Officially Legacy Tech.md",
-    "Files/Articles/2025.11.16 ConfigHub Why Your Internal Developer Platform Needs It.md",
-    "Files/Articles/2025.11.15 ArgoCD 3.2 The Latest Stable Release Is Here.md",
-    "Files/Articles/2025.11.13 MCP is Broken and Anthropic Just Admitted It.md",
-    "Files/Articles/2025.11.12 Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
-    "Files/Articles/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.md",
-    "Files/Articles/2025.11.06 This Tiny Open-Source Project Is Doing What Kafka Couldn’t.md",
-    "Files/Articles/2025.11.04 Argo CD Blue-Green Deployments in Kubernetes Full Guide.md",
     "Training/GitHub Foundations",
     "Other/PowerShell",
     "Quick Starts",
@@ -207,7 +222,6 @@
     "K8s/Tools & Utilities",
     "K8s/Pods",
     "K8s/Nodes",
-    "K8s/Hosted Kubernetes Platforms",
     "Media/Screenshots/Pasted image 20250720113823.png",
     "Media/Screenshots/Pasted image 20250720113637.png",
     "Media/Screenshots/Pasted image 20250720113524.png",
