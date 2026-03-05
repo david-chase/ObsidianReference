@@ -188,6 +188,7 @@
   "lastOpenFiles": [
     "K8s/Nodes/Node autoscaling.md",
     "K8s/Nodes/Node Scale-Down Blockers.md",
+    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
     "Untitled.md",
     "What is/SeaweedFS.md",
     "Untitled 2.md",
@@ -212,7 +213,6 @@
     "K8s/Storage/Script - Toggle-DefaultStorageClass.md",
     "K8s/Storage/Local Storage.md",
     "K8s/Storage/Rancher local-path storage provisioner.md",
-    "Files/Articles/2026.02.24 What Really Happens When You Create a Kubernetes Pod.md",
     "Training/GitHub Foundations",
     "Other/PowerShell",
     "Quick Starts",
