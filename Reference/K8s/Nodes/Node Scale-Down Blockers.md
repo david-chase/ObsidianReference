@@ -6,6 +6,16 @@
 There are a number of conditions that can block nodes from scaling down when they otherwise should:
 
 ## Scale-down Blockers
+
+The following scenarios cause the node on which a workload is running to be ignored by Karpenter or Cluster Autoscaler when making node consolidation or scale-down decisions.  These nodes are effectively blocked from scaling down.
+
+## Unmanaged Pods
+
+- Karpenter and cluster autoscaler will not attempt to scale down nodes running "Naked", stand-alone, static, or unmanaged pods.  Examples include:
+	- Pods deployed from a manifest with "Kind: Pod"
+	- Pods deployed using `kubectl run
+	- Pods created by placing a manifest in the `/etc/kubernetes/manifests/` folder of a node
+
 ### Nodes exceeding Max Pods Per Node
 
 - When a node exceeds its Max Pods per Node, it can no longer accept new pods no matter how many resources it has available.  A new node will be scaled out, resulting in underutilized nodes.
@@ -13,7 +23,7 @@ There are a number of conditions that can block nodes from scaling down when the
 ### Deployments at their PDB threshold
 
 - Imagine a scenario where you have a deployment that consists of 3 replicas, and a Pod Disruption Budget that specifies that 3 copies of the workload must be running at all times.  This, in effect, makes all the pods unevictable since restarting even one of them would violate the PDB.
-- Since the pods are effectively unevictable, the nodes on which they're running can never be scaled down.
+- Since the pods cannot be evicted, the nodes on which they're running can never be scaled down.
 
 ``` YAML
 apiVersion: apps/v1
@@ -44,40 +54,6 @@ spec:
     matchLabels:
       app: nginx
 ```
-
-## Topology Spread Constraints
-
-- Pod topology spread constraints are used to resolve latency and availability issues by forcing pods to be spread across multiple physical regions.  
-- Take, for example, the manifest below.  This creates a Deployment with 3 replicas, but all these replicas will be scheduled in different regions.  This means the Deployment will always require 3 nodes (in different regions) -- they cannot be scheduled on a single node.
-
-``` YAML
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-topology
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      topologySpreadConstraints:
-      - maxSkew: 1
-        topologyKey: topology.kubernetes.io/region
-        whenUnsatisfiable: DoNotSchedule
-        labelSelector:
-          matchLabels:
-            app: nginx
-      containers:
-      - name: nginx
-        image: nginx
-```
-
-- In most cases this is an intentional architectural decision that trades lower latency and fault tolerance for additional cost.
 
 ## Ephemeral Storage Requests
 
@@ -212,13 +188,42 @@ spec:
           claimName: nginx-pvc
 ```
 
-## Unmanaged Pods
+## Node Sprawl
 
-- Karpenter and cluster autoscaler will not attempt to scale down nodes running "Naked", stand-alone, static, or unmanaged pods.  Examples include:
-	- Pods deployed from a manifest with "Kind: Pod"
-	- Pods deployed using `kubectl run
-	- Pods created by placing a manifest in the `/etc/kubernetes/manifests/` folder of a node
+While not directly blocking an individual node from being scaled down, the following scenarios prevent the *total nodes* in a cluster o
+### Topology Spread Constraints
 
+- Pod topology spread constraints are used to resolve latency and availability issues by forcing pods to be spread across multiple physical regions.  
+- Take, for example, the manifest below.  This creates a Deployment with 3 replicas, but all these replicas will be scheduled in different regions.  This means the Deployment will always require 3 nodes (in different regions) -- they cannot be scheduled on a single node.
+
+``` YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-topology
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: topology.kubernetes.io/region
+        whenUnsatisfiable: DoNotSchedule
+        labelSelector:
+          matchLabels:
+            app: nginx
+      containers:
+      - name: nginx
+        image: nginx
+```
+
+- In most cases this is an intentional architectural decision that trades lower latency and fault tolerance for additional cost.
 ## "Do Not Evict" Annotations
 
 - If a pod has the annotation `"cluster-autoscaler.kubernetes.io/safe-to-evict": "false"` (cluster autoscaler) or `"karpenter.sh/do-not-disrupt": "true"` (Karpenter) then it will never be evicted to do a node consolidation.
