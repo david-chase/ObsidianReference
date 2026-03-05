@@ -86,19 +86,28 @@ spec:
 - Either way, the end result is node sprawl: the current node stops accepting new pods.
 
 ``` YAML
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: storage-example
 spec:
-  containers:
-  - name: app-container
-    image: nginx
-    resources:
-      requests:
-        ephemeral-storage: "2Gi"
-      limits:
-        ephemeral-storage: "4Gi"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: storage-app
+  template:
+    metadata:
+      labels:
+        app: storage-app
+    spec:
+      containers:
+      - name: app-container
+        image: nginx
+        resources:
+          requests:
+            ephemeral-storage: "2Gi"
+          limits:
+            ephemeral-storage: "4Gi"
 ```
 
 ## hostPath and EmptyDir storage
