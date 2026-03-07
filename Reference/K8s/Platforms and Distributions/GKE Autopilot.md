@@ -14,14 +14,18 @@
 - GKE prevents you from arbitrarily low requests by setting minimum requests for each resource type and enforcing CPU:Memory ratios
 - <span style="color:rgb(255, 0, 0)">This means in GKE Autopilot it would be very important for Kubex to know and respect these minimums and ratios</span> 
 
-## Minimum Requests
+## Minimum and Maximum Requests
 
-https://cloud.google.com/kubernetes-engine/pricing#general-purpose-autopilot-workloads
+[https://cloud.google.com/kubernetes-engine/pricing#general-purpose-autopilot-workloads](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests#compute-class-defaults)
 
-|                        | CPU (m) | Memory (MiB) | E. Storage (MiB) |
-| ---------------------- | ------- | ------------ | ---------------- |
-| Burstable Clusters     | 1       | 2            | 10               |
-| Non-Burstable Clusters | 10      | 20           | 20               |
+| Compute Class   | CPU:Memory Ratio | Resource | Minimum                                                                                               | Maximum                                                                                                                                                                                           |
+| --------------- | ---------------- | -------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| General Purpose | 1:1 to 1:6.5     | CPU      | - **Clusters that support bursting**: 50m CPU<br>- **Clusters that don't support bursting**: 250m CPU | 30 vCPU                                                                                                                                                                                           |
+|                 |                  | Memory   | - **Clusters that support bursting**: 52 MiB<br>- **Clusters that don't support bursting**: 512 MiB   | 110 GiB                                                                                                                                                                                           |
+| Balanced        | 1:1 to 1:8       | CPU      | 0.25 vCPU                                                                                             | 222 vCPU<br><br>If [minimum CPU platform](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/min-cpu-platform) selected:<br><br>- Intel platforms: 126 vCPU<br>- AMD platforms: 222 vCPU |
+|                 |                  | Memory   | 0.5 GiB                                                                                               | 851 GiB<br><br>If [minimum CPU platform](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/min-cpu-platform) selected:<br><br>- Intel platforms: 823 GiB<br>- AMD platforms: 851 GiB    |
+| Performance     | n/a              | CPU      | No minimum requests enforced                                                                          | See link                                                                                                                                                                                          |
+|                 |                  | Memory   | No minimum requests enforced                                                                          | See link                                                                                                                                                                                          |
 
 ## Bursting Capability
 
@@ -40,3 +44,27 @@ For all other types of Pods, bursting becomes available when you restart the con
 ## Default Requests
 
 - If no requests are specified, GKE Autopilot defaults to 500m CPU and 2GiB Memory.
+
+## Compute Classes
+
+- The default compute class is General Purpose
+
+### Implementation Example
+
+To request a specific compute class for a deployment, you would include the `cloud.google.com/compute-class` label in your manifest:
+
+``` YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: high-performance-app
+spec:
+  replicas: 3
+  template:
+    spec:
+      nodeSelector:
+        cloud.google.com/compute-class: Performance
+      containers:
+      - name: web-app
+        image: my-app-image
+```

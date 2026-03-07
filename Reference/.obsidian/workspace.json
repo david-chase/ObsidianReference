@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/Platforms and Distributions/GKE Autopilot.md",
+                "file": "K8s/Nodes/Node autoscaling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GKE Autopilot"
+              "title": "Node autoscaling"
             }
           }
         ],
@@ -186,8 +186,15 @@
   },
   "active": "186091898041736b",
   "lastOpenFiles": [
-    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
+    "K8s/Nodes/Karpenter node consolidation.md",
+    "K8s/Nodes/Nodes General Notes.md",
+    "K8s/Nodes/Adding worker nodes.md",
+    "K8s/Nodes/Node autoscaling.md",
+    "K8s/Nodes/Temporarily Removing a Node From a Cluster.md",
+    "K8s/Nodes/Detecting node autoscaler.md",
+    "K8s/Nodes/Karpenter.md",
     "K8s/Platforms and Distributions/GKE Autopilot.md",
+    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
     "K8s/Platforms and Distributions/GKE Autopilot notes.md",
     "K8s/Platforms and Distributions/OpenShift.md",
     "K8s/Nodes/Node Scale-Down Blockers.md",
@@ -205,13 +212,6 @@
     "Files/Articles/2026.02.24 What Really Happens When You Create a Kubernetes Pod.md",
     "What is/Vault.md",
     "What is/Terraform.md",
-    "What is/Nomad.md",
-    "K8s/Deployment/Argo/Argo CD.md",
-    "K8s/Deployment/Argo/Argo CD sample command lines.md",
-    "Files/Articles/2025.12.24 Knative - Scale to Zero.md",
-    "Files/Articles/2025.12.24 Is MinIO Dead - Why It’s Time to Migrate to Garage Object Storage.md",
-    "Files/Articles/2025.11.12 In-place Pod resizing in Kubernetes How it works and how to use it.md",
-    "Files/Articles/2025.11.12 Kubernetes Wasn’t Built for AI, but NVIDIA Grove Might Fix That.md",
     "Training/GitHub Foundations",
     "Other/PowerShell",
     "Quick Starts",
