@@ -457,6 +457,37 @@ spec:
 - While both Karpenter and Cluster Autoscaler ignore Daemonsets when making decisions about scaling down a node, keep in mind that because a Daemonset is deployed to every node, the impact of violating one of the preceding rules is that much more impactful.  
 - Imagine adding a `do-not-evict` annotation to a Daemonset.  You suddenly have an node group or cluster that are incapable of scaling down.
 
+## Autoscaler-Specific Scenarios
+
+### Cluster Autoscaler
+
+- If the node group’s `minSize` is > 0, Cluster Autoscaler won't go below it—even if the node is empty.
+
+``` YAML
+apiVersion: cluster.x-k8s.io/v1beta1
+kind: MachineDeployment
+metadata:
+  name: worker-nodes
+  namespace: default
+  annotations:
+    # This is the "minSize" lever for Cluster Autoscaler
+    cluster.x-k8s.io/cluster-api-autoscaler-node-group-min-size: "5"
+spec:
+  replicas: 5 # Start with 5
+  selector:
+    matchLabels:
+      cluster.x-k8s.io/cluster-name: my-cluster
+  template:
+    # ... standard pod template for nodes ...
+```
+
+- Cluster Autoscaler uses a utilization threshold (default 50% for CPU and memory). A node won’t be removed if its CPU and Memory resource requests exceed this threshold.  Daemonsets are not included in this calculation.
+- A `cluster-autoscaler.kubernetes.io/scale-down-disabled` annotation on nodes or pods prevents downsizing.
+
+### Karpenter
+
+- If a node has drift (e.g., wrong AMI, taints, labels), Karpenter may keep or replace it instead of downsizing based on usage.
+
 ## Summary
 
 In summary, reducing wasteful resource requests is only the first step in Kubernetes resource optimization.  In many cases you won't fully achieve your savings until you've scaled down your node infrastructure, and there are a lot of factors that influence your ability to do so.  Hopefully this guide has helped you understand and avoid some of the hidden pitfalls when optimizing Kubernetes clusters.
