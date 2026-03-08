@@ -3,55 +3,28 @@
 ```table-of-contents
 ```
 
-There are a number of conditions that can block nodes from scaling down when they otherwise should:
+# Kubernetes Optimization Beyond Requests and Limits: Node Scaling Blockers
+
+Many of us understand the concept of Kubernetes Requests and Limits, and that by reducing over-sized resource requests we can reduce waste in our clusters.  And for GKE Autopilot and EKS Fargate clusters that is true.  Because you're being billed directly for the resources you're requesting, driving down requests can result in instantaneous savings.
+
+However in most hosted Kubernetes environments you're not actually being billed for requests.  Instead you're being billed for the **node infrastructure**.  We trust that by reducing wasteful resource requests our node autoscaler (typically Karpenter or Cluster Autoscaler) will be smart enough to do a node scale down.  However this is not always the case.
+
+Without understanding how node autoscalers work, you could be stuck optimizing all those requests and limits only to find your node infrastructure hasn't shrunk at all, or barely so.  This article will walk through the many scenarios that can impact the size of your node infrastructure and help you avoid scale-down blockers that can cost your company millions.  
+
+For the purposes of this article I will use the term "node autoscalers" to mean Karpenter and Cluster Autoscaler.  
 
 ## Scale-down Blockers
 
-The following scenarios cause the node on which a workload is running to be ignored by Karpenter or Cluster Autoscaler when making node consolidation or scale-down decisions.  This effectively renders an individual node blocked from scaling down.
+The following scenarios cause the node on which a workload is running to be ignored by Karpenter or Cluster Autoscaler when making node consolidation or scale-down decisions.  This effectively renders an individual node blocked from scaling down.  If one or two nodes in your cluster are affected by these scale-down blockers the impact ma
 
 ### Unmanaged Pods
 
-- Karpenter and cluster autoscaler will not attempt to scale down nodes running "Naked", stand-alone, static, or unmanaged pods.  Examples include:
+- Node autoscalers will not attempt to scale down nodes running "Naked", stand-alone, static, or unmanaged pods.  Examples include:
 	- Pods deployed from a manifest with "Kind: Pod"
 	- Pods deployed using `kubectl run
 	- Pods created by placing a manifest in the `/etc/kubernetes/manifests/` folder of a node
 - In theory if you had 5 static pods in your cluster, each placed on different nodes, then your Kubernetes cluster could never downscale to fewer than 5 nodes, no matter how low their utilization.
 - For this and other reasons it's generally not considered a best practice to deploy unmanaged pods in Kubernetes.
-
-### Deployments at their PDB threshold
-
-- Imagine a scenario where you have a deployment that consists of 3 replicas, and a Pod Disruption Budget that specifies that 3 copies of the workload must be running at all times.  This, in effect, makes all the pods unevictable since restarting even one of them would violate the PDB.
-- Since the pods cannot be evicted, the nodes on which they're running can never be scaled down.
-
-``` YAML
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-      - name: nginx
-        image: nginx
----
-apiVersion: policy/v1
-kind: PodDisruptionBudget
-metadata:
-  name: nginx-pdb
-spec:
-  minAvailable: 3
-  selector:
-    matchLabels:
-      app: nginx
-```
 
 ### hostPath and EmptyDir storage
 
@@ -112,6 +85,7 @@ spec:
       - name: scratch-space
         emptyDir: {}
 ```
+
 ### Local storage
 
 - If a cluster uses the Rancher local path storage provider (or an equivalent) for persistent storage, the resulting PV will be bound to the node on which it's created using nodeAffinity.  As long as the pod bound to that PV are running, the node on which the PV was created cannot be scaled down.
@@ -184,6 +158,40 @@ spec:
 kubectl get pods -A | grep -E 'Terminating|Unknown'
 ```
 
+### Deployments at their PDB threshold
+
+- Imagine a scenario where you have a deployment that consists of 3 replicas, and a Pod Disruption Budget that specifies that 3 copies of the workload must be running at all times.  This, in effect, makes all the pods unevictable since restarting even one of them would violate the PDB.
+- Since the pods cannot be evicted, the nodes on which they're running can never be scaled down.
+
+``` YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: nginx-pdb
+spec:
+  minAvailable: 3
+  selector:
+    matchLabels:
+      app: nginx
+```
 
 ## Node Sprawl
 
@@ -435,18 +443,7 @@ spec:
             memory: "700Mi" # Memory request as specified
 ```
 
-## Special Cases
-
-There are a few interesting scenarios that don't directly block nodes from scaling down or cause node sprawl, but they're interesting edge cases to be aware of because they cause clusters to scale in potentially unpredictable ways.
-
-### Daemonsets
+## Daemonsets
 
 - While both Karpenter and Cluster Autoscaler ignore Daemonsets when making decisions about scaling down a node, keep in mind that because a Daemonset is deployed to every node, the impact of violating one of the preceding rules is that much more impactful.  
 - Imagine adding a `do-not-evict` annotation to a Daemonset.  You suddenly have an node group or cluster that are incapable of scaling down.
-
-### IP Exhaustion
-
-- Every pod in a cluster must have a unique IP.  This is part of the fundamental design of Kubernetes.
-- You have both a Pod CIDR and a Node CIDR that determine both the total pool of IP addresses in your cluster, as well as the pool of addresses per node.
-- A Pod CIDR of `10.244.0.0/16` means you have a total of 65,536 IPs available to your cluster.  If you exceed this number you will no longer be able to place any pods.
--  A node mask of "/24" means that each node gets a CIDR with 256 IPs.  
