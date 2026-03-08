@@ -184,15 +184,16 @@ spec:
 kubectl get pods -A | grep -E 'Terminating|Unknown'
 ```
 
-## Disk Pressure
+
+## Node Sprawl
+
+While not directly blocking an individual node from being scaled down, the following scenarios either inflate the **total nodes** in a cluster or node group or prevent them from dropping below a certain level.  
+
+### Disk Pressure
 
 - When a node's root filesystem or image filesystem crosses a high-usage threshold (typically **85%** by default), the `kubelet` posts a **DiskPressure** condition.
 - Once this condition is active, the node is automatically **tainted** with `node.kubernetes.io/disk-pressure:NoSchedule`.
 - The kubernetes scheduler will skip any node with this taint when trying to place new pods.
-
-## Node Sprawl
-
-While not directly blocking an individual node from being scaled down, the following scenarios prevent the *total nodes* in a cluster or node group from dropping below a certain level.  
 
 ### Nodes exceeding Max Pods Per Node
 
@@ -434,15 +435,18 @@ spec:
             memory: "700Mi" # Memory request as specified
 ```
 
-### Daemonsets and Cluster Autoscaler
-
-- While both Karpenter and Cluster Autoscaler generally don't treat Daemonsets as unevictable, Daemonsets can cause nodes to become blocked 
-
 ## Special Cases
 
 There are a few interesting scenarios that don't directly block nodes from scaling down or cause node sprawl, but they're interesting edge cases to be aware of because they cause clusters to scale in potentially unpredictable ways.
 
+### Daemonsets
+
+- While both Karpenter and Cluster Autoscaler ignore Daemonsets when making decisions about scaling down a node, keep in mind that because a Daemonset is deployed to every node, the impact of violating one of the preceding rules is that much more impactful.  
+- Imagine adding a `do-not-evict` annotation to a Daemonset.  You suddenly have an node group or cluster that are incapable of scaling down.
+
 ### IP Exhaustion
 
-- Every pod in a cluster must have a unique IP.  If your cluster CIDR is too small, you may exhaust your available IPs and no longer be able to create pods.
-- While this isn't node blocking in the traditional sense, it's still a related issue as it blocks new pod creation
+- Every pod in a cluster must have a unique IP.  This is part of the fundamental design of Kubernetes.
+- You have both a Pod CIDR and a Node CIDR that determine both the total pool of IP addresses in your cluster, as well as the pool of addresses per node.
+- A Pod CIDR of `10.244.0.0/16` means you have a total of 65,536 IPs available to your cluster.  If you exceed this number you will no longer be able to place any pods.
+-  A node mask of "/24" means that each node gets a CIDR with 256 IPs.  
