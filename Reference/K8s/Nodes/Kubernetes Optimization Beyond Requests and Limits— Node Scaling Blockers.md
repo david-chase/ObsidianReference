@@ -21,7 +21,7 @@ The following scenarios cause the node on which a workload is running to be igno
 Node autoscalers will not attempt to scale down nodes running "Naked", stand-alone, static, or unmanaged pods.  Examples include:
 
 - Pods deployed from a manifest with "`Kind: Pod`"
-- Pods deployed using `kubectl run
+- Pods deployed using `kubectl run`
 - Pods created by placing a manifest in the `/etc/kubernetes/manifests/` folder of a node
 
 In theory if you had 5 static pods in your cluster, each placed on different nodes, then your Kubernetes cluster could never downscale to fewer than 5 nodes, no matter how low their utilization.  For this and other reasons you should generally avoid deploying unmanaged pods in Kubernetes.
