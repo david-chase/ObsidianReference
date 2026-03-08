@@ -15,20 +15,20 @@ For the purposes of this article I will use the term "node autoscalers" to mean 
 
 ## Scale-down Blockers
 
-The following scenarios cause the node on which a workload is running to be ignored by Karpenter or Cluster Autoscaler when making node consolidation or scale-down decisions.  This effectively renders an individual node blocked from scaling down.  If one or two nodes in your cluster are affected by these scale-down blockers the impact ma
+The following scenarios cause the node on which a workload is running to be ignored by the node autoscaler when making node consolidation or scale-down decisions.  This effectively renders an individual node blocked from scaling down.  If one or two nodes in your cluster are affected by these scale-down blockers the impact may be minimal, but if dozens or hundreds of nodes are impacted, you could be paying for huge amounts of under-utilized infrastructure.
 
 ### Unmanaged Pods
 
 - Node autoscalers will not attempt to scale down nodes running "Naked", stand-alone, static, or unmanaged pods.  Examples include:
-	- Pods deployed from a manifest with "Kind: Pod"
+	- Pods deployed from a manifest with "`Kind: Pod`"
 	- Pods deployed using `kubectl run
 	- Pods created by placing a manifest in the `/etc/kubernetes/manifests/` folder of a node
 - In theory if you had 5 static pods in your cluster, each placed on different nodes, then your Kubernetes cluster could never downscale to fewer than 5 nodes, no matter how low their utilization.
-- For this and other reasons it's generally not considered a best practice to deploy unmanaged pods in Kubernetes.
+- For this and other reasons you should generally avoid deploying unmanaged pods in Kubernetes.
 
-### hostPath and EmptyDir storage
+### hostPath and emptyDir storage
 
-- Pods that use hostPath volumes become tied to that node because the data they're using exists only on that node.  Karpenter and Cluster Autoscaler will avoid scaling down any nodes with these types of storage on them as it will likely result in data loss.
+- Pods that use hostPath volumes become tied to that node because the data they're using exists only on that node.  Node autoscalers will avoid scaling down any nodes with these types of volumes on them as it will likely result in data loss.
 
 ``` YAML
 apiVersion: apps/v1
@@ -58,7 +58,7 @@ spec:
           type: DirectoryOrCreate
 ```
 
-- Similarly, Karpenter and Cluster Autoscaler will generally not scale down a node with pods that use emptyDir storage, since this storage is also tied to the node on which the pod is running, and will likely result in data loss if terminated.
+- Similarly, node autoscalers will generally not scale down a node with pods that use emptyDir storage, since this storage is also tied to the node on which the pod is running, and will likely result in data loss if terminated.
 
 ``` YAML
 apiVersion: apps/v1
@@ -88,7 +88,7 @@ spec:
 
 ### Local storage
 
-- If a cluster uses the Rancher local path storage provider (or an equivalent) for persistent storage, the resulting PV will be bound to the node on which it's created using nodeAffinity.  As long as the pod bound to that PV are running, the node on which the PV was created cannot be scaled down.
+- If a cluster uses the Rancher local path storage provider (or an equivalent) for persistent storage, the resulting PV will be bound to the node on which it's created using nodeAffinity.  As long as the pods bound to that PV are running, the node on which the PV was created cannot be scaled down.
 
 ``` YAML
 apiVersion: v1
@@ -195,13 +195,13 @@ spec:
 
 ## Node Sprawl
 
-While not directly blocking an individual node from being scaled down, the following scenarios either inflate the **total nodes** in a cluster or node group or prevent them from dropping below a certain level.  
+While not directly blocking an individual node from being scaled down, the following scenarios either inflate the **total nodes** in a cluster or node group or prevent them from dropping below a certain level.  When these nodes go underutilized it's known as node sprawl.
 
 ### Disk Pressure
 
 - When a node's root filesystem or image filesystem crosses a high-usage threshold (typically **85%** by default), the `kubelet` posts a **DiskPressure** condition.
 - Once this condition is active, the node is automatically **tainted** with `node.kubernetes.io/disk-pressure:NoSchedule`.
-- The kubernetes scheduler will skip any node with this taint when trying to place new pods.
+- The kubernetes scheduler will skip any node with this taint when trying to place new pods, often resulting in new nodes being needed.
 
 ### Nodes exceeding Max Pods Per Node
 
@@ -219,6 +219,7 @@ kubectl get pods -A -o jsonpath='{range .items[*]}{.spec.nodeName}{"\n"}{end}' |
 ```
 
 - If you are at or near your maximum on any nodes, consider increasing the Max Pods Per Node on that or all nodes, or spreading small pods evenly across many nodes rather than letting them concentrate on a single node.
+- While it's outside the scope of this article, nodes hitting their Max Pods Per Node is a form of IP exhaustion and could be resolved by increasing the size of your Node CIDR Mask.
 
 ### Topology Spread Constraints
 
@@ -256,9 +257,9 @@ spec:
 
 ### Ephemeral Storage Requests
 
-- Containers can request ephemeral storage in much the same way as they can request memory and CPU.   
+- Containers can request ephemeral storage in much the same way they can request memory and CPU.   
 - If a node has insufficient storage available to satisfy the ephemeral storage requests, it will be filtered out during node selection.
-- This could cause additional nodes to scale out to meet all ephemeral storage requests, even if there's sufficient node capacity to satisfy CPU and memory requests.
+- This could cause additional nodes to scale out to meet ephemeral storage requests, even if there's sufficient node capacity to satisfy CPU and memory requests.
 
 ``` YAML
 apiVersion: apps/v1
@@ -284,6 +285,8 @@ spec:
           limits:
             ephemeral-storage: "4Gi"
 ```
+
+- While this is no different than needing to scale out a node due to exhausted CPU or Memory resources, ephemeral storage is often overlooked as a finite resource that must be managed.
 
 ### Node Affinity or Anti-affinity, Node Selectors
 
@@ -443,6 +446,9 @@ spec:
             memory: "700Mi" # Memory request as specified
 ```
 
+### Partial Scheduling
+
+- Particularly with the rise of high-performance distributed frameworks (like PyTorch, TensorFlow, or MPI), pods can have multiple cross-dependencies before they can complete their work.  If these pods are not all sche
 ## Daemonsets
 
 - While both Karpenter and Cluster Autoscaler ignore Daemonsets when making decisions about scaling down a node, keep in mind that because a Daemonset is deployed to every node, the impact of violating one of the preceding rules is that much more impactful.  
