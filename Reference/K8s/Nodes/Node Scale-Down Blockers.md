@@ -174,7 +174,21 @@ spec:
     image: nginx
 ```
 
-### Pods in Terminating or Unknown State
+### Pods in Terminating or Unknown State, Stuck Finalizers
+
+- When a node is being considered for scale-down, autoscalers must ensure that all workloads can be safely evicted or have already exited. A pod stuck in a **Terminating** or **Unknown** state will prevent the node the pod is running on from being scaled down.
+- Pods with stuck finalizers are a common example of this scenario.  Pods may be stuck in a Terminating state indefinitely, perhaps without your being aware.  This can block a node from scale-down indefinitely.
+- Use this command to identify pods stuck in this state:
+
+``` bash
+kubectl get pods -A | grep -E 'Terminating|Unknown'
+```
+
+## Disk Pressure
+
+- When a node's root filesystem or image filesystem crosses a high-usage threshold (typically **85%** by default), the `kubelet` posts a **DiskPressure** condition.
+- Once this condition is active, the node is automatically **tainted** with `node.kubernetes.io/disk-pressure:NoSchedule`.
+- The kubernetes scheduler will skip any node with this taint when trying to place new pods.
 
 ## Node Sprawl
 
@@ -183,6 +197,19 @@ While not directly blocking an individual node from being scaled down, the follo
 ### Nodes exceeding Max Pods Per Node
 
 - When a node exceeds its Max Pods per Node, it can no longer accept new pods no matter how many resources it has available.  A new node will be scaled out, resulting in underutilized nodes.
+- Use this command to list all the nodes in your cluster including the Max Pods Per Node. 
+
+``` bash
+kubectl get nodes -o custom-columns="NODE:.metadata.name,MAX_PODS:.status.allocatable.pods"
+```
+
+- Cross-reference this with the output of the following command, which shows a count of pods per node:
+
+``` bash
+kubectl get pods -A -o jsonpath='{range .items[*]}{.spec.nodeName}{"\n"}{end}' | sort | uniq -c
+```
+
+- If you are at or near your maximum on any nodes, consider increasing the Max Pods Per Node on that or all nodes, or spreading small pods evenly across many nodes rather than letting them concentrate on a single node.
 
 ### Topology Spread Constraints
 
@@ -221,8 +248,8 @@ spec:
 ### Ephemeral Storage Requests
 
 - Containers can request ephemeral storage in much the same way as they can request memory and CPU.   
-- Once storage on a node is exhausted, you may see a new node scaled out, or you may see pods evicted and placed on nodes which do have available storage.
-- Either way, the end result is node sprawl: the current node stops accepting new pods that request ephemeral storage even if memory and CPU requests are low.
+- If a node has insufficient storage available to satisfy the ephemeral storage requests, it will be filtered out during node selection.
+- This could cause additional nodes to scale out to meet all ephemeral storage requests, even if there's sufficient node capacity to satisfy CPU and memory requests.
 
 ``` YAML
 apiVersion: apps/v1
@@ -250,6 +277,8 @@ spec:
 ```
 
 ### Node Affinity or Anti-affinity
+
+- Node anti-affinity is a "repulsion" rule. It explicitly tells the scheduler: "Do not place this pod on a node that already meets these criteria." 
 
 ### Pod anti-affinity
 
