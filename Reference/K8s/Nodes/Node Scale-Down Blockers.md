@@ -352,9 +352,96 @@ spec:
         image: nginx
 ```
 
-### Daemonsets
+### Pod Affinity
+
+- Pod affinity rules tell the kubernetes scheduler "try to schedule these workloads together." 
+- While these rules are rarely the **direct** cause of a node scale out, they can indirectly cause one, as well as increase the average node size in your cluster.
+- As with other affinities, pod affinities can be either hard or soft.
+- Pods that share hard affinities must be scheduled together.  Therefore they can only be placed on nodes with sufficient capacity to host all the pods, not just one of them.  If there are no nodes with sufficient capacity, a new ones must be scaled out.
+- This also means that if the total resources required for these grouped pods is high, Karpenter will favour large nodes over small ones when determining node shape.
+- In the following example, we have:
+	- A Deployment of 3 replicas of nginx, with an anti-affinity rule that specifies they must all be placed on different nodes.
+	- A Deployment of 3 replicas of redis, with an affinity rule that a redis pod must always be placed on the same node as an nginx pod.
+	- This means a minimum of 3 nodes must be used to satisfy the placement of these pods.  
+	- Since the total memory requirements of every nginx + redis pair is 1,000Mi, if there aren't at least 3 nodes with 1,000Mi of free memory a scale out will be required.
+
+``` YAML
+---
+# Deployment 1: Nginx (3 Replicas)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      affinity:
+        podAntiAffinity:
+          # Hard rule: Nginx pods MUST NOT be on the same node
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - nginx
+            topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: nginx
+        image: nginx
+        resources:
+          requests:
+            memory: "300Mi" # Memory request as specified
+---
+# Deployment 2: Redis (3 Replicas)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-cache
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      affinity:
+        podAffinity:
+          # Hard rule: Redis pods MUST be on a node already hosting Nginx
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - nginx
+            topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: redis
+        image: redis
+        resources:
+          requests:
+            memory: "700Mi" # Memory request as specified
+```
+
+### Daemonsets and Cluster Autoscaler
+
+- While both Karpenter and Cluster Autoscaler generally don't treat Daemonsets as unevictable, Daemonsets can cause nodes to become blocked 
 
 ## Special Cases
+
+There are a few interesting scenarios that don't directly block nodes from scaling down or cause node sprawl, but they're interesting edge cases to be aware of because they cause clusters to scale in potentially unpredictable ways.
+
 ### IP Exhaustion
 
 - Every pod in a cluster must have a unique IP.  If your cluster CIDR is too small, you may exhaust your available IPs and no longer be able to create pods.
