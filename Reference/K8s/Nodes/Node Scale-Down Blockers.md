@@ -276,11 +276,81 @@ spec:
             ephemeral-storage: "4Gi"
 ```
 
-### Node Affinity or Anti-affinity
+### Node Affinity or Anti-affinity, Node Selectors
 
-- Node anti-affinity is a "repulsion" rule. It explicitly tells the scheduler: "Do not place this pod on a node that already meets these criteria." 
+- Node affinity is an "attraction" rule.  It tells the scheduler: "place this pod on a node that meets these criteria."  Node anti-affinity, on the other hand, is a "repulsion" rule. It explicitly tells the scheduler: "Do not place this pod on a node that already meets these criteria." 
+- Node constraints can be either soft (constraint begins with "`preferred...`") or hard (constraint begins with "`required...`")
+- When using hard node affinity constraints, the Kubernetes scheduler will refuse to place a pod if no nodes satisfy the constraint.  The pod will instead be placed in Pending status.
+- Your node autoscaler will then detect the pending pod and attempt to scale out a node that meets its scheduling constraints.
+- Here is an example of a Deployment manifest with a hard node anti-affinity.  If no node exists **without** a diskType of "hdd" a new node will need to be scaled out.
+
+``` YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-server
+spec:
+  selector:
+    matchLabels:
+      app: web-server
+  template:
+    metadata:
+      labels:
+        app: web-server
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: disktype
+                operator: NotIn
+                values:
+                - hdd
+      containers:
+      - name: nginx
+        image: nginx
+```
+
+- A `nodeSelector` in a pod spec is similar to a node affinity except that it is simpler.  Node selectors only match node labels, and constraints are always hard.
 
 ### Pod anti-affinity
+
+- Pod anti-affinity rules tell the Kubernetes scheduler "do not place this pod on a node that already has pods that meet these criteria".  
+- Like node anti-affinity, pod anti-affinity constraints can be either soft (constraint begins with "`preferred...`") or hard (constraint begins with "`required...`")
+- When using hard anti-affinity constraints, the Kubernetes scheduler will refuse to place a pod if no nodes satisfy the constraint.  The pod will instead be placed in Pending status.
+- Your node autoscaler will then detect the pending pod and attempt to scale out a node that meets its scheduling constraints.
+- Below is an example of a Deployment manifest requesting 3 replicas, with a hard anti-affinity rule.  The rule says, in effect, "don't place any of the pods in this Deployment on the same node."  As a result, this Deployment will require at least 3 nodes already exist (or be scaled out) to satisfy its placement rules:
+
+``` YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-server
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web-server
+  template:
+    metadata:
+      labels:
+        app: web-server
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - web-server
+            topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: nginx
+        image: nginx
+```
 
 ### Daemonsets
 
