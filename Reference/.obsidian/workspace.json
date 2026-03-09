@@ -43,12 +43,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8s/GPU/Useful commands in a GPU environment.md",
+                "file": "K8s/GPU/eBook -- Right-Sizing GPUs in Kubernetes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Useful commands in a GPU environment"
+              "title": "eBook -- Right-Sizing GPUs in Kubernetes"
             }
           }
         ],
@@ -200,12 +200,12 @@
   },
   "active": "abac892835c577a7",
   "lastOpenFiles": [
+    "K8s/GPU/Useful commands in a GPU environment.md",
     "K8s/GPU/Steering GPU workloads to a MIG instance.md",
     "K8s/GPU/NVIDIA GPU Operator.md",
     "K8s/GPU/GPUs General Notes.md",
     "K8s/GPU/GPU Sharing.md",
     "K8s/GPU/GPU node labels.md",
-    "K8s/GPU/Useful commands in a GPU environment.md",
     "K8s/GPU/Training vs inference hardware requirements.md",
     "K8s/GPU/Poor GPU utilization contributing factors.md",
     "K8s/GPU/NVIDIA MIG and Kubernetes DRA - Better together.md",
