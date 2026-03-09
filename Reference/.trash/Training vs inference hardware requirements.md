@@ -1,6 +1,6 @@
 #ai #k8s #hardware
 
-### 🔁 Training vs. 🔍 Inference: Hardware Considerations
+### Training vs. 🔍 Inference: Hardware Considerations
 
 |Feature|Training|Inference|
 |---|---|---|
@@ -13,7 +13,7 @@
 
 ---
 
-### 🧠 Why Not Use the Same Hardware?
+### Why Not Use the Same Hardware?
 
 - **Cost**: Training GPUs are much more expensive and overkill for inference.
 - **Latency vs. Throughput**:

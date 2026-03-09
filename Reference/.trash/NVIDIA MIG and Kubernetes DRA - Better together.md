@@ -1,6 +1,6 @@
 #nvidia #k8s #dra #gpu #mig 
 
-### 🔹 **Short Answer**
+### Short Answer**
 
 Kubernetes **Dynamic Resource Allocation (DRA)** and **NVIDIA’s Multi-Instance GPU (MIG)** are **complementary**, not replacements.  
 They solve **different layers** of the GPU resource-sharing problem — and when combined, they give you much finer control and better utilization.
