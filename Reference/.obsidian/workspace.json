@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7a02331951bec4d1",
+        "id": "f381f48410e666ad",
         "type": "tabs",
         "children": [
           {
-            "id": "28b450799840c3ff",
+            "id": "97f9f4ef74d271bb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "What is/Cluster API.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Cluster API"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#pods",
+                "query": "path:\"Files/Articles/\" emptive",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -163,34 +167,35 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "28b450799840c3ff",
+  "active": "97f9f4ef74d271bb",
   "lastOpenFiles": [
-    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
-    "K8s/Nodes/Nodes General Notes.md",
     "Files/Articles/2026.03.06 How Kubernetes Schedules GPUs -- Device Plugins, MIG, and Time-Slicing.md",
-    "K8s/Nodes/Temporarily Removing a Node From a Cluster.md",
-    "What is/Cluster API.md",
-    "K8s/Nodes/Node autoscaling.md",
-    "K8s/Nodes/Node Scale-Down Blockers.md",
-    "Untitled.md",
     "K8s/Nodes/Kubernetes Optimization Beyond Requests and Limits— Node Scaling Blockers.md",
-    "K8s/Nodes/Kubernetes Optimization Beyond Requests and Limits- Node Scaling Blockers.md",
-    "K8s/Nodes/Karpenter node consolidation.md",
-    "K8s/Nodes/Adding worker nodes.md",
-    "K8s/Nodes/Detecting node autoscaler.md",
-    "K8s/Nodes/Karpenter.md",
-    "K8s/Platforms and Distributions/GKE Autopilot.md",
-    "K8s/Platforms and Distributions/GKE Autopilot notes.md",
-    "K8s/Platforms and Distributions/OpenShift.md",
+    "What is/Cluster API.md",
+    "K8s/Nodes/Node Scale-Down Blockers.md",
     "Untitled 1.md",
+    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
+    "K8s/Nodes/Node autoscaling.md",
+    "Untitled.md",
+    "K8s/Nodes/Nodes General Notes.md",
+    "K8s/Nodes/Temporarily Removing a Node From a Cluster.md",
+    "What is/SeaweedFS.md",
+    "K8s/Platforms and Distributions/GKE Autopilot.md",
     "Untitled 2.md",
     "What is/KAI Scheduler.md",
     "K8s/Nodes/Node Blockers.md",
     "What is/OVN-Kubernetes.md",
-    "What is/Podman.md",
-    "What is/PostgreSQL.md",
-    "K8s/Troubleshooting K8s.md",
-    "What is/SeaweedFS.md",
+    "K8s/Platforms and Distributions/etcd Encryption by CSP.md",
+    "K8s/Platforms and Distributions/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
+    "K8s/Platforms and Distributions/OpenShift.md",
+    "K8s/Platforms and Distributions/IRSA vs EKS pod identity.md",
+    "K8s/Platforms and Distributions/GKE Autopilot notes.md",
+    "K8s/Platforms and Distributions/Enable VPC CNI Prefix.md",
+    "K8s/Platforms and Distributions/EKS service exposure guide.md",
+    "K8s/Platforms and Distributions/EBS backed PV.md",
+    "K8s/Platforms and Distributions/Deploy Prometheus on GKE Autopilot.md",
+    "K8s/Platforms and Distributions",
+    "What is/Ceph.md",
     "Training/GitHub Foundations",
     "Other/PowerShell",
     "Quick Starts",
@@ -200,7 +205,6 @@
     "K8s/Tools & Utilities",
     "K8s/Pods",
     "K8s/Nodes",
-    "K8s/Platforms and Distributions",
     "Media/Screenshots/Pasted image 20250720113823.png",
     "Media/Screenshots/Pasted image 20250720113637.png",
     "Media/Screenshots/Pasted image 20250720113524.png",
