@@ -163,8 +163,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "97f9f4ef74d271bb",
+  "active": "5b7f78650c3d9d0c",
   "lastOpenFiles": [
+    "Untitled 1.md",
     "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
     "K8s/Nodes/Node autoscaling.md",
     "K8s/Nodes/Node Scale-Down Blockers.md",
@@ -175,7 +176,6 @@
     "What is/SeaweedFS.md",
     "K8s/Platforms and Distributions/GKE Autopilot.md",
     "Untitled 2.md",
-    "Untitled 1.md",
     "What is/KAI Scheduler.md",
     "K8s/Nodes/Node Blockers.md",
     "What is/OVN-Kubernetes.md",
