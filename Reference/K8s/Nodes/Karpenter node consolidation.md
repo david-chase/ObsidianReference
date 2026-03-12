@@ -2,6 +2,57 @@
 
 ```table-of-contents
 ```
+
+## Sample Nodepool Manifest with Multiple Node Consolidation policies
+
+```YAML
+apiVersion: karpenter.sh/v1
+kind: NodePool
+metadata:
+  name: tokyo-scheduled-consolidation
+spec:
+  template:
+    spec:
+      requirements:
+        - key: kubernetes.io/arch
+          operator: In
+          values: ["amd64"]
+        - key: karpenter.sh/capacity-type
+          operator: In
+          values: ["on-demand"]
+      nodeClassRef:
+        group: karpenter.sh
+        kind: NodeClass
+        name: default
+  disruption:
+    # 1. Business Hours: Mon-Fri, 08:00 - 18:00
+    # Conservative policy: Only remove nodes that are completely empty.
+    # The 'nodes: 10%' value limits disruption to a small fraction of the cluster
+    # at any given time, preventing large-scale workload shifts during the day.
+    - consolidationPolicy: WhenEmpty
+      consolidateAfter: 1h
+      schedule: "0 8 * * 1-5"
+      nodes: "10%"
+
+    # 2. Off-Hours: Mon-Fri, starting at 18:00
+    # Aggressive policy: Consolidate underutilized nodes.
+    # The 'nodes: 100%' value allows Karpenter to disrupt as many nodes as 
+    # necessary simultaneously to reach the most cost-effective state quickly.
+    - consolidationPolicy: WhenUnderutilized
+      consolidateAfter: 1m
+      schedule: "0 18 * * 1-5"
+      nodes: "100%"
+
+    # 3. Weekends: Sat-Sun, starting at 00:00
+    # Maintains the aggressive 100% node disruption budget to ensure the 
+    # cluster remains tightly optimized while business activity is low.
+    - consolidationPolicy: WhenUnderutilized
+      consolidateAfter: 1m
+      schedule: "0 0 * * 0,6"
+      nodes: "100%"
+```
+
+---
 ## What Node Consolidation Is
 
 Karpenter is an autoscaler for Kubernetes that not only **adds nodes** when workloads need capacity, but also **removes or reshapes nodes** when the cluster can run more efficiently.
@@ -12,7 +63,6 @@ Karpenter is an autoscaler for Kubernetes that not only **adds nodes** when work
 2. Determines if the pods running on them could be rescheduled elsewhere.
 3. Terminates those nodes to save cost and improve utilization.
 
----
 ## How It Works (Process)
 
 1. **Metrics Collection**
@@ -36,13 +86,11 @@ Karpenter is an autoscaler for Kubernetes that not only **adds nodes** when work
     - Pods are evicted respecting PodDisruptionBudgets.
     - Once empty, the node is terminated.
 
----
 ## Key Differences From Cluster Autoscaler
 
 - **Cluster Autoscaler**: Works mostly at the node group level (e.g., AWS ASG, GCP MIG). It scales node groups up/down but can’t freely replace instances with different types/sizes.
 - **Karpenter**: Works at the **individual node level**. It can replace an expensive instance type with a cheaper one, or consolidate multiple small nodes into fewer large ones.
 
----
 ### Example Scenario
 
 - Suppose you have 3 `m5.2xlarge` nodes running at 20% utilization.
@@ -50,14 +98,12 @@ Karpenter is an autoscaler for Kubernetes that not only **adds nodes** when work
 - It launches the larger node, evicts pods from the smaller ones, and terminates the 3 old nodes.
 - Result: Same workload, fewer nodes, lower cost.
 
----
 ## Important Safeguards
 
 - **PodDisruptionBudgets (PDBs)**: Karpenter respects them and won’t evict if it violates availability guarantees.
 - **Topology/Affinity**: Pods with hard constraints prevent consolidation if they can’t move.
 - **Grace Periods**: Consolidation isn’t instant—it waits for safe opportunities.
 
----
 
 In short:  
 Karpenter consolidation is like an _always-on cost optimizer_. It continuously evaluates whether the cluster could run with fewer or cheaper nodes, simulates rescheduling, and safely drains/removes nodes when possible.
