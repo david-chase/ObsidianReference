@@ -14,6 +14,50 @@
 - GKE prevents you from arbitrarily low requests by setting minimum requests for each resource type and enforcing CPU:Memory ratios
 - <span style="color:rgb(255, 0, 0)">This means in GKE Autopilot it would be very important for Kubex to know and respect these minimums and ratios</span> 
 
+## Sample Deployment Manifest Requesting Balanced Compute Capacity
+
+``` YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-server-balanced
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web-server
+  template:
+    metadata:
+      labels:
+        app: web-server
+    spec:
+    
+		# affinity: 
+		# 	nodeAffinity: 
+		# 		nodeSelectorTerms: 
+		# 		- matchExpressions: 
+		#		  - key: cloud.google.com/compute-class 
+		#		    operator: In 
+		#		    values: 
+		#		    - Balanced 
+    
+      nodeSelector:
+        # This label tells GKE Autopilot to provision nodes 
+        # from the Balanced compute class for this workload
+        cloud.google.com/compute-class: Balanced
+      containers:
+      - name: nginx
+        image: nginx:latest
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "500m"
+            memory: "1Gi"
+```
+
 ## Minimum and Maximum Requests
 
 [https://cloud.google.com/kubernetes-engine/pricing#general-purpose-autopilot-workloads](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests#compute-class-defaults)
