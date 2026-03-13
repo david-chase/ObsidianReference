@@ -186,6 +186,8 @@
   },
   "active": "9a97b3f8f47e00ab",
   "lastOpenFiles": [
+    "K8s/Deployment/Helm/helm Sample Command Lines.md",
+    "K8s/Deployment/Argo/Argo CD.md",
     "K8s/Platforms and Distributions/GKE Autopilot.md",
     "What is/SeaweedFS.md",
     "What is/Cluster API.md",
@@ -210,9 +212,7 @@
     "K8s/Platforms and Distributions/Enable VPC CNI Prefix.md",
     "K8s/Platforms and Distributions/EKS service exposure guide.md",
     "K8s/Platforms and Distributions/EBS backed PV.md",
-    "K8s/Platforms and Distributions/Deploy Prometheus on GKE Autopilot.md",
     "K8s/Platforms and Distributions",
-    "What is/Ceph.md",
     "Training/GitHub Foundations",
     "Other/PowerShell",
     "Quick Starts",
