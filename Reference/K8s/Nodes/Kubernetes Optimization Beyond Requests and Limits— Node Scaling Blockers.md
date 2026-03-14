@@ -457,7 +457,7 @@ Imagine adding a do-not-evict annotation to a Daemonset.  You suddenly have an n
 
 ## Autoscaler-Specific Scenarios
 
-### Cluster Autoscaler
+### Cluster Autoscaler Configuration
 
 If the node group’s `minSize` is > 0, Cluster Autoscaler won't go below it—even if the node is empty.
 
@@ -483,7 +483,46 @@ spec:
 
 Lastly a `cluster-autoscaler.kubernetes.io/scale-down-disabled` annotation on nodes or pods prevents downsizing.
 
-### Karpenter
+### Karpenter Node Consolidation Configuration
+
+If your Karpenter node consolidation configuration is too passive, it may take inordinate amounts of time to scale down your nodes, if they scale down at all.  In the following Karpenter node pool manifest we've configured node consolidation as follows:
+
+- Never consolidate between 9AM and 9PM
+- Outside those hours consolidate only when the node is empty
+- Do so only after the node has been empty for an hour
+- Never disrupt more than 10% of our node capacity at once
+
+``` YAML
+apiVersion: karpenter.sh/v1
+kind: NodePool
+metadata:
+  name: tokyo-nodepool
+spec:
+  template:
+    spec:
+      requirements:
+        - key: kubernetes.io/arch
+          operator: In
+          values: ["amd64"]
+        - key: karpenter.sh/capacity-type
+          operator: In
+          values: ["on-demand"]
+      nodeClassRef:
+        group: karpenter.k8s.aws
+        kind: EC2NodeClass
+        name: default
+  disruption:
+    consolidationPolicy: WhenEmpty
+    consolidateAfter: 60m
+    budgets:
+      - nodes: 0%
+        schedule: "0 9 * * *"
+        duration: 12h
+      - nodes: 10%
+```
+
+This will make node consolidation proceed very slowly, especially if you have hundreds of nodes.  A better configuration may be to allow node consolidation `WhenEmpty` from 9AM to 9PM, with a disruption limit of 10%.  Then outside of business hours enable node consolidation
+### Karpenter Node Drift
 
 If a node has drift (e.g., wrong AMI, taints, labels), Karpenter may keep or replace it instead of downsizing based on usage.
 
