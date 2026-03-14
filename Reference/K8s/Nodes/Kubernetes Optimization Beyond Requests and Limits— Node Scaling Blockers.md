@@ -528,6 +528,8 @@ Imagine adding a do-not-evict annotation to a Daemonset.  You suddenly have an n
 
 ## Autoscaler-Specific Scenarios
 
+The following scenarios are specific to the node autoscaler you’re using, be it Cluster Autoscaler or Karpenter. Understanding your node autoscaler implementation is integral to identifying node scale-down blockers.
+
 ### Cluster Autoscaler and `LeastAllocated` Scoring Strategy
 
 You'll recall that the `LeastAllocated` node scoring strategy tells `kube-scheduler` to place new workloads on the least busy nodes.  While this is very effective at spreading load evenly across all nodes it can make node consolidation and scale-down very difficult if you're using Cluster Autoscaler.
