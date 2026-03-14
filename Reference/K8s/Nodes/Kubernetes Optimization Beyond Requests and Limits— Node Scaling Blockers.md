@@ -449,15 +449,74 @@ Particularly with the rise of high-performance distributed frameworks like PyTor
 
  These types of workloads require Gang Scheduling using a solution like the NVIDIA KAI Scheduler or the Kubernetes-native alpha feature Workload-Aware Scheduling.   While the topic of gang scheduling is outside the scope of this guide, keep in mind that as AI and parallel processing workloads become more and more popular in Kubernetes, pod interdependencies can continue to drive waste, underutilized nodes, and even resource deadlocks when using older scheduling capabilities that are only aware of individual pods.
 
-### LeastAllocated Scoring Strategy AKA Bin Packing
+### LeastAllocated Scoring Strategy
 
-The default configuration for `kube-scheduler` applies a node scoring strategy of `LeastAllocated`.  What this means is that when the Kubernetes Scheduler is choosing which nodes to place a workload on, it will favour nodes that have the least resources in use.  This can be useful because it evenly distributes workloads across nodes.  A very busy node is less likely to receive new workloads while an underutilized node is most likely to receive them.
+The default configuration for `kube-scheduler` applies a node scoring strategy of `LeastAllocated`.  What this means is that when the Kubernetes Scheduler is choosing which nodes to place a workload on, it will favour nodes that have the most available resources.  This can be useful because it evenly distributes workloads across nodes.  A very busy node is less likely to receive new workloads while an underutilized node is most likely to receive them.
 
-One downside of this scoring strategy is it wreaks havoc on node consolidation algorithms.  As soon as a node starts to approach utilization thresholds that might allow it to scale down, the scheduler starts placing new workloads on it.  This results in nodes that are underutilized and node sprawl.
+One downside of this scoring strategy is it wreaks havoc on node consolidation algorithms.  As soon as a node starts to approach utilization thresholds that might allow it to scale down, the scheduler starts placing new workloads on it.  This results in nodes that are underutilized and causes node sprawl.
 
-A scoring strategy of `MostAllocated` causes the scheduler to always favour the busiest nodes for workload placement, until the node is full.  This means busy nodes are fully utilized while under-utilized nodes will tend to scale down, which can significantly reduce node sprawl and costs.
+A scoring strategy of `MostAllocated` causes the scheduler to always favour the busiest nodes for workload placement, until the node is full.  This means busy nodes tend to be fully utilized while under-utilized nodes will tend to scale down, which can significantly reduce node sprawl and costs.
 
-In the major managed Kubernetes flavours (EKS, AKS, GKE) it's not possible to change the scoring strategy for the default scheduler but it **is** relatively trivial to create a custom scheduler that uses the `MostAllocated` strategy.  However keep in mind there are risks associated with this scoring strategy as well.  Be aware of how it impacts node sprawl, but don't take lightly the decision to move to a `MostAllocated` strategy.
+In the major managed Kubernetes flavours (EKS, AKS, GKE) it's not possible to change the scoring strategy for the default scheduler but it **is** relatively trivial to create a custom scheduler that uses the `MostAllocated` strategy.  However keep in mind there are risks associated with this scoring strategy as well.  Don’t rush headlong into the decision to move to a `MostAllocated` strategy without considering all the implications. These are weighty architectural decisions that shouldn’t be taken lightly.
+
+``` YAML
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bin-packing-scheduler-config
+  namespace: kube-system
+data:
+  scheduler-config.yaml: |
+    apiVersion: kubescheduler.config.k8s.io/v1
+    kind: KubeSchedulerConfiguration
+    profiles:
+      - schedulerName: bin-packing-scheduler
+        pluginConfig:
+          - name: NodeResourcesFit
+            args:
+              scoringStrategy:
+                type: MostAllocated
+                resources:
+                  - name: cpu
+                    weight: 1
+                  - name: memory
+                    weight: 1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bin-packing-scheduler
+  namespace: kube-system
+  labels:
+    component: scheduler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: scheduler
+  template:
+    metadata:
+      labels:
+        component: scheduler
+    spec:
+      serviceAccountName: kube-scheduler
+      containers:
+        - name: kube-scheduler
+          image: registry.k8s.io/kube-scheduler:v1.35.0
+          command:
+            - kube-scheduler
+            - --config=/etc/kubernetes/scheduler-config.yaml
+            - --v=2
+          volumeMounts:
+            - name: config-volume
+              mountPath: /etc/kubernetes/scheduler-config.yaml
+              subPath: scheduler-config.yaml
+              readOnly: true
+      volumes:
+        - name: config-volume
+          configMap:
+            name: bin-packing-scheduler-config
+```
 
 Later in the article I'll discuss specifically how the `LeastAllocated` scoring strategy affects node consolidation in Cluster Autoscaler and Karpenter respectively.
 
@@ -469,7 +528,13 @@ Imagine adding a do-not-evict annotation to a Daemonset.  You suddenly have an n
 
 ## Autoscaler-Specific Scenarios
 
-### Cluster Autoscaler Configuration
+### Cluster Autoscaler and `LeastAllocated` Scoring Strategy
+
+You'll recall that the `LeastAllocated` node scoring strategy tells `kube-scheduler` to place new workloads on the least busy nodes.  While this is very effective at spreading load evenly across all nodes it can make node consolidation and scale-down very difficult if you're using Cluster Autoscaler.
+
+Cluster Autoscaler will only attempt to scale down a node if both its CPU and Memory requests drop below 50%.  However if your node scoring strategy is set to `LeastAllocated` this can result in the Kubernetes scheduler and the Cluster Autoscaler scale-down algorithm "fighting" against each other.  As soon as a node starts nearing its scale-down threshold, the scheduler starts steering workloads to it.  This can make it very difficult for nodes to scale back in after a large scale-out event has occurred.
+
+### Other Cluster Autoscaler Considerations
 
 If the node group’s `minSize` is > 0, Cluster Autoscaler won't go below it—even if the node is empty.
 
@@ -494,12 +559,6 @@ spec:
  Furthermore Cluster Autoscaler uses a utilization threshold (default 50% for CPU and memory).  A node won’t be removed if its CPU and Memory resource requests exceed this threshold.  Daemonsets are not included in this calculation.
 
 Lastly a `cluster-autoscaler.kubernetes.io/scale-down-disabled` annotation on nodes or pods prevents downsizing.
-
-### Cluster Autoscaler and `LeastAllocated` Scoring Strategy
-
-You'll recall that the `LeastAllocated` node scoring strategy tells `kube-scheduler` to place new workloads on the least busy nodes.  While this is very effective at spreading load evenly across all nodes it can make node consolidation and scale-down very difficult if you're using Cluster Autoscaler.
-
-Cluster Autoscaler will only attempt to scale down a node if both its CPU and Memory requests drop below 50%.  However if your node scoring strategy is set to `LeastAllocated` this can result in the Kubernetes scheduler and the Cluster Autoscaler scale-down algorithm "fighting" against each other.  As soon as a node starts nearing its scale-down threshold, the scheduler starts steering workloads to it.  This can make it very difficult for nodes to scale back in after a large scale-out event has occurred.
 
 ### Karpenter Node Consolidation Configuration
 
@@ -541,9 +600,11 @@ spec:
 
 This will make node consolidation proceed very slowly, especially if you have hundreds of nodes.  A better configuration may be to allow node consolidation `WhenEmpty` from 9AM to 9PM, with a disruption limit of 10%.  Then outside of business hours enable node consolidation `WhenEmptyOrUnderutilized` with disruption up to 20%.
 
-### Use of `WhenEmpty`
+### Karpenter and Use of `WhenEmpty`
 
+A `consolidationPolicy` of `WhenEmpty` tells Karpenter to only scale down a node when there is nothing left running on it except Daemonsets.  While this can have its uses -- like the previous example where we ran a very conservative disruption policy during peak business hours -- it can also block node consolidation.  
 
+Imagine a scenario where we have a  `consolidationPolicy` of `WhenEmpty` all day, every day.  It would be extremely rare for a node to scale down because it won't do so until empty.  Combine this with a `LeastAllocated` node scoring strategy where `kube-scheduler` is constantly scheduling new workloads on nodes as they approach the scale-down threshold and you can easily imagine node scale downs being blocked entirely.
 
 ### Karpenter Node Drift
 
@@ -554,6 +615,7 @@ If a node has drift (e.g., wrong AMI, taints, labels), Karpenter may keep or rep
 While Cluster Autoscaler is a stable, reliable solution for node autoscaling, it's beginning to show its age.  When it makes node consolidation decisions it looks only at individual nodes.  If the CPU and Memory requests on a node exceed 50% it will not attempt to scale down the node.  In theory you could have 25 nodes all running at 51% utilization and Cluster Autoscaler will not attempt to recover any capacity, resulting in significant waste.
 
 Karpenter, on the other hand, looks at your aggregate demand, your aggregate node capacity, and creates a bin packing plan to most efficiently allocate capacity to meet demand.  For example, Karpenter is able to determine that your **total** aggregate demand has dropped and a node can be scaled down by moving its workloads to two under-utilized nodes.  Similarly it may determine that two smaller nodes can be combined into one larger node that costs less.  This means Karpenter is much more efficient at managing your aggregate node capacity than Cluster Autoscaler is.
+
 ## Summary
 
 In summary, reducing wasteful resource requests is only the first step in Kubernetes resource optimization.  In many cases you won't fully realize your savings until you've scaled down your node infrastructure, and there are a lot of factors that influence your ability to do so.  Hopefully this guide has helped you understand and avoid some of the hidden pitfalls when optimizing Kubernetes clusters.
