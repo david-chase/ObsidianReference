@@ -37,8 +37,7 @@
               "title": "Kubernetes Optimization Beyond Requests and Limits— Node Scaling Blockers"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,15 +183,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "9a97b3f8f47e00ab",
+  "active": "99dfb0527bfc2b17",
   "lastOpenFiles": [
+    "K8s/Nodes/Kubernetes Optimization Beyond Requests and Limits— Node Scaling Blockers.md",
     "K8s/Deployment/Argo/Argo CD.md",
     "K8s/Deployment/Helm/helm Sample Command Lines.md",
     "K8s/Platforms and Distributions/GKE Autopilot.md",
     "What is/SeaweedFS.md",
     "What is/Cluster API.md",
     "K8s/Nodes/Nodes General Notes.md",
-    "K8s/Nodes/Kubernetes Optimization Beyond Requests and Limits— Node Scaling Blockers.md",
     "K8s/GPU/eBook -- Right-Sizing GPUs in Kubernetes.md",
     "K8s/GPU/GPUs General Notes.md",
     "Files/Articles/2026.03.06 How Kubernetes Schedules GPUs -- Device Plugins, MIG, and Time-Slicing.md",
