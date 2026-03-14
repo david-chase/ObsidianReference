@@ -449,6 +449,10 @@ Particularly with the rise of high-performance distributed frameworks like PyTor
 
  These types of workloads require Gang Scheduling using a solution like the NVIDIA KAI Scheduler or the Kubernetes-native alpha feature Workload-Aware Scheduling.   While the topic of gang scheduling is outside the scope of this guide, keep in mind that as AI and parallel processing workloads become more and more popular in Kubernetes, pod interdependencies can continue to drive waste, underutilized nodes, and even resource deadlocks when using older scheduling capabilities that are only aware of individual pods.
 
+### LeastAllocated Scoring Strategy
+
+The default configuration for `kube-scheduler` applies a node scoring strategy of `LeastAllocated`.  What this means is that when the Kubernetes Scheduler is choosing which nodes to place a workload on, it will favour nodes that have the least resources in use.  This can be useful because it evenly distributes 
+
 ## Daemonsets
 
 While both Karpenter and Cluster Autoscaler ignore Daemonsets when making decisions about scaling down a node, keep in mind that because a Daemonset is deployed to every node, the impact of violating one of the preceding rules is that much more impactful.  
@@ -485,7 +489,7 @@ Lastly a `cluster-autoscaler.kubernetes.io/scale-down-disabled` annotation on no
 
 ### Karpenter Node Consolidation Configuration
 
-If your Karpenter node consolidation configuration is too passive, it may take inordinate amounts of time to scale down your nodes, if they scale down at all.  In the following Karpenter node pool manifest we've configured node consolidation as follows:
+If your Karpenter node consolidation configuration is too passive, it may take inordinate amounts of time to scale down your nodes, if they scale down at all.  In the following Karpenter node pool manifest we've configured node consolidation very conservatively:
 
 - Never consolidate between 9AM and 9PM
 - Outside those hours consolidate only when the node is empty
@@ -521,7 +525,8 @@ spec:
       - nodes: 10%
 ```
 
-This will make node consolidation proceed very slowly, especially if you have hundreds of nodes.  A better configuration may be to allow node consolidation `WhenEmpty` from 9AM to 9PM, with a disruption limit of 10%.  Then outside of business hours enable node consolidation
+This will make node consolidation proceed very slowly, especially if you have hundreds of nodes.  A better configuration may be to allow node consolidation `WhenEmpty` from 9AM to 9PM, with a disruption limit of 10%.  Then outside of business hours enable node consolidation `WhenEmptyOrUnderutilized` with disruption up to 20%.
+
 ### Karpenter Node Drift
 
 If a node has drift (e.g., wrong AMI, taints, labels), Karpenter may keep or replace it instead of downsizing based on usage.
