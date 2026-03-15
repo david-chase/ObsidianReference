@@ -3,5 +3,6 @@
   "colored-text",
   "remove-newlines",
   "automatic-table-of-contents",
-  "copy-url-in-preview"
+  "copy-url-in-preview",
+  "highlightr-plugin"
 ]
