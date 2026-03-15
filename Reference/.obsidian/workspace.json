@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Files/Articles/2026.03.09 Kubernetes v1.36 — Sneak Peek.md",
+                "file": "Files/Articles/2026.03.09 Solving the Karpenter Price-Performance Trap with NodeOverlays.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026.03.09 Kubernetes v1.36 — Sneak Peek"
+              "title": "2026.03.09 Solving the Karpenter Price-Performance Trap with NodeOverlays"
             }
           }
         ],
@@ -186,8 +186,9 @@
   },
   "active": "912cf165ea6dcf53",
   "lastOpenFiles": [
-    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
     "Files/Articles/2026.03.09 Kubernetes v1.36 — Sneak Peek.md",
+    "Files/Articles/2026.03.09 Solving the Karpenter Price-Performance Trap with NodeOverlays.md",
+    "K8s/Tools & Utilities/kubectl Sample Command Lines.md",
     "K8s/Nodes/Kubernetes Optimization Beyond Requests and Limits— Node Scaling Blockers.md",
     "Files/Articles/2026.02.14 Cilium Network Policies -- L7 HTTP Filtering with eBPF on Kubernetes.md",
     "Files/Articles/2025.10.04 Beyond the Single Cluster -- A Principal Engineer’s Guide to Mastering Multi-Cluster Kubernetes.md",
@@ -211,7 +212,6 @@
     "K8s/Platforms and Distributions/Using an Image from Amazon ECR in a bare metal Kubernetes Cluster.md",
     "K8s/Platforms and Distributions/OpenShift.md",
     "K8s/Platforms and Distributions/IRSA vs EKS pod identity.md",
-    "K8s/Platforms and Distributions/GKE Autopilot notes.md",
     "K8s/Platforms and Distributions",
     "Training/GitHub Foundations",
     "Other/PowerShell",
